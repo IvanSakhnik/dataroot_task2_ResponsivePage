@@ -15,6 +15,9 @@ button {
 body {
   font-family: "open_sans"; }
 
+a {
+  color: green; }
+
 /*************************
 	All The Layout Styles
 *************************/
