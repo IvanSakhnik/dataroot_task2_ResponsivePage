@@ -1,10 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="scss/style.css">
 </head>
 <body>
-	chek git!
+
+	<!-- Project-header start -->
+	<header class="project-header">
+		<div class="project-header__wrapper">
+			<div class="project-header__header">
+				<a class="logo" href=""><img src="" alt="logo"></a>
+				<menu class="project-header__menu">
+					<li>Аренда</li>
+					<li>Продажа</li>
+					<li>Посуточно</li>
+					<li>Еще</li>
+				</menu>
+				<div class="project-header__botton-menu">
+					<a class="button advert" href="">
+						<div class="icon-plus"></div>
+						Разместить обьявление</a>
+					<a class="button enter" href="">Войти</a>
+				</div>
+			</div>
+
+			<div class="project-header__content">
+				<h1 class="project-header__tittle">Поиск недвижимости в Украине</h1>
+				<form action="" method="">
+					<label for="choose_city">Выберите город</label>
+					<select name="choose city" id="choose_city">
+						<option value="Kyev" selected>Киев</option>
+						<option value="Kharkov">Харьков</option>
+						<option value="Lviv">Львов</option>
+						<option value="Odessa">Одесса</option>
+					</select>
+					<label for="choose_rooms">Кол-во комнат</label>
+					<input type="checkbox" name="1" value="1">
+					<input type="checkbox" name="2" value="2">
+					<input type="checkbox" name="3" value="3">
+					<input type="checkbox" name="4" value="4">
+					<input type="checkbox" name="5+" value="5+">
+					<input class="button button-go-to-search" type="submit" name="" value="Перейти к поиску">
+				</form>
+			</div>
+		</div>
+	</header>
+	<!-- Project-header ends -->
+
+	<!-- Project-content start -->
+	<main class="project-content">
+		<div class="project-content__wrapper"></div>
+			
+			<!-- block1 start -->
+			<div class="project-content__accommodation-metro">
+				<div class="choose-accommodation">
+					<h2 class="choose-accommodation__title">
+						Недвижимость возле метро
+					</h2>
+					<ul class="type-accommodation">
+						<li><a href="">Квартиры</a></li>
+						<li><a href="">Дома</a></li>
+						<li><a href="">Офисы</a></li>
+					</ul>
+					<form action="" method="">
+						<select name="choose station">
+							<option selected>Политехнический институт</option>
+							<option>Шулявка</option>
+							<option>Крещатик</option>
+							<option>Майдан Независимости</option>
+							<option>Левобережная</option>
+						</select>
+						<input class="button button-search" type="submit" name="" value="Показать результаты поиска">
+					</form>
+				</div>
+				<img src="" alt="metro">
+			</div>
+			<!-- block1 ends -->
+
+			<!-- block2 start -->
+			<div class="project-content__best-proposition">
+				<header class="best-proposition__header">
+					<h2>Лучшие предложения в Киеве</h2>
+				</header>
+				<main class="best-proposition__content">
+					<div class="best-proposition__photo">
+						<div class="proposition1">
+							<img src="" alt="flat1">
+							<div class="price">
+								7800 грн
+								<div class="icon-check"></div>
+							</div>
+							<div class="flat-description">2комн. 30кв.м.</div>
+							<div class="flat-location">
+								<div class="red-circle"></div>
+								Политихнический институт
+							</div>
+						</div>
+						<div class="proposition2"align="">
+							<img src="" alt="flat2">
+							<div class="price">
+								10 200 грн
+								<div class="icon-check"></div>
+							</div>
+							<div class="flat-description">1комн. 30кв.м.</div>
+							<div class="flat-location">
+								<div class="red-circle"></div>
+								Политихнический институт
+							</div>
+						</div>
+						<div class="proposition3">
+							<img src="" alt="flat3">
+							<div class="price">
+								6900 грн
+								<div class="icon-check"></div>
+							</div>
+							<div class="flat-description">2комн. 30кв.м.</div>
+							<div class="flat-location">
+								<div class="red-circle"></div>
+								Политихнический институт
+							</div>
+						</div>
+						<div class="proposition4">
+							<img src="" alt="flat1">
+							<div class="price">
+								9000 грн
+								<div class="icon-check"></div>
+							</div>
+							<div class="flat-description">2комн. 30кв.м.</div>
+							<div class="flat-location">
+								<div class="red-circle"></div>
+								Политихнический институт
+							</div>
+						</div>
+					</div>
+				</main>
+				<footer class="best-proposition__footer">
+					<a class="watch-best-prop-button" href="">Смотреть лучшие ценовые предложения</a>
+				</footer>
+			</div>
+			<!-- block2 ends -->
+
+			<div class="project-content__last-adverb"></div>
+
+			<div class="project-content__telegram"></div>
+
+			<div class="project-content__metrovka"></div>
+
+		</div>
+	</main>
+	<!-- Project-content ends -->
+
+	<!-- Project-footer start -->
+	<footer class="project-footer">
+		
+	</footer>
+	<!-- Project-footer ends -->
+
 </body>
 </html>
