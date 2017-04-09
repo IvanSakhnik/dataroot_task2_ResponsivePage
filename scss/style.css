@@ -23,15 +23,15 @@ body {
   font-weight: 400px;
   font-style: normal; }
 
-.menu-accommodation {
-  margin-top: 20px; }
-  .menu-accommodation .menu-accommodation__item {
+.menu-accommodation, .telegram-header .telegram-header__menu {
+  padding-top: 20px; }
+  .menu-accommodation .menu-accommodation__item, .telegram-header .telegram-header__menu .menu-accommodation__item, .telegram-header .telegram-header__menu .telegram-header__menu-item {
     padding: 0 5px 0 5px;
     height: 30px;
     display: inline-block;
     margin-right: 30px;
     vertical-align: middle; }
-    .menu-accommodation .menu-accommodation__item .menu-accommodation__item-text {
+    .menu-accommodation .menu-accommodation__item .menu-accommodation__item-text, .telegram-header .telegram-header__menu .menu-accommodation__item .menu-accommodation__item-text, .telegram-header .telegram-header__menu .telegram-header__menu-item .menu-accommodation__item-text, .telegram-header .telegram-header__menu .telegram-header__menu-item .telegram-header__menu-item__text {
       color: black; }
 
 .button {
@@ -85,6 +85,10 @@ body {
   position: relative;
   min-height: 444px;
   background-color: white;
+  margin-top: 30px; }
+
+.project-content__telegram {
+  min-height: 800px;
   margin-top: 30px; }
 
 /* Responsive ***********/
@@ -148,6 +152,51 @@ body {
   display: inline-block;
   margin-left: 10px; }
 
+.telegram-content {
+  width: 100%;
+  margin: 0 0 0 80px;
+  padding: 30px 0 0 30px;
+  display: flex; }
+  .telegram-content .phone-img {
+    max-width: 282px;
+    max-height: 573px;
+    display: inline-block; }
+  .telegram-content .telegram-info {
+    display: inline-block;
+    width: 400px;
+    height: 440px;
+    margin: 60px 0 0 95px;
+    background-color: white; }
+    .telegram-content .telegram-info .telegram-info_header {
+      position: relative;
+      width: 200px;
+      height: 70px;
+      margin: 40px 0 0 30px; }
+      .telegram-content .telegram-info .telegram-info_header .telegram-info_header_title {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 22px;
+        padding-bottom: 50px; }
+    .telegram-content .telegram-info .telegram-info_content {
+      width: 320px;
+      margin: 0 auto;
+      padding-top: 30px; }
+      .telegram-content .telegram-info .telegram-info_content .telegram-info_content_title {
+        font-size: 22px; }
+      .telegram-content .telegram-info .telegram-info_content .telegram-info_content_text {
+        padding-top: 15px; }
+        .telegram-content .telegram-info .telegram-info_content .telegram-info_content_text .telegram-info_content_text_p {
+          margin-top: 10px; }
+      .telegram-content .telegram-info .telegram-info_content .subscribe-telegram-button {
+        margin-top: 30px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        background-color: #30AE63;
+        padding: 10px 0 0 10px;
+        border-radius: 3px; }
+
 /* Header ***************/
 .project-header__header {
   display: flex; }
@@ -185,6 +234,18 @@ body {
   padding-top: 30px;
   text-align: center; }
 
+.telegram-header {
+  width: 100%;
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: center; }
+  .telegram-header .telegram-header_text {
+    padding-top: 20px;
+    max-width: 500px;
+    margin: 0 auto; }
+  .telegram-header .telegram-header__menu {
+    padding-left: 40px; }
+
 /* Footer ***************/
 .proposition__footer {
   position: absolute;
@@ -217,6 +278,14 @@ body {
   height: 18px;
   background: url("../images/sprite.png") no-repeat -92px -10px; }
 
+.icon-telegram {
+  display: inline-block;
+  top: 20px;
+  width: 62px;
+  height: 62px;
+  margin-right: 20px;
+  background: url("../images/sprite.png") no-repeat -10px -10px; }
+
 /*************************
 	All The States Styles
 *************************/
@@ -226,10 +295,10 @@ body {
 .button:hover {
   background-color: #6FCF97; }
 
-.menu-accommodation__item:hover {
+.menu-accommodation__item:hover, .telegram-header .telegram-header__menu .telegram-header__menu-item:hover {
   border-bottom: 2px solid #27AE60; }
 
-.best-proposition__footer:hover {
+.proposition__footer:hover {
   background-color: #6FCF97; }
 
 .propositions:hover {
