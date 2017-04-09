@@ -71,3 +71,32 @@
 //******************************************************
 
 
+//******************************************************
+ // STYLES FOR HEADER OF BLOCK WITH TELEGRAM
+.telegram-header{
+	width:100%;
+	padding-top: 30px;
+	margin: 0 auto;
+	text-align: center;
+
+	.telegram-header_text{
+		padding-top: 20px;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.telegram-header__menu{
+		@extend .menu-accommodation;
+		padding-left: 40px;
+
+		.telegram-header__menu-item{
+			@extend .menu-accommodation__item;
+
+			.telegram-header__menu-item__text{
+				@extend .menu-accommodation__item-text;
+			}
+		}
+
+	}
+}
+ //*****************************************************
