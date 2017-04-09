@@ -2,67 +2,55 @@
 //--Header ----------------//
 //-------------------------//
 
+
+//******************************************************
+ // STYLES FOR HEADER OF PROJECT HEADER
 .project-header__header{
 	display: flex;
-}
 
-.project-header__menu{
+	.project-header__menu{
 	padding-top: 25px;
 	margin-left:40px;
+
+		.project-header__menu-item{
+			padding: 0 5px 0 5px;
+			height: 30px;
+			display: inline-block;
+			margin-right: 40px;
+			vertical-align: middle;
+
+			.project-header__menu-item__text{
+				color:white;
+			}
+		}
+	}
+
+	.project-header__botton-menu{
+		margin: 20px 0 0 60px;
+
+		.place-advert-button{
+			width: 230px;
+			text-align: center;
+			position:relative;
+
+			.place-advert-button__text{
+				display:inline-block;
+			}
+
+		.enter-site-button{
+			width: 70px;
+			margin-left: -4px;
+			text-align: center;
+			}
+		}
+	}
 }
 
-.header-logo{
-	padding-top: 20px;
-}
+//******************************************************
 
-.header-menu-item{
-	padding: 0 5px 0 5px;
-	height: 30px;
-	display: inline-block;
-	margin-right: 40px;
-	vertical-align: middle;
-}
 
-.header-menu-item-text{
-	color:white;
-}
-
-.project-header__botton-menu{
-	margin: 20px 0 0 60px;
-}
-
-.button{
-	color:white;
-	display:inline-block;
-	height: 35px;
-	padding: 5px;
-}
-
-.advert{
-	width: 230px;
-	text-align: center;
-	position:relative;
-}
-
-.advert-text{
-	display:inline-block;
-}
-
-.icon-plus{
-	display:inline-block;
-	position:absolute;
-	left: 10px;
-	top:9px;
-	width: 18px;
-	height: 18px;
-	background: url("../images/sprite.png") no-repeat -202px -10px;
-}
-
-.enter{
-	width: 70px;
-	margin-left: -4px;
-	text-align: center;
-}
+//******************************************************
+ // STYLES FOR HEADER OF BLOCK WITH BEST PROPOSITIONS
 
 .best-proposition__header{
 	width: 100%;
@@ -70,14 +58,16 @@
 	padding-top: 20px;
 }
 
+//*****************************************************
 
 
-.last-adverb__header{
+//******************************************************
+ // STYLES FOR HEADER OF BLOCK WITH LAST ADVERT
+.last-advert__header{
 	width:100%;
 	padding-top: 30px;	
 	text-align: center;
 }
+//******************************************************
 
-.last-adverb__header-title{
-	
-}
+

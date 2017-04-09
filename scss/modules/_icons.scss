@@ -1,3 +1,28 @@
 //-------------------------//
 //--Icons Module-----------//
 //-------------------------//
+
+
+.header-logo{
+	padding-top: 20px;
+}
+
+.icon-plus{
+	display:inline-block;
+	position:absolute;
+	left: 10px;
+	top:9px;
+	width: 18px;
+	height: 18px;
+	background: url("../images/sprite.png") no-repeat -202px -10px;
+}
+
+.icon-check{
+	display:inline-block;
+	position:absolute;
+	right: 25px;
+	top: 2px;
+	width: 18px;
+	height: 18px;
+	background: url("../images/sprite.png") no-repeat -92px -10px;
+}

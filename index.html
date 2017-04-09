@@ -10,28 +10,37 @@
 	<!-- Project-header start -->
 	<header class="project-header">
 		<div class="project-header__wrapper">
+
 			<div class="project-header__header">
 				<a class="header-logo" href=""><img src="./images/logo.png" alt="logo"></a>
 				<menu class="project-header__menu">
-					<li class="header-menu-item"><a class="header-menu-item-text" href="">Аренда</a></li>
-					<li class="header-menu-item"><a class="header-menu-item-text" href="">Продажа</a></li>
-					<li class="header-menu-item"><a class="header-menu-item-text" href="">Посуточно</a></li>
-					<li class="header-menu-item"><a class="header-menu-item-text" href="">&bull;&bull;&bull; Еще</a></li>
+					<li class="project-header__menu-item">
+						<a class="project-header__menu-item__text" href="">Аренда</a>
+					</li>
+					<li class="project-header__menu-item">
+						<a class="project-header__menu-item__text" href="">Продажа</a>
+					</li>
+					<li class="project-header__menu-item">
+						<a class="project-header__menu-item__text" href="">Посуточно</a>
+					</li>
+					<li class="project-header__menu-item">
+						<a class="project-header__menu-item__text" href="">&bull;&bull;&bull; Еще</a>
+					</li>
 				</menu>
 				<div class="project-header__botton-menu">
-					<a class="button advert" href="">
+					<a class="button place-advert-button" href="">
 						<div class="icon-plus"></div>
-						<div class="advert-text">Разместить обьявление</div>
+						<div class="place-advert-button__text">Разместить обьявление</div>
 					</a>
-					<a class="button enter" href="">Войти</a>
+					<a class="button enter-site-button" href="">Войти</a>
 				</div>
 			</div>
 
 			<div class="project-header__content">
 				<h1 class="project-header__tittle">Поиск недвижимости в Украине</h1>
-			
+
 				<form action="" method="">
-					<div class="elem-form choose-city-form">
+					<div class="choose-city-form">
 						<label for="choose_city">Выберите город</label><br>
 						<select class="choose_city" name="choose city" id="choose_city">
 							<option value="Kyev" selected>Киев</option>
@@ -57,21 +66,21 @@
 	<main class="project-content">
 		<div class="project-content__wrapper">
 			
-			<!-- block1 start -->
+			<!-- content block1 start -->
 			<div class="project-content__accommodation-metro">
-				<div class="choose-accommodation">
-					<h2 class="choose-accommodation__title">
+				<div class="content-choose-accommodation">
+					<h2 class="content-choose-accommodation__title">
 						Недвижимость возле метро
 					</h2>
-					<ul class="type-accommodation">
-						<li class="type-accommodation__item">
-							<a class="type-accommodation__item-text" href="">Квартиры</a>
+					<ul class="menu-accommodation">
+						<li class="menu-accommodation__item">
+							<a class="menu-accommodation__item-text" href="">Квартиры</a>
 						</li>
-						<li class="type-accommodation__item">
-							<a class="type-accommodation__item-text" href="">Дома</a>
+						<li class="menu-accommodation__item">
+							<a class="menu-accommodation__item-text" href="">Дома</a>
 						</li>
-						<li class="type-accommodation__item">
-							<a class="type-accommodation__item-text" href="">Офисы</a>
+						<li class="menu-accommodation__item">
+							<a class="menu-accommodation__item-text" href="">Офисы</a>
 						</li>
 					</ul>
 					<form action="" method="">
@@ -87,14 +96,14 @@
 				</div>
 				<img class="metro-img" src="./images/metro.jpg" alt="metro">
 			</div>
-			<!-- block1 ends -->
+			<!-- content block1 ends -->
 
-			<!-- block2 start -->
+			<!-- content block2 start -->
 			<div class="project-content__best-proposition">
 				<header class="best-proposition__header">
 					<h2>Лучшие предложения в Киеве</h2>
 				</header>
-				<main class="best-proposition__block">
+				<main class="best-proposition__content">
 					<div class="propositions proposition1">
 						<img class="proposition-photo" src="./images/flat1.jpg" alt="flat1">
 						<div class="price">
@@ -144,28 +153,30 @@
 						</div>
 					</div>
 				</main>
-				<footer class="best-proposition__footer">
-					<a class="watch-best-prop-button" href="">Смотреть лучшие ценовые предложения</a>
+				<footer class="proposition__footer">
+					<a class="watch-prop-button" href="">Смотреть лучшие ценовые предложения</a>
 				</footer>
 			</div>
-			<!-- block2 ends -->
+			<!-- content block2 ends -->
 
-			<div class="project-content__last-adverb">
-				<header class="last-adverb__header">
-					<h2 class="last-adverb__header-title" >Последние объявления в Киеве</h2>
-					<ul class="type-accommodation">
-						<li class="type-accommodation__item">
-							<a class="type-accommodation__item-text" href="">Квартиры</a>
+
+			<!-- content block3 start -->
+			<div class="project-content__last-advert">
+				<header class="last-advert__header">
+					<h2 class="last-advert__header-title" >Последние объявления в Киеве</h2>
+					<ul class="menu-accommodation">
+						<li class="menu-accommodation__item">
+							<a class="menu-accommodation__item-text" href="">Квартиры</a>
 						</li>
-						<li class="type-accommodation__item">
-							<a class="type-accommodation__item-text" href="">Дома</a>
+						<li class="menu-accommodation__item">
+							<a class="menu-accommodation__item-text" href="">Дома</a>
 						</li>
-						<li class="type-accommodation__item">
-							<a class="type-accommodation__item-text" href="">Офисы</a>
+						<li class="menu-accommodation__item">
+							<a class="menu-accommodation__item-text" href="">Офисы</a>
 						</li>
 					</ul>
 				</header>
-				<main class="best-proposition__block">
+				<main class="best-proposition__content">
 					<div class="propositions proposition1">
 						<img class="proposition-photo" src="./images/flat2.jpg" alt="flat1">
 						<div class="price">
@@ -215,22 +226,23 @@
 						</div>
 					</div>
 				</main>
-				<footer class="best-proposition__footer">
-					<a class="watch-best-prop-button" href="">Смотреть самые свежие объявления</a>
+				<footer class="proposition__footer">
+					<a class="watch-prop-button" href="">Смотреть самые свежие объявления</a>
 				</footer>
 			</div>
+			<!-- content block3 ends -->
 
-
+			<!-- content block4 start -->
 			<div class="project-content__telegram">
 				<header class="telegram-header">
 					<h2 class="telegram-header_title">Общайтесь в Telegram</h2>
 					<div class="telegram-header_text">
 						Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых объявлениях, общайтесь без ограничений.
 					</div>
-					<ul class="telegram-header_menu">
+					<menu class="telegram-header_menu">
 						<li class="telegram-header_menu_item">Поиск недвижимости</li>
 						<li class="telegram-header_menu_item">Общение с клиентами</li>
-					</ul>
+					</menu>
 				</header>
 				<main class="telegram-content">
 					<img src="./images/phone.png" alt="phone">
@@ -256,9 +268,13 @@
 					
 				</main>
 			</div>
+			<!-- content block4 ends -->
 
-			<div class="project-content__metrovka"></div>
-
+			<!-- content block5 start -->
+			<div class="project-content__metrovka">
+				
+			</div>
+			<!-- content block5 end -->
 		</div>
 	</main>
 	<!-- Project-content ends -->

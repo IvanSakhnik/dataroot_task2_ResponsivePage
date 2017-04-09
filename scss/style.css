@@ -19,7 +19,30 @@ ul, ol, menu {
 
 /* Base *****************/
 body {
-  font-family: "open_sans"; }
+  font-family: "open_sans";
+  font-weight: 400px;
+  font-style: normal; }
+
+.menu-accommodation {
+  margin-top: 20px; }
+  .menu-accommodation .menu-accommodation__item {
+    padding: 0 5px 0 5px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle; }
+    .menu-accommodation .menu-accommodation__item .menu-accommodation__item-text {
+      color: black; }
+
+.button {
+  color: white;
+  display: inline-block;
+  height: 35px;
+  padding: 5px; }
+
+.watch-prop-button {
+  color: black;
+  font-size: 18px; }
 
 /*************************
 	All The Layout Styles
@@ -45,6 +68,25 @@ body {
     margin: 0 auto;
     border: 1px solid black; }
 
+.project-content__accommodation-metro {
+  min-height: 295px;
+  background-color: white;
+  margin-top: 30px;
+  padding: 50px 0 0 40px;
+  display: flex; }
+
+.project-content__best-proposition {
+  position: relative;
+  min-height: 384px;
+  background-color: white;
+  margin-top: 30px; }
+
+.project-content__last-advert {
+  position: relative;
+  min-height: 444px;
+  background-color: white;
+  margin-top: 30px; }
+
 /* Responsive ***********/
 /* Tools ****************/
 /*************************
@@ -57,50 +99,16 @@ body {
 .project-header__tittle {
   color: white; }
 
-.elem-form {
-  display: inline-block;
-  margin-top: 30px; }
-
-.choose-city {
-  width: 200px;
-  height: 30px;
-  background-color: white; }
-
-.project-content__accommodation-metro {
-  min-height: 295px;
-  background-color: white;
-  margin-top: 30px;
-  display: flex; }
-
-.choose-accommodation {
-  width: 320px;
-  margin: 50px 0 0 40px; }
-
-.type-accommodation {
-  margin-top: 20px; }
-
-.type-accommodation__item {
-  padding: 0 5px 0 5px;
-  height: 30px;
-  display: inline-block;
-  margin-right: 30px;
-  vertical-align: middle; }
-
-.type-accommodation__item-text {
-  color: black; }
+.content-choose-accommodation {
+  max-width: 300px;
+  border: 1px solid black; }
 
 .metro-img {
   max-width: 411px;
   max-height: 212px;
-  margin: 40px 0 0 70px; }
+  margin-left: 80px; }
 
-.project-content__best-proposition {
-  position: relative;
-  min-height: 384px;
-  background-color: white;
-  margin-top: 30px; }
-
-.best-proposition__block {
+.best-proposition__content {
   margin: 20px 0 0 20px; }
 
 .propositions {
@@ -118,15 +126,6 @@ body {
 
 .price-text {
   display: inline-block; }
-
-.icon-check {
-  display: inline-block;
-  position: absolute;
-  right: 25px;
-  top: 2px;
-  width: 18px;
-  height: 18px;
-  background: url("../images/sprite.png") no-repeat -92px -10px; }
 
 .flat-description {
   margin-top: 5px;
@@ -149,49 +148,56 @@ body {
   display: inline-block;
   margin-left: 10px; }
 
-.project-content__last-adverb {
-  position: relative;
-  min-height: 444px;
-  background-color: white;
-  margin-top: 30px; }
-
 /* Header ***************/
 .project-header__header {
   display: flex; }
+  .project-header__header .project-header__menu {
+    padding-top: 25px;
+    margin-left: 40px; }
+    .project-header__header .project-header__menu .project-header__menu-item {
+      padding: 0 5px 0 5px;
+      height: 30px;
+      display: inline-block;
+      margin-right: 40px;
+      vertical-align: middle; }
+      .project-header__header .project-header__menu .project-header__menu-item .project-header__menu-item__text {
+        color: white; }
+  .project-header__header .project-header__botton-menu {
+    margin: 20px 0 0 60px; }
+    .project-header__header .project-header__botton-menu .place-advert-button {
+      width: 230px;
+      text-align: center;
+      position: relative; }
+      .project-header__header .project-header__botton-menu .place-advert-button .place-advert-button__text {
+        display: inline-block; }
+      .project-header__header .project-header__botton-menu .place-advert-button .enter-site-button {
+        width: 70px;
+        margin-left: -4px;
+        text-align: center; }
 
-.project-header__menu {
-  padding-top: 25px;
-  margin-left: 40px; }
-
-.header-logo {
+.best-proposition__header {
+  width: 100%;
+  text-align: center;
   padding-top: 20px; }
 
-.header-menu-item {
-  padding: 0 5px 0 5px;
-  height: 30px;
-  display: inline-block;
-  margin-right: 40px;
-  vertical-align: middle; }
+.last-advert__header {
+  width: 100%;
+  padding-top: 30px;
+  text-align: center; }
 
-.header-menu-item-text {
-  color: white; }
-
-.project-header__botton-menu {
-  margin: 20px 0 0 60px; }
-
-.button {
-  color: white;
-  display: inline-block;
-  height: 35px;
-  padding: 5px; }
-
-.advert {
-  width: 230px;
+/* Footer ***************/
+.proposition__footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
   text-align: center;
-  position: relative; }
+  border-top: 1px solid #d8d8d8; }
 
-.advert-text {
-  display: inline-block; }
+/* Icons ****************/
+.header-logo {
+  padding-top: 20px; }
 
 .icon-plus {
   display: inline-block;
@@ -202,46 +208,25 @@ body {
   height: 18px;
   background: url("../images/sprite.png") no-repeat -202px -10px; }
 
-.enter {
-  width: 70px;
-  margin-left: -4px;
-  text-align: center; }
-
-.best-proposition__header {
-  width: 100%;
-  text-align: center;
-  padding-top: 20px; }
-
-.last-adverb__header {
-  width: 100%;
-  padding-top: 30px;
-  text-align: center; }
-
-/* Footer ***************/
-.best-proposition__footer {
+.icon-check {
+  display: inline-block;
   position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 40px;
-  padding-top: 7px;
-  text-align: center;
-  border-top: 1px solid #d8d8d8; }
+  right: 25px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background: url("../images/sprite.png") no-repeat -92px -10px; }
 
-.watch-best-prop-button {
-  color: black;
-  font-size: 18px; }
-
-/* Icons ****************/
 /*************************
 	All The States Styles
 *************************/
-.header-menu-item:hover {
+.project-header__menu-item:hover {
   border-bottom: 2px solid white; }
 
 .button:hover {
   background-color: #6FCF97; }
 
-.type-accommodation__item:hover {
+.menu-accommodation__item:hover {
   border-bottom: 2px solid #27AE60; }
 
 .best-proposition__footer:hover {

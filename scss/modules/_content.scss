@@ -3,6 +3,9 @@
 //-------------------------//
 
 
+//**************************************
+ // STYLES FOR CONTENT OF PROJECT HEADER
+
 .project-header__content{
 	margin-top: 40px;
 }
@@ -11,64 +14,42 @@
 	color:white;
 }
 
-.elem-form{
-	display:inline-block;
-	margin-top:30px;
-}
+// .choose-city-form{
+// 	display:inline-block;
+// 	margin-top:30px;
+// }
 
-.choose-city{
-	width:200px;
-	height: 30px;
-	background-color: white;
+// .choose-city{
+// 	width:200px;
+// 	height: 30px;
+// 	background-color: white;
 	
-}
+// }
+//*************************************
 
-.project-content__accommodation-metro{
-	min-height: 295px;
-	background-color: white;
-	margin-top: 30px;
-	display:flex;
-}
 
-.choose-accommodation{
-	width: 320px;
-	margin: 50px 0 0 40px;
-	// background-color: red;
-}
+//***********************************************************
+ // STYLES FOR CONTENT OF BLOCK WITH ACCOMMODATION NEAR METRO
 
-.type-accommodation{
-	margin-top: 20px;
-}
-
-.type-accommodation__item{
-	padding: 0 5px 0 5px;
-	height: 30px;
-	display: inline-block;
-	margin-right: 30px;
-	vertical-align: middle;
-}
-
-.type-accommodation__item-text{
-	color: black;
-}
+.content-choose-accommodation{
+ 	max-width: 300px;
+ 	border: 1px solid black;
+ }
 
 .metro-img{
 	max-width: 411px;
 	max-height: 212px;
-	margin: 40px 0 0 70px;
+	margin-left: 80px;
 }
+//***********************************************************
 
 
-.project-content__best-proposition{
-	position: relative;
-	min-height: 384px;
-	background-color: white;
-	margin-top: 30px;
-}
+//****************************************************
+ // STYLES FOR CONTENT OF BLOCK WITH BEST PROPOSITIONS
+ // STYLES FOR CONTENT OF BLOCK WITH LAST ADVERB
 
-.best-proposition__block{
+.best-proposition__content{
 	margin: 20px 0 0 20px;
-
 }
 
 .propositions{
@@ -89,16 +70,6 @@
 
 .price-text{
 	display: inline-block;
-}
-
-.icon-check{
-	display:inline-block;
-	position:absolute;
-	right: 25px;
-	top: 2px;
-	width: 18px;
-	height: 18px;
-	background: url("../images/sprite.png") no-repeat -92px -10px;
 }
 
 .flat-description{
@@ -126,11 +97,4 @@
 	display:inline-block;
 	margin-left: 10px;
 }
-
-
-.project-content__last-adverb{
-	position:relative;
-	min-height: 444px;
-	background-color: white;
-	margin-top: 30px;
-}
+//****************************************************

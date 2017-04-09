@@ -5,8 +5,49 @@
 
 body{
 	font-family: "open_sans";
+	font-weight: 400px;
+	font-style: normal;
 }
 
 
+//****************************************
+// STYLES FOR MENU WITH TYPE ACCOMMODATION
+
+.menu-accommodation{
+	margin-top: 20px;
+
+	.menu-accommodation__item{
+		padding: 0 5px 0 5px;
+		height: 30px;
+		display: inline-block;
+		margin-right: 30px;
+		vertical-align: middle;
+
+		.menu-accommodation__item-text{
+			color: black;
+		}
+	}
+}
 
 
+//***************************************
+
+//*****************************
+// STYLES FOR HEADER BUTTONS
+.button{
+	color:white;
+	display:inline-block;
+	height: 35px;
+	padding: 5px;
+}
+
+//*****************************
+
+
+// STYLES FOR BUTTON WITH TO WATCH PROPOSITIONS IN BLOCK WITH BEST PROPOSITIONS
+// STYLES FOR BUTTON WITH TO WATCH PROPOSITIONS IN BLOCK WITH LAST ADVERB
+.watch-prop-button{
+	color:black;
+	font-size: 18px;
+}
+//*****************************************************************************
