@@ -11,38 +11,42 @@
 	<header class="project-header">
 		<div class="project-header__wrapper">
 			<div class="project-header__header">
-				<a class="logo" href=""><img src="" alt="logo"></a>
+				<a class="header-logo" href=""><img src="./images/logo.png" alt="logo"></a>
 				<menu class="project-header__menu">
-					<li>Аренда</li>
-					<li>Продажа</li>
-					<li>Посуточно</li>
-					<li>Еще</li>
+					<li class="header-menu-item"><a class="header-menu-item-text" href="">Аренда</a></li>
+					<li class="header-menu-item"><a class="header-menu-item-text" href="">Продажа</a></li>
+					<li class="header-menu-item"><a class="header-menu-item-text" href="">Посуточно</a></li>
+					<li class="header-menu-item"><a class="header-menu-item-text" href="">&bull;&bull;&bull; Еще</a></li>
 				</menu>
 				<div class="project-header__botton-menu">
 					<a class="button advert" href="">
 						<div class="icon-plus"></div>
-						Разместить обьявление</a>
+						<div class="advert-text">Разместить обьявление</div>
+					</a>
 					<a class="button enter" href="">Войти</a>
 				</div>
 			</div>
 
 			<div class="project-header__content">
 				<h1 class="project-header__tittle">Поиск недвижимости в Украине</h1>
+			
 				<form action="" method="">
-					<label for="choose_city">Выберите город</label>
-					<select name="choose city" id="choose_city">
-						<option value="Kyev" selected>Киев</option>
-						<option value="Kharkov">Харьков</option>
-						<option value="Lviv">Львов</option>
-						<option value="Odessa">Одесса</option>
-					</select>
-					<label for="choose_rooms">Кол-во комнат</label>
+					<div class="elem-form choose-city-form">
+						<label for="choose_city">Выберите город</label><br>
+						<select class="choose_city" name="choose city" id="choose_city">
+							<option value="Kyev" selected>Киев</option>
+							<option value="Kharkov">Харьков</option>
+							<option value="Lviv">Львов</option>
+							<option value="Odessa">Одесса</option>
+						</select>
+					</div>
+					<!-- <label for="choose_rooms">Кол-во комнат</label>
 					<input type="checkbox" name="1" value="1">
 					<input type="checkbox" name="2" value="2">
 					<input type="checkbox" name="3" value="3">
 					<input type="checkbox" name="4" value="4">
 					<input type="checkbox" name="5+" value="5+">
-					<input class="button button-go-to-search" type="submit" name="" value="Перейти к поиску">
+					<input class="button button-go-to-search" type="submit" name="" value="Перейти к поиску"> -->
 				</form>
 			</div>
 		</div>
@@ -51,7 +55,7 @@
 
 	<!-- Project-content start -->
 	<main class="project-content">
-		<div class="project-content__wrapper"></div>
+		<div class="project-content__wrapper">
 			
 			<!-- block1 start -->
 			<div class="project-content__accommodation-metro">
@@ -60,9 +64,15 @@
 						Недвижимость возле метро
 					</h2>
 					<ul class="type-accommodation">
-						<li><a href="">Квартиры</a></li>
-						<li><a href="">Дома</a></li>
-						<li><a href="">Офисы</a></li>
+						<li class="type-accommodation__item">
+							<a class="type-accommodation__item-text" href="">Квартиры</a>
+						</li>
+						<li class="type-accommodation__item">
+							<a class="type-accommodation__item-text" href="">Дома</a>
+						</li>
+						<li class="type-accommodation__item">
+							<a class="type-accommodation__item-text" href="">Офисы</a>
+						</li>
 					</ul>
 					<form action="" method="">
 						<select name="choose station">
@@ -75,7 +85,7 @@
 						<input class="button button-search" type="submit" name="" value="Показать результаты поиска">
 					</form>
 				</div>
-				<img src="" alt="metro">
+				<img class="metro-img" src="./images/metro.jpg" alt="metro">
 			</div>
 			<!-- block1 ends -->
 
@@ -84,55 +94,53 @@
 				<header class="best-proposition__header">
 					<h2>Лучшие предложения в Киеве</h2>
 				</header>
-				<main class="best-proposition__content">
-					<div class="best-proposition__photo">
-						<div class="proposition1">
-							<img src="" alt="flat1">
-							<div class="price">
-								7800 грн
-								<div class="icon-check"></div>
-							</div>
-							<div class="flat-description">2комн. 30кв.м.</div>
-							<div class="flat-location">
-								<div class="red-circle"></div>
-								Политихнический институт
-							</div>
+				<main class="best-proposition__block">
+					<div class="propositions proposition1">
+						<img class="proposition-photo" src="./images/flat1.jpg" alt="flat1">
+						<div class="price">
+							<div class="price-text">7 800 грн</div>
+							<div class="icon-check"></div>
 						</div>
-						<div class="proposition2"align="">
-							<img src="" alt="flat2">
-							<div class="price">
-								10 200 грн
-								<div class="icon-check"></div>
-							</div>
-							<div class="flat-description">1комн. 30кв.м.</div>
-							<div class="flat-location">
-								<div class="red-circle"></div>
-								Политихнический институт
-							</div>
+						<div class="flat-description">2комн. &bull; 30кв.м.</div>
+						<div class="flat-location">
+							<div class="red-circle">&#9899;</div>
+							<div class="metro-location">Политехнический институт</div>
 						</div>
-						<div class="proposition3">
-							<img src="" alt="flat3">
-							<div class="price">
-								6900 грн
-								<div class="icon-check"></div>
-							</div>
-							<div class="flat-description">2комн. 30кв.м.</div>
-							<div class="flat-location">
-								<div class="red-circle"></div>
-								Политихнический институт
-							</div>
+					</div>
+					<div class="propositions proposition2"align="">
+						<img class="proposition-photo" src="./images/flat1.jpg" alt="flat2">
+						<div class="price">
+							<div class="price-text">10 200 грн</div>
+							<div class="icon-check"></div>
 						</div>
-						<div class="proposition4">
-							<img src="" alt="flat1">
-							<div class="price">
-								9000 грн
-								<div class="icon-check"></div>
-							</div>
-							<div class="flat-description">2комн. 30кв.м.</div>
-							<div class="flat-location">
-								<div class="red-circle"></div>
-								Политихнический институт
-							</div>
+						<div class="flat-description">1комн. &bull; 30кв.м.</div>
+						<div class="flat-location">
+							<div class="red-circle">&#9899;</div>
+							<div class="metro-location">Политехнический институт</div>
+						</div>
+					</div>
+					<div class="propositions proposition3">
+						<img class="proposition-photo" src="./images/flat1.jpg" alt="flat3">
+						<div class="price">
+							<div class="price-text">6 900 грн</div>
+							<div class="icon-check"></div>
+						</div>
+						<div class="flat-description">2комн. &bull; 30кв.м.</div>
+						<div class="flat-location">
+							<div class="red-circle">&#9899;</div>
+							<div class="metro-location">Политехнический институт</div>
+						</div>
+					</div>
+					<div class="propositions proposition4">
+						<img class="proposition-photo" src="./images/flat1.jpg" alt="flat1">
+						<div class="price">
+							<div class="price-text">9 000 грн</div>
+							<div class="icon-check"></div>
+						</div>
+						<div class="flat-description">2комн. &bull; 30кв.м.</div>
+						<div class="flat-location">
+							<div class="red-circle">&#9899;</div>
+							<div class="metro-location">Политехнический институт</div>
 						</div>
 					</div>
 				</main>
@@ -142,9 +150,112 @@
 			</div>
 			<!-- block2 ends -->
 
-			<div class="project-content__last-adverb"></div>
+			<div class="project-content__last-adverb">
+				<header class="last-adverb__header">
+					<h2 class="last-adverb__header-title" >Последние объявления в Киеве</h2>
+					<ul class="type-accommodation">
+						<li class="type-accommodation__item">
+							<a class="type-accommodation__item-text" href="">Квартиры</a>
+						</li>
+						<li class="type-accommodation__item">
+							<a class="type-accommodation__item-text" href="">Дома</a>
+						</li>
+						<li class="type-accommodation__item">
+							<a class="type-accommodation__item-text" href="">Офисы</a>
+						</li>
+					</ul>
+				</header>
+				<main class="best-proposition__block">
+					<div class="propositions proposition1">
+						<img class="proposition-photo" src="./images/flat2.jpg" alt="flat1">
+						<div class="price">
+							<div class="price-text">11 800 грн</div>
+							<div class="icon-check"></div>
+						</div>
+						<div class="flat-description">2комн. &bull; 48кв.м.</div>
+						<div class="flat-location">
+							<div class="red-circle">&#9899;</div>
+							<div class="metro-location">Политехнический институт</div>
+						</div>
+					</div>
+					<div class="propositions proposition2"align="">
+						<img class="proposition-photo" src="./images/flat3.jpg" alt="flat2">
+						<div class="price">
+							<div class="price-text">15 000 грн</div>
+							<div class="icon-check"></div>
+						</div>
+						<div class="flat-description">3комн. &bull; 100кв.м.</div>
+						<div class="flat-location">
+							<div class="red-circle">&#9899;</div>
+							<div class="metro-location">Шулявская</div>
+						</div>
+					</div>
+					<div class="propositions proposition3">
+						<img class="proposition-photo" src="./images/flat4.jpg" alt="flat3">
+						<div class="price">
+							<div class="price-text">11 800 грн</div>
+							<div class="icon-check"></div>
+						</div>
+						<div class="flat-description">1комн. &bull; 30кв.м.</div>
+						<div class="flat-location">
+							<div class="blue-circle">&#9899;</div>
+							<div class="metro-location">Контрактовая площадь</div>
+						</div>
+					</div>
+					<div class="propositions proposition4">
+						<img class="proposition-photo" src="./images/flat1.jpg" alt="flat1">
+						<div class="price">
+							<div class="price-text">7 000 грн</div>
+							<div class="icon-check"></div>
+						</div>
+						<div class="flat-description">2комн. &bull; 40кв.м.</div>
+						<div class="flat-location">
+							<!-- <div class="red-circle">&#9899;</div> -->
+							<div class="metro-location">просп. Победы, 18А</div>
+						</div>
+					</div>
+				</main>
+				<footer class="best-proposition__footer">
+					<a class="watch-best-prop-button" href="">Смотреть самые свежие объявления</a>
+				</footer>
+			</div>
 
-			<div class="project-content__telegram"></div>
+
+			<div class="project-content__telegram">
+				<header class="telegram-header">
+					<h2 class="telegram-header_title">Общайтесь в Telegram</h2>
+					<div class="telegram-header_text">
+						Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых объявлениях, общайтесь без ограничений.
+					</div>
+					<ul class="telegram-header_menu">
+						<li class="telegram-header_menu_item">Поиск недвижимости</li>
+						<li class="telegram-header_menu_item">Общение с клиентами</li>
+					</ul>
+				</header>
+				<main class="telegram-content">
+					<img src="./images/phone.png" alt="phone">
+					<div class="telegram-info">
+						<header class="telegram-info_header">
+							<div class="icon-telegram"></div>
+							<div class="telegram-info_header_title">Telegram</div>
+						</header>
+						<main class="telegram-info_content">
+							<div class="telegram-info_content_title">Metrovka Bot</div>
+							<div class="telegram-info_content_text">
+								<div class="telegram-info_text1">1. Собирайте аналитику по объектам</div>
+								<div class="telegram-info_text2">2. Получайте подсказки по эффективному продвижению объявлений</div>
+								<div class="telegram-info_text3">3. Общайтесь с клиентами через специальный канал телекоммуникации</div>
+							</div>
+							<a class="button subscribe_telegram" href=""></a>
+						</main>
+						<footer class="telegram-footer">
+							<!-- вообще хз что это -->
+						</footer>
+						
+					</div>
+					
+				</main>
+			</div>
 
 			<div class="project-content__metrovka"></div>
 
@@ -156,6 +267,6 @@
 	<footer class="project-footer">
 		
 	</footer>
-	<!-- Project-footer ends -->
+	<!-- Project-footer ends --> 
 </body>
 </html>

@@ -1,3 +1,136 @@
 //-------------------------//
 //--Content ---------------//
 //-------------------------//
+
+
+.project-header__content{
+	margin-top: 40px;
+}
+
+.project-header__tittle{
+	color:white;
+}
+
+.elem-form{
+	display:inline-block;
+	margin-top:30px;
+}
+
+.choose-city{
+	width:200px;
+	height: 30px;
+	background-color: white;
+	
+}
+
+.project-content__accommodation-metro{
+	min-height: 295px;
+	background-color: white;
+	margin-top: 30px;
+	display:flex;
+}
+
+.choose-accommodation{
+	width: 320px;
+	margin: 50px 0 0 40px;
+	// background-color: red;
+}
+
+.type-accommodation{
+	margin-top: 20px;
+}
+
+.type-accommodation__item{
+	padding: 0 5px 0 5px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: middle;
+}
+
+.type-accommodation__item-text{
+	color: black;
+}
+
+.metro-img{
+	max-width: 411px;
+	max-height: 212px;
+	margin: 40px 0 0 70px;
+}
+
+
+.project-content__best-proposition{
+	position: relative;
+	min-height: 384px;
+	background-color: white;
+	margin-top: 30px;
+}
+
+.best-proposition__block{
+	margin: 20px 0 0 20px;
+
+}
+
+.propositions{
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.proposition-photo{
+	max-width: 202px;
+	max-height: 135px;
+}
+
+.price{
+	position:relative;
+	width: 150px;
+	margin-top: 20px;
+}
+
+.price-text{
+	display: inline-block;
+}
+
+.icon-check{
+	display:inline-block;
+	position:absolute;
+	right: 25px;
+	top: 2px;
+	width: 18px;
+	height: 18px;
+	background: url("../images/sprite.png") no-repeat -92px -10px;
+}
+
+.flat-description{
+	margin-top: 5px;
+	color: #8C9BA5;
+	font-size: 14px;
+}
+
+.flat-location{
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.red-circle{
+	display:inline-block;
+	color: #E71D32;
+}
+
+.blue-circle{
+	display:inline-block;
+	color: #2573D8;
+}
+
+.metro-location{
+	display:inline-block;
+	margin-left: 10px;
+}
+
+
+.project-content__last-adverb{
+	position:relative;
+	min-height: 444px;
+	background-color: white;
+	margin-top: 30px;
+}
