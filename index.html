@@ -39,9 +39,9 @@
 			<div class="project-header__content">
 				<h1 class="project-header__tittle">Поиск недвижимости в Украине</h1>
 
-				<form action="" method="">
+				<form class="project-header__form" action="" method="">
+					<label for="choose_city">Выберите город<br>
 					<div class="choose-city-form">
-						<label for="choose_city">Выберите город</label><br>
 						<select class="choose_city" name="choose city" id="choose_city">
 							<option value="Kyev" selected>Киев</option>
 							<option value="Kharkov">Харьков</option>
@@ -49,13 +49,20 @@
 							<option value="Odessa">Одесса</option>
 						</select>
 					</div>
-					<!-- <label for="choose_rooms">Кол-во комнат</label>
-					<input type="checkbox" name="1" value="1">
-					<input type="checkbox" name="2" value="2">
-					<input type="checkbox" name="3" value="3">
-					<input type="checkbox" name="4" value="4">
-					<input type="checkbox" name="5+" value="5+">
-					<input class="button button-go-to-search" type="submit" name="" value="Перейти к поиску"> -->
+					</label>
+
+					<label class="choose-room">Кол-во комнат<br>
+						<!-- <div class="choose-room"> -->
+							<label class="check-room"><input type="checkbox" value="1" name="rooms"><span class="check-room__1"></span></label>
+							<label class="check-room"><input type="checkbox" value="2" name="rooms"><span class="check-room__2"></span></label>
+							<label class="check-room"><input type="checkbox" value="3" name="rooms"><span class="check-room__3"></span></label>
+							<label class="check-room"><input type="checkbox" value="4" name="rooms"><span class="check-room__4"></span></label>
+							<label class="check-room"><input type="checkbox" value="5" name="rooms"><span class="check-room__5"></span></label>
+						<!-- </div> -->
+					</label>
+					
+
+					<input class="button button-go-to-search" type="submit" name="" value="Перейти к поиску"> 
 				</form>
 			</div>
 		</div>
