@@ -1,5 +1,8 @@
 @import url(../fonts/stylesheet.css);
 /*************************
+ All The Utilities Styles
+*************************/
+/*************************
 	All The Base Styles
 *************************/
 /* Reset ****************/
@@ -23,15 +26,15 @@ body {
   font-weight: 400px;
   font-style: normal; }
 
-.menu-accommodation, .telegram-header .telegram-header__menu {
+.menu-accommodation, .telegram-header__menu {
   padding-top: 20px; }
-  .menu-accommodation .menu-accommodation__item, .telegram-header .telegram-header__menu .menu-accommodation__item, .telegram-header .telegram-header__menu .telegram-header__menu-item {
+  .menu-accommodation .menu-accommodation__item, .telegram-header__menu .menu-accommodation__item, .menu-accommodation .telegram-header__menu-item, .telegram-header__menu .telegram-header__menu-item {
     padding: 0 5px 0 5px;
     height: 30px;
     display: inline-block;
     margin-right: 30px;
     vertical-align: middle; }
-    .menu-accommodation .menu-accommodation__item .menu-accommodation__item-text, .telegram-header .telegram-header__menu .menu-accommodation__item .menu-accommodation__item-text, .telegram-header .telegram-header__menu .telegram-header__menu-item .menu-accommodation__item-text, .telegram-header .telegram-header__menu .telegram-header__menu-item .telegram-header__menu-item__text {
+    .menu-accommodation .menu-accommodation__item .menu-accommodation__item-text, .telegram-header__menu .menu-accommodation__item .menu-accommodation__item-text, .menu-accommodation .telegram-header__menu-item .menu-accommodation__item-text, .telegram-header__menu .telegram-header__menu-item .menu-accommodation__item-text, .menu-accommodation .menu-accommodation__item .telegram-header__menu-item__text, .telegram-header__menu .menu-accommodation__item .telegram-header__menu-item__text, .menu-accommodation .telegram-header__menu-item .telegram-header__menu-item__text, .telegram-header__menu .telegram-header__menu-item .telegram-header__menu-item__text {
       color: black; }
 
 .button {
@@ -39,10 +42,6 @@ body {
   display: inline-block;
   height: 35px;
   padding: 5px; }
-
-.watch-prop-button {
-  color: black;
-  font-size: 18px; }
 
 /*************************
 	All The Layout Styles
@@ -90,6 +89,12 @@ body {
 .project-content__telegram {
   min-height: 800px;
   margin-top: 30px; }
+
+.project-content__metrovka {
+  position: relative;
+  min-height: 518px;
+  margin-top: 30px;
+  background-color: white; }
 
 /* Responsive ***********/
 /* Tools ****************/
@@ -197,6 +202,57 @@ body {
         padding: 10px 0 0 10px;
         border-radius: 3px; }
 
+.metrovka-slider {
+  width: 848px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.metrovka-slider__element {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  width: 272px;
+  min-height: 306px; }
+
+.metrovka-slider :last-child {
+  margin-right: 0px; }
+
+.metrovka-slider__element__img {
+  width: 272px;
+  height: 182px; }
+
+.metrovka-slider__element__theme {
+  font-size: 12px;
+  margin-top: 20px; }
+
+.metrovka-theme1 {
+  color: #BA8FF7; }
+
+.metrovka-theme2 {
+  color: #2573D8; }
+
+.metrovka-theme3 {
+  color: #30AE63; }
+
+.metrovka-slider__element__description {
+  max-width: 272px;
+  margin-top: 5px;
+  font-size: 18px; }
+
+.metrovka-slider__element__author {
+  color: #8C9BA5;
+  margin-top: 20px;
+  font-size: 16px; }
+
+.metrovka-img1 {
+  background: url("../images/metrovka_slider1.jpg") no-repeat; }
+
+.metrovka-img2 {
+  background: url("../images/metrovka_slider2.jpg") no-repeat; }
+
+.metrovka-img3 {
+  background: url("../images/metrovka_slider3.jpg") no-repeat; }
+
 /* Header ***************/
 .project-header__header {
   display: flex; }
@@ -239,22 +295,61 @@ body {
   padding-top: 30px;
   margin: 0 auto;
   text-align: center; }
-  .telegram-header .telegram-header_text {
-    padding-top: 20px;
-    max-width: 500px;
-    margin: 0 auto; }
-  .telegram-header .telegram-header__menu {
-    padding-left: 40px; }
+
+.telegram-header__text, .metrovka-header__text {
+  padding-top: 20px;
+  max-width: 500px;
+  margin: 0 auto; }
+
+.telegram-header__menu {
+  padding-left: 40px; }
+
+.metrovka-header {
+  width: 100%;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center; }
 
 /* Footer ***************/
-.proposition__footer {
+.best-proposition__footer {
   position: absolute;
   bottom: 0px;
   width: 100%;
   height: 40px;
   padding-top: 7px;
   text-align: center;
-  border-top: 1px solid #d8d8d8; }
+  border-top: 1px solid #D8D8D8; }
+
+.best-proposition__footer__button {
+  color: black;
+  font-size: 18px; }
+
+.last-advert__footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+  border-top: 1px solid #D8D8D8; }
+
+.last-advert__footer__button {
+  color: black;
+  font-size: 18px; }
+
+.metrovka-footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+  border-top: 1px solid #D8D8D8;
+  margin-top: 40px; }
+
+.metrovka-footer__button {
+  color: black;
+  font-size: 18px; }
 
 /* Icons ****************/
 .header-logo {
@@ -295,15 +390,17 @@ body {
 .button:hover {
   background-color: #6FCF97; }
 
-.menu-accommodation__item:hover, .telegram-header .telegram-header__menu .telegram-header__menu-item:hover {
+.menu-accommodation__item:hover, .telegram-header__menu-item:hover {
   border-bottom: 2px solid #27AE60; }
 
-.proposition__footer:hover {
+.metrovka-footer:hover {
+  background-color: #6FCF97; }
+
+.last-advert__footer:hover {
+  background-color: #6FCF97; }
+
+.best-proposition__footer:hover {
   background-color: #6FCF97; }
 
 .propositions:hover {
   border-bottom: 2px solid #27AE60; }
-
-/*************************
- All The Utilities Styles
-*************************/

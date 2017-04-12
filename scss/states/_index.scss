@@ -15,8 +15,16 @@
 	border-bottom: 2px solid #27AE60;
 }
 
-.proposition__footer:hover{
-	background-color: #6FCF97;
+.metrovka-footer:hover{
+	@include footer-with-button-hover;
+}
+
+.last-advert__footer:hover{
+	@include footer-with-button-hover;
+}
+
+.best-proposition__footer:hover{
+	@include footer-with-button-hover;
 }
 
 .propositions:hover{
