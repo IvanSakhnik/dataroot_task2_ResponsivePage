@@ -78,25 +78,42 @@
 	padding-top: 30px;
 	margin: 0 auto;
 	text-align: center;
-
-	.telegram-header_text{
-		padding-top: 20px;
-		max-width: 500px;
-		margin: 0 auto;
-	}
-
-	.telegram-header__menu{
-		@extend .menu-accommodation;
-		padding-left: 40px;
-
-		.telegram-header__menu-item{
-			@extend .menu-accommodation__item;
-
-			.telegram-header__menu-item__text{
-				@extend .menu-accommodation__item-text;
-			}
-		}
-
-	}
 }
+
+.telegram-header__text{
+	padding-top: 20px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.telegram-header__menu{
+	@extend .menu-accommodation;
+	padding-left: 40px;
+}
+
+.telegram-header__menu-item{
+	@extend .menu-accommodation__item;
+}
+
+.telegram-header__menu-item__text{
+	@extend .menu-accommodation__item-text;
+}
+			
+ //*****************************************************
+
+
+//******************************************************
+ // STYLES FOR HEADER OF BLOCK WITH BLOG METROVKA
+
+ .metrovka-header{
+ 	width:100%;
+	padding-top: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+.metrovka-header__text{
+	@extend .telegram-header__text;
+}
+
+
  //*****************************************************
