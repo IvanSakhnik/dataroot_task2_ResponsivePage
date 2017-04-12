@@ -436,7 +436,7 @@ input[type="checkbox"]:checked + span.check-room__5 {
   top: 9px;
   width: 18px;
   height: 18px;
-  background: url("../images/sprite.png") no-repeat -202px -10px; }
+  background: url("../images/sprite.png") no-repeat -25px -672px; }
 
 .icon-check {
   display: inline-block;
@@ -445,7 +445,7 @@ input[type="checkbox"]:checked + span.check-room__5 {
   top: 2px;
   width: 18px;
   height: 18px;
-  background: url("../images/sprite.png") no-repeat -92px -10px; }
+  background: url("../images/sprite.png") no-repeat -25px -80px; }
 
 .icon-telegram {
   display: inline-block;
@@ -453,7 +453,7 @@ input[type="checkbox"]:checked + span.check-room__5 {
   width: 62px;
   height: 62px;
   margin-right: 20px;
-  background: url("../images/sprite.png") no-repeat -10px -10px; }
+  background: url("../images/sprite.png") no-repeat -25px -432px; }
 
 /*************************
 	All The States Styles
