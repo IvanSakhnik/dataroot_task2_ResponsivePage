@@ -31,6 +31,7 @@
 
 .project-content__wrapper{
 	width: 890px;
+	padding-top: 20px;
 	margin: 0 auto;
 	// border: 1px solid black;
 }
@@ -42,7 +43,6 @@
 .project-content__accommodation-metro{
 	min-height: 295px;
 	background-color: white;
-	padding-top: 30px;
 	padding: 50px 0 0 40px;
 	display:flex;
 }
@@ -55,7 +55,7 @@
 	position: relative;
 	min-height: 384px;
 	background-color: white;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 //**************************************************************
 
@@ -66,7 +66,7 @@
 	position:relative;
 	min-height: 444px;
 	background-color: white;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 //**************************************************************
 
@@ -75,7 +75,7 @@
 // STYLES FOR CONTENTAINER WITH TELEGRAM
 .project-content__telegram{
 	min-height: 800px;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 //**************************************************************
 
@@ -85,7 +85,7 @@
 .project-content__metrovka{
 	position:relative;
 	min-height: 518px;
-	margin-top: 30px;
+	margin-top: 20px;
 	background-color: white;
 }
  //**************************************************************

@@ -70,12 +70,12 @@ body {
 
 .project-content__wrapper {
   width: 890px;
+  padding-top: 20px;
   margin: 0 auto; }
 
 .project-content__accommodation-metro {
   min-height: 295px;
   background-color: white;
-  padding-top: 30px;
   padding: 50px 0 0 40px;
   display: flex; }
 
@@ -83,22 +83,22 @@ body {
   position: relative;
   min-height: 384px;
   background-color: white;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .project-content__last-advert {
   position: relative;
   min-height: 444px;
   background-color: white;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .project-content__telegram {
   min-height: 800px;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .project-content__metrovka {
   position: relative;
   min-height: 518px;
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: white; }
 
 .project-footer {
@@ -502,9 +502,6 @@ input[type="checkbox"]:checked + span.check-room__5 {
 /* Icons ****************/
 .header-logo {
   padding-top: 20px; }
-
-.icons {
-  display: inline-block; }
 
 .icon-plus {
   display: inline-block;
