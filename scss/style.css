@@ -75,7 +75,7 @@ body {
 .project-content__accommodation-metro {
   min-height: 295px;
   background-color: white;
-  margin-top: 30px;
+  padding-top: 30px;
   padding: 50px 0 0 40px;
   display: flex; }
 
