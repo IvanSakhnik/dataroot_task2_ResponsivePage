@@ -15,6 +15,8 @@
 		.project-header__menu-item{
 			padding: 0 5px 0 5px;
 			height: 30px;
+			font-size: 14px;
+			line-height: 20px;
 			display: inline-block;
 			margin-right: 40px;
 			vertical-align: middle;
@@ -26,23 +28,26 @@
 	}
 
 	.project-header__botton-menu{
-		margin: 20px 0 0 60px;
+		margin: 18px 0 0 93px;
+		font-size: 14px;
+		line-height: 17px;
+		width:303px;
 
 		.place-advert-button{
-			width: 230px;
+			width: 236px;
+			height: 40px;
+			margin-left: 15px;
 			text-align: center;
-			position:relative;
-
-			.place-advert-button__text{
-				display:inline-block;
-			}
+			background: url("../images/sprite.png") no-repeat -10px -662px;
+		}
 
 		.enter-site-button{
-			width: 70px;
-			margin-left: -4px;
+			width: 50px;
+			height: 40px;
 			text-align: center;
-			}
+			margin-left: -5px;
 		}
+		
 	}
 }
 
