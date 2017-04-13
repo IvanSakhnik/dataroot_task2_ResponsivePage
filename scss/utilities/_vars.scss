@@ -1,7 +1,12 @@
 
 $background-color-gray:rgba(90, 104, 114, 0.08);
-
 $button-color-green:#30ae63;
+$button-color-hover:#50DB88;
+
+$color-red-circle:#E71D32;
+$color-blue-circle:#2573D8;
+
+$color-border-form:#f2f2f2;
 
 $metrovka-color-theme1:#BA8FF7;
 $metrovka-color-theme2:#2573D8; 
@@ -11,12 +16,24 @@ $metrovka-color-author:#8C9BA5;
 $border-color:#D8D8D8;
 
 
+
+@mixin title{
+	max-width: 400px;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+@mixin vertical-dots{
+	position: absolute;
+	right: 0px;
+	width: 20px;
+    height: 36px;
+    background: url("../images/sprite.png") no-repeat -25px -346px;
+}
+
 @mixin watch-footer-button{
 	color: black;
 	font-size: 18px;
-}
-
-@mixin footer-with-button{
 	position: absolute;
 	bottom: 0px;
 	width:100%;
@@ -24,6 +41,24 @@ $border-color:#D8D8D8;
 	padding-top:7px;
 	text-align: center;
 	border-top: 1px solid $border-color;
+
+	&:hover{
+		background-color: $button-color-hover;
+	}
+
+	&:active{
+		background-color: darken($button-color-green,7%);
+	}
+}
+
+@mixin footer-with-button{
+	// position: absolute;
+	// bottom: 0px;
+	// width:100%;
+	// height:40px;
+	// padding-top:7px;
+	// text-align: center;
+	// border-top: 1px solid $border-color;
 }
 
 @mixin footer-with-button-hover{

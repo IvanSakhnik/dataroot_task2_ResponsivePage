@@ -4,10 +4,10 @@
 	text-align: center;
 }
 
-.last-advert__footer{
-	@include footer-with-button;
+.last-advert__title{
+	@include title;
 }
 
-.last-advert__footer__button{
-	@include watch-footer-button;
+.last-advert__footer{
+	@include footer-with-button;
 }

@@ -33,28 +33,19 @@
 	font-size: 12px;
 }
 
-.footer-button{
-	display: block;
-	margin-top: 15px;
-	width:162px;
-	height: 40px;
-	color: white;
-	background-color:$button-color-green;
-	border-radius: 3px;
-	text-align: center;
-	padding-top: 8px;
-}
-
 .footer-logo{
 	height: 200px;
 	width:100%;
+	padding-top:60px;
 	text-align:center;
 }
 
 .footer-logo__img{
 	width: 51px;
 	height: 47px;
-	margin-top:60px;
+	padding-top:60px;
+	margin: 0 auto;
+	background: url("../images/logo_footer.png") no-repeat 0 0;
 }
 //**************************************************************************************************************************
 //************************************************************************************************************************** 

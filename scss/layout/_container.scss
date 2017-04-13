@@ -35,6 +35,11 @@
 	margin: 0 auto;
 	// border: 1px solid black;
 }
+
+.container{
+	background-color: white;
+	margin-top: 20px;
+}
 //**************************************************************
 
 
@@ -54,8 +59,6 @@
 .project-content__best-proposition{
 	position: relative;
 	min-height: 384px;
-	background-color: white;
-	margin-top: 20px;
 }
 //**************************************************************
 
@@ -65,8 +68,6 @@
 .project-content__last-advert{
 	position:relative;
 	min-height: 444px;
-	background-color: white;
-	margin-top: 20px;
 }
 //**************************************************************
 
@@ -76,6 +77,7 @@
 .project-content__telegram{
 	min-height: 800px;
 	margin-top: 20px;
+	border: 1px solid black;
 }
 //**************************************************************
 
@@ -85,8 +87,6 @@
 .project-content__metrovka{
 	position:relative;
 	min-height: 518px;
-	margin-top: 20px;
-	background-color: white;
 }
  //**************************************************************
 
@@ -99,9 +99,8 @@
 
 .project-footer__wrapper{
 	width: 844px;
-	margin: 0 auto;
 	padding-top: 40px;
-	// border: 1px solid black;
+	margin: 0 auto;	
 }
 
  //**************************************************************

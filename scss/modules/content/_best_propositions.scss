@@ -1,11 +1,16 @@
+
 .best-proposition__header{
 	width: 100%;
 	text-align: center;
 	padding-top: 20px;
 }
 
+.best-proposition__title{
+	@include title;
+}
+
 .best-proposition__content{
-	margin: 20px 0 0 20px;
+	padding: 20px 0 0 20px;
 }
 
 .propositions{
@@ -14,12 +19,29 @@
 }
 
 .proposition-photo{
-	max-width: 202px;
-	max-height: 135px;
+	position: relative;
+	width: 202px;
+	height: 135px;
+
+	&1{
+		background-image: url("../images/flat1.jpg");
+	}
+
+	&2{
+		background-image: url("../images/flat2.jpg");
+	}
+
+	&3{
+		background-image: url("../images/flat3.jpg");
+	}
+
+	&4{
+		background-image: url("../images/flat4.jpg");
+	}
 }
 
-.proposition-photo1{
-	background: url("../images/flat1.jpg") no-repeat;
+.vertical-dots{
+	@include vertical-dots;
 }
 
 .price{
@@ -45,12 +67,12 @@
 
 .red-circle{
 	display:inline-block;
-	color: #E71D32;
+	color: $color-red-circle;
 }
 
 .blue-circle{
 	display:inline-block;
-	color: #2573D8;
+	color: $color-blue-circle;
 }
 
 .metro-location{
@@ -61,7 +83,3 @@
  .best-proposition__footer{
  	@include footer-with-button;
  }
-
-.best-proposition__footer__button{
-	@include watch-footer-button;
-}

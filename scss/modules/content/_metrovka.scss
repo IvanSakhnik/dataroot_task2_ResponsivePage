@@ -5,6 +5,10 @@
 	text-align: center;
 }
 
+.metrovka__title{
+	@include title;
+}
+
 .metrovka-header__text{
 	@extend .telegram-header__text;
 }
@@ -12,7 +16,7 @@
 .metrovka-slider{
 	width: 848px;
 	margin: 0 auto;
-	margin-top:20px;
+	padding-top:20px;
 }
 
 .metrovka-slider__element{
@@ -61,6 +65,10 @@
 	font-size: 16px;
 }
 
+.metrovka-slider__element__img{
+	position: relative;
+}
+
 .metrovka-img1{
 	background: url("../images/metrovka_slider1.jpg") no-repeat;
 }
@@ -75,9 +83,4 @@
 
 .metrovka-footer{
 	@include footer-with-button;
-	margin-top: 40px;
-}
-
-.metrovka-footer__button{
-	@include watch-footer-button;
 }

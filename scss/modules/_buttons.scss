@@ -1,0 +1,88 @@
+
+
+.best-proposition__footer__button{
+	@include watch-footer-button;
+}
+
+.last-advert__footer__button{
+	@include watch-footer-button;
+}
+
+.metrovka-footer__button{
+	@include watch-footer-button;
+}
+
+
+.button{
+	color: white;
+	background-color:$button-color-green;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+.button:hover{
+	background-color: $button-color-hover;
+}
+	
+.button:active{
+	background-color: darken($button-color-green,7%);
+}
+
+.button:disabled{
+	background-color: lighten($button-color-green,40%);
+}
+
+.subscribe-telegram-button{
+	margin-top: 30px;
+	max-width: 320px;
+	padding: 10px 0 0 10px;
+	border-radius: 3px;
+}
+
+.switch{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: $button-color-green;	
+}
+
+.switch-empty{
+ 	background-color: transparent;		
+	border: 2px solid $button-color-green;
+	margin-left: 5px;
+}
+
+.place-advert-button{
+	width: 236px;
+	margin-left: 15px;
+
+	&__text{
+		display:inline-block;
+	}
+}
+
+.enter-site-button{
+	width: 50px;
+	margin-left: -5px;
+	padding-left: 6px;
+}
+
+.button-go-to-search{
+	margin: 30px 0 0 43px;
+	background: white;
+	width: 200px;
+	height: 40px;
+	color:$button-color-green;
+	font-size: 14px;
+	border: 0;
+}
+
+.footer-button{
+	display: block;
+	margin-top: 15px;
+	max-width:162px;
+	border-radius: 3px;
+	padding-top: 8px;
+}

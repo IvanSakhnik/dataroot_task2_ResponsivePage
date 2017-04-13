@@ -124,6 +124,10 @@ body {
   padding-top: 20px;
   margin: 0 auto; }
 
+.container {
+  background-color: white;
+  margin-top: 20px; }
+
 .project-content__accommodation-metro {
   min-height: 295px;
   background-color: white;
@@ -132,25 +136,20 @@ body {
 
 .project-content__best-proposition {
   position: relative;
-  min-height: 384px;
-  background-color: white;
-  margin-top: 20px; }
+  min-height: 384px; }
 
 .project-content__last-advert {
   position: relative;
-  min-height: 444px;
-  background-color: white;
-  margin-top: 20px; }
+  min-height: 444px; }
 
 .project-content__telegram {
   min-height: 800px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  border: 1px solid black; }
 
 .project-content__metrovka {
   position: relative;
-  min-height: 518px;
-  margin-top: 20px;
-  background-color: white; }
+  min-height: 518px; }
 
 .project-footer {
   width: 100%;
@@ -158,33 +157,158 @@ body {
 
 .project-footer__wrapper {
   width: 844px;
-  margin: 0 auto;
-  padding-top: 40px; }
+  padding-top: 40px;
+  margin: 0 auto; }
 
 /* Responsive ***********/
 /* Tools ****************/
 /*************************
 	All The Modules Styles
 *************************/
+/* Buttons **************/
+.best-proposition__footer__button {
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+  border-top: 1px solid #D8D8D8; }
+  .best-proposition__footer__button:hover {
+    background-color: #50DB88; }
+  .best-proposition__footer__button:active {
+    background-color: #289253; }
+
+.last-advert__footer__button {
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+  border-top: 1px solid #D8D8D8; }
+  .last-advert__footer__button:hover {
+    background-color: #50DB88; }
+  .last-advert__footer__button:active {
+    background-color: #289253; }
+
+.metrovka-footer__button {
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+  border-top: 1px solid #D8D8D8; }
+  .metrovka-footer__button:hover {
+    background-color: #50DB88; }
+  .metrovka-footer__button:active {
+    background-color: #289253; }
+
+.button {
+  color: white;
+  background-color: #30ae63;
+  height: 40px;
+  width: 100%;
+  text-align: center; }
+
+.button:hover {
+  background-color: #50DB88; }
+
+.button:active {
+  background-color: #289253; }
+
+.button:disabled {
+  background-color: #bdedd0; }
+
+.subscribe-telegram-button {
+  margin-top: 30px;
+  max-width: 320px;
+  padding: 10px 0 0 10px;
+  border-radius: 3px; }
+
+.switch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #30ae63; }
+
+.switch-empty {
+  background-color: transparent;
+  border: 2px solid #30ae63;
+  margin-left: 5px; }
+
+.place-advert-button {
+  width: 236px;
+  margin-left: 15px; }
+  .place-advert-button__text {
+    display: inline-block; }
+
+.enter-site-button {
+  width: 50px;
+  margin-left: -5px;
+  padding-left: 6px; }
+
+.button-go-to-search {
+  margin: 30px 0 0 43px;
+  background: white;
+  width: 200px;
+  height: 40px;
+  color: #30ae63;
+  font-size: 14px;
+  border: 0; }
+
+.footer-button {
+  display: block;
+  margin-top: 15px;
+  max-width: 162px;
+  border-radius: 3px;
+  padding-top: 8px; }
+
 /* Content **************/
 .best-proposition__header {
   width: 100%;
   text-align: center;
   padding-top: 20px; }
 
+.best-proposition__title {
+  max-width: 400px;
+  font-size: 24px;
+  margin: 0 auto; }
+
 .best-proposition__content {
-  margin: 20px 0 0 20px; }
+  padding: 20px 0 0 20px; }
 
 .propositions {
   display: inline-block;
   margin-right: 8px; }
 
 .proposition-photo {
-  max-width: 202px;
-  max-height: 135px; }
+  position: relative;
+  width: 202px;
+  height: 135px; }
+  .proposition-photo1 {
+    background-image: url("../images/flat1.jpg"); }
+  .proposition-photo2 {
+    background-image: url("../images/flat2.jpg"); }
+  .proposition-photo3 {
+    background-image: url("../images/flat3.jpg"); }
+  .proposition-photo4 {
+    background-image: url("../images/flat4.jpg"); }
 
-.proposition-photo1 {
-  background: url("../images/flat1.jpg") no-repeat; }
+.vertical-dots {
+  position: absolute;
+  right: 0px;
+  width: 20px;
+  height: 36px;
+  background: url("../images/sprite.png") no-repeat -25px -346px; }
 
 .price {
   position: relative;
@@ -215,42 +339,26 @@ body {
   display: inline-block;
   margin-left: 10px; }
 
-.best-proposition__footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 40px;
-  padding-top: 7px;
-  text-align: center;
-  border-top: 1px solid #D8D8D8; }
-
-.best-proposition__footer__button {
-  color: black;
-  font-size: 18px; }
-
 .last-advert__header {
   width: 100%;
   padding-top: 30px;
   text-align: center; }
 
-.last-advert__footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 40px;
-  padding-top: 7px;
-  text-align: center;
-  border-top: 1px solid #D8D8D8; }
-
-.last-advert__footer__button {
-  color: black;
-  font-size: 18px; }
+.last-advert__title {
+  max-width: 400px;
+  font-size: 24px;
+  margin: 0 auto; }
 
 .telegram-header {
   width: 100%;
   padding-top: 30px;
   margin: 0 auto;
   text-align: center; }
+
+.telegram__title {
+  max-width: 400px;
+  font-size: 24px;
+  margin: 0 auto; }
 
 .telegram-header__text, .metrovka-header__text {
   padding-top: 20px;
@@ -262,8 +370,7 @@ body {
 
 .telegram-content {
   width: 100%;
-  margin: 0 0 0 80px;
-  padding: 30px 0 0 30px;
+  padding: 30px 0 0 110px;
   display: flex; }
 
 .phone-img {
@@ -273,16 +380,17 @@ body {
 
 .telegram-info {
   display: inline-block;
-  width: 400px;
-  height: 440px;
-  margin: 60px 0 0 95px;
-  background-color: white; }
+  width: 436px;
+  height: 448px;
+  margin: 60px 0 0 60px;
+  background-color: white;
+  padding: 50px 0 0 40px; }
 
 .telegram-info_header {
   position: relative;
-  width: 200px;
-  height: 70px;
-  margin: 40px 0 0 30px; }
+  max-width: 320px;
+  width: 100%;
+  height: 60px; }
 
 .telegram-info_header_title {
   display: inline-block;
@@ -292,27 +400,24 @@ body {
 
 .telegram-info_content {
   width: 320px;
-  margin: 0 auto;
-  padding-top: 30px; }
+  padding-top: 40px; }
 
 .telegram-info_content_title {
   font-size: 22px; }
 
-.telegram-info_content_text {
-  padding-top: 15px; }
+.telegram-info_content_list {
+  padding: 15px 0 0 20px;
+  list-style: decimal; }
 
-.telegram-info_content_text_p {
-  margin-top: 10px; }
+.telegram-info_content_list_item {
+  padding-top: 15px;
+  line-height: 1.3; }
 
-.subscribe-telegram-button {
-  margin-top: 30px;
-  color: white;
-  text-align: center;
+.telegram-footer {
+  height: 100px;
   width: 100%;
-  height: 40px;
-  background-color: #30AE63;
-  padding: 10px 0 0 10px;
-  border-radius: 3px; }
+  text-align: center;
+  padding-top: 40px; }
 
 .metrovka-header {
   width: 100%;
@@ -320,10 +425,15 @@ body {
   margin: 0 auto;
   text-align: center; }
 
+.metrovka__title {
+  max-width: 400px;
+  font-size: 24px;
+  margin: 0 auto; }
+
 .metrovka-slider {
   width: 848px;
   margin: 0 auto;
-  margin-top: 20px; }
+  padding-top: 20px; }
 
 .metrovka-slider__element {
   display: inline-block;
@@ -362,6 +472,9 @@ body {
   margin-top: 20px;
   font-size: 16px; }
 
+.metrovka-slider__element__img {
+  position: relative; }
+
 .metrovka-img1 {
   background: url("../images/metrovka_slider1.jpg") no-repeat; }
 
@@ -371,19 +484,19 @@ body {
 .metrovka-img3 {
   background: url("../images/metrovka_slider3.jpg") no-repeat; }
 
-.metrovka-footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 40px;
-  padding-top: 7px;
+.content-choose-accommodation {
+  max-width: 300px;
   text-align: center;
-  border-top: 1px solid #D8D8D8;
-  margin-top: 40px; }
+  border: 1px solid black; }
 
-.metrovka-footer__button {
-  color: black;
-  font-size: 18px; }
+.content-choose-accommodation__title {
+  font-size: 24px;
+  line-height: 32px; }
+
+.metro-img {
+  max-width: 411px;
+  max-height: 212px;
+  margin-left: 80px; }
 
 /* Header ***************/
 .project-header__header {
@@ -411,33 +524,14 @@ body {
   line-height: 17px;
   width: 303px; }
 
-.place-advert-button {
-  width: 236px;
-  height: 40px;
-  margin-left: 15px;
-  text-align: center; }
-
-.place-advert-button__text {
-  display: inline-block; }
-
-.enter-site-button {
-  width: 50px;
-  height: 40px;
-  text-align: center;
-  margin-left: -5px;
-  padding-left: 6px; }
-
-.project-header__content {
-  margin-top: 40px; }
-
 .project-header__tittle {
   color: white;
   font-size: 32px;
-  margin-top: 60px; }
+  padding-top: 60px; }
 
 .project-header__form {
   display: flex;
-  margin-top: 45px; }
+  padding-top: 45px; }
 
 .check-room {
   margin-top: 2px;
@@ -506,15 +600,6 @@ input[type="checkbox"]:checked + span.check-room__5 {
 .choose_city option {
   background: white; }
 
-.button-go-to-search {
-  margin: 30px 0 0 43px;
-  background: white;
-  width: 200px;
-  height: 40px;
-  color: #30ae63;
-  font-size: 14px;
-  border: 0; }
-
 /* Footer ***************/
 .footer-column {
   display: inline-block;
@@ -541,26 +626,18 @@ input[type="checkbox"]:checked + span.check-room__5 {
   margin-top: 5px;
   font-size: 12px; }
 
-.footer-button {
-  display: block;
-  margin-top: 15px;
-  width: 162px;
-  height: 40px;
-  color: white;
-  background-color: #30ae63;
-  border-radius: 3px;
-  text-align: center;
-  padding-top: 8px; }
-
 .footer-logo {
   height: 200px;
   width: 100%;
+  padding-top: 60px;
   text-align: center; }
 
 .footer-logo__img {
   width: 51px;
   height: 47px;
-  margin-top: 60px; }
+  padding-top: 60px;
+  margin: 0 auto;
+  background: url("../images/logo_footer.png") no-repeat 0 0; }
 
 /* Icons ****************/
 .header-logo {
@@ -608,23 +685,3 @@ input[type="checkbox"]:checked + span.check-room__5 {
 /*************************
 	All The States Styles
 *************************/
-.project-header__menu-item:hover {
-  border-bottom: 2px solid white; }
-
-.button:hover {
-  background-color: #6FCF97 !important; }
-
-.menu-accommodation__item:hover, .telegram-header__menu-item:hover {
-  border-bottom: 2px solid #27AE60; }
-
-.metrovka-footer:hover {
-  background-color: #6FCF97; }
-
-.last-advert__footer:hover {
-  background-color: #6FCF97; }
-
-.best-proposition__footer:hover {
-  background-color: #6FCF97; }
-
-.propositions:hover {
-  border-bottom: 2px solid #27AE60; }
