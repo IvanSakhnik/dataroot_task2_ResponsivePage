@@ -8,13 +8,7 @@
 }
 
 .icon-plus{
-	display:inline-block;
-	position:absolute;
-	left: 10px;
-	top:12px;
-	width: 18px;
-	height: 18px;
-	background: url("../images/sprite.png") no-repeat -25px -672px;
+	background: url("../images/sprite.png") no-repeat -10px -662px;
 }
 
 .icon-check{
@@ -29,9 +23,32 @@
 
 .icon-telegram{
 	display:inline-block;
-	top:20px;
 	width: 62px;
 	height: 62px;
 	margin-right: 20px;
 	background: url("../images/sprite.png") no-repeat -25px -432px;
 }
+
+.icon-facebook{
+	display:inline-block;
+	width: 17px;
+    height: 18px;
+    background: url("../images/sprite.png") no-repeat -25px -146px;
+}
+
+.icon-vk{
+	display:inline-block;
+	width: 22px;
+    height: 12px;
+    margin-left: 10px;
+    background: url("../images/sprite.png") no-repeat -25px -544px;
+}
+
+.icon-instagram{
+	display:inline-block;
+	width: 17px;
+    height: 18px;
+    margin-left: 10px;
+    background: url("../images/sprite.png") no-repeat -25px -278px;
+}
+

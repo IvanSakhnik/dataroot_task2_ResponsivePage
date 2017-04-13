@@ -1,0 +1,13 @@
+ .last-advert__header{
+	width:100%;
+	padding-top: 30px;	
+	text-align: center;
+}
+
+.last-advert__footer{
+	@include footer-with-button;
+}
+
+.last-advert__footer__button{
+	@include watch-footer-button;
+}

@@ -2,31 +2,6 @@
  All The Utilities Styles
 *************************/
 
+@import "_vars";
+@import "_forms";
 
-
-$metrovka-color-theme1:#BA8FF7;
-$metrovka-color-theme2:#2573D8; 
-$metrovka-color-theme3:#30AE63;
-$metrovka-color-author:#8C9BA5;
-
-$border-color:#D8D8D8;
-
-
-@mixin watch-footer-button{
-	color: black;
-	font-size: 18px;
-}
-
-@mixin footer-with-button{
-	position: absolute;
-	bottom: 0px;
-	width:100%;
-	height:40px;
-	padding-top:7px;
-	text-align: center;
-	border-top: 1px solid $border-color;
-}
-
-@mixin footer-with-button-hover{
-	background-color: #6FCF97;
-}

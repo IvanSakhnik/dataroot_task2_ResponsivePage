@@ -2,38 +2,59 @@
 //--Footer ----------------//
 //-------------------------//
 
-
-
-//****************************************************
- // STYLES FOR FOOTER OF BLOCK WITH BEST PROPOSITIONS
- .best-proposition__footer{
- 	@include footer-with-button;
- }
-
-.best-proposition__footer__button{
-	@include watch-footer-button;
-}
-//****************************************************
-
-
-//****************************************************
- // STYLES FOR FOOTER OF BLOCK WITH LAST ADVERT
-.last-advert__footer{
-	@include footer-with-button;
+.footer-column{
+	display:inline-block;
+	vertical-align: top;
+	width:206px;
 }
 
-.last-advert__footer__button{
-	@include watch-footer-button;
+.footer-column__title{
+	font-size: 20px;
 }
 
-//****************************************************
-
-
-.metrovka-footer{
-	@include footer-with-button;
-	margin-top: 40px;
+.footer-column__text{
+	display:block;
+	margin-top:15px;
+	max-width: 180px;
+	font-size: 16px;
+	color:black;
 }
 
-.metrovka-footer__button{
-	@include watch-footer-button;
+.footer-icons, .footer-email{
+	margin-top:15px;
 }
+
+.footer-adress, .footer-city{
+	margin-top:10px;
+}
+
+.footer-city{
+	margin-top:5px;
+	font-size: 12px;
+}
+
+.footer-button{
+	display: block;
+	margin-top: 15px;
+	width:162px;
+	height: 40px;
+	color: white;
+	background-color:$button-color-green;
+	border-radius: 3px;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.footer-logo{
+	height: 200px;
+	width:100%;
+	text-align:center;
+}
+
+.footer-logo__img{
+	width: 51px;
+	height: 47px;
+	margin-top:60px;
+}
+//**************************************************************************************************************************
+//************************************************************************************************************************** 

@@ -108,23 +108,24 @@ body {
   min-height: 301px;
   color: white;
   background-size: cover; }
-  .project-header .project-header__wrapper {
-    position: relative;
-    width: 890px;
-    margin: 0 auto; }
+
+.project-header__wrapper {
+  position: relative;
+  width: 890px;
+  margin: 0 auto; }
 
 .project-content {
   width: 100%;
+  padding-top: 20px;
   background-color: rgba(90, 104, 114, 0.08); }
-  .project-content .project-content__wrapper {
-    width: 890px;
-    margin: 0 auto;
-    border: 1px solid black; }
+
+.project-content__wrapper {
+  width: 890px;
+  margin: 0 auto; }
 
 .project-content__accommodation-metro {
   min-height: 295px;
   background-color: white;
-  margin-top: 30px;
   padding: 50px 0 0 40px;
   display: flex; }
 
@@ -132,23 +133,32 @@ body {
   position: relative;
   min-height: 384px;
   background-color: white;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .project-content__last-advert {
   position: relative;
   min-height: 444px;
   background-color: white;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .project-content__telegram {
   min-height: 800px;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .project-content__metrovka {
   position: relative;
   min-height: 518px;
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: white; }
+
+.project-footer {
+  width: 100%;
+  background-color: rgba(90, 104, 114, 0.08); }
+
+.project-footer__wrapper {
+  width: 844px;
+  margin: 0 auto;
+  padding-top: 40px; }
 
 /* Responsive ***********/
 /* Tools ****************/
@@ -156,6 +166,266 @@ body {
 	All The Modules Styles
 *************************/
 /* Content **************/
+.best-proposition__header {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px; }
+
+.best-proposition__content {
+  margin: 20px 0 0 20px; }
+
+.propositions {
+  display: inline-block;
+  margin-right: 8px; }
+
+.proposition-photo {
+  max-width: 202px;
+  max-height: 135px; }
+
+.proposition-photo1 {
+  background: url("../images/flat1.jpg") no-repeat; }
+
+.price {
+  position: relative;
+  width: 150px;
+  margin-top: 20px; }
+
+.price-text {
+  display: inline-block; }
+
+.flat-description {
+  margin-top: 5px;
+  color: #8C9BA5;
+  font-size: 14px; }
+
+.flat-location {
+  margin-top: 10px;
+  font-size: 14px; }
+
+.red-circle {
+  display: inline-block;
+  color: #E71D32; }
+
+.blue-circle {
+  display: inline-block;
+  color: #2573D8; }
+
+.metro-location {
+  display: inline-block;
+  margin-left: 10px; }
+
+.best-proposition__footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+  border-top: 1px solid #D8D8D8; }
+
+.best-proposition__footer__button {
+  color: black;
+  font-size: 18px; }
+
+.last-advert__header {
+  width: 100%;
+  padding-top: 30px;
+  text-align: center; }
+
+.last-advert__footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+  border-top: 1px solid #D8D8D8; }
+
+.last-advert__footer__button {
+  color: black;
+  font-size: 18px; }
+
+.telegram-header {
+  width: 100%;
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: center; }
+
+.telegram-header__text, .metrovka-header__text {
+  padding-top: 20px;
+  max-width: 500px;
+  margin: 0 auto; }
+
+.telegram-header__menu {
+  padding-left: 40px; }
+
+.telegram-content {
+  width: 100%;
+  margin: 0 0 0 80px;
+  padding: 30px 0 0 30px;
+  display: flex; }
+
+.phone-img {
+  max-width: 282px;
+  max-height: 573px;
+  display: inline-block; }
+
+.telegram-info {
+  display: inline-block;
+  width: 400px;
+  height: 440px;
+  margin: 60px 0 0 95px;
+  background-color: white; }
+
+.telegram-info_header {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  margin: 40px 0 0 30px; }
+
+.telegram-info_header_title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+  padding-bottom: 50px; }
+
+.telegram-info_content {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 30px; }
+
+.telegram-info_content_title {
+  font-size: 22px; }
+
+.telegram-info_content_text {
+  padding-top: 15px; }
+
+.telegram-info_content_text_p {
+  margin-top: 10px; }
+
+.subscribe-telegram-button {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  background-color: #30AE63;
+  padding: 10px 0 0 10px;
+  border-radius: 3px; }
+
+.metrovka-header {
+  width: 100%;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center; }
+
+.metrovka-slider {
+  width: 848px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.metrovka-slider__element {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  width: 272px;
+  min-height: 306px; }
+
+.metrovka-slider :last-child {
+  margin-right: 0px; }
+
+.metrovka-slider__element__img {
+  width: 272px;
+  height: 182px; }
+
+.metrovka-slider__element__theme {
+  font-size: 12px;
+  margin-top: 20px; }
+
+.metrovka-theme1 {
+  color: #BA8FF7; }
+
+.metrovka-theme2 {
+  color: #2573D8; }
+
+.metrovka-theme3 {
+  color: #30AE63; }
+
+.metrovka-slider__element__description {
+  max-width: 272px;
+  margin-top: 5px;
+  font-size: 18px; }
+
+.metrovka-slider__element__author {
+  color: #8C9BA5;
+  margin-top: 20px;
+  font-size: 16px; }
+
+.metrovka-img1 {
+  background: url("../images/metrovka_slider1.jpg") no-repeat; }
+
+.metrovka-img2 {
+  background: url("../images/metrovka_slider2.jpg") no-repeat; }
+
+.metrovka-img3 {
+  background: url("../images/metrovka_slider3.jpg") no-repeat; }
+
+.metrovka-footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px;
+  text-align: center;
+  border-top: 1px solid #D8D8D8;
+  margin-top: 40px; }
+
+.metrovka-footer__button {
+  color: black;
+  font-size: 18px; }
+
+/* Header ***************/
+.project-header__header {
+  display: flex; }
+
+.project-header__menu {
+  padding-top: 25px;
+  margin-left: 40px; }
+
+.project-header__menu-item {
+  padding: 0 5px 0 5px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  margin-right: 40px;
+  vertical-align: middle; }
+
+.project-header__menu-item__text {
+  color: white; }
+
+.project-header__botton-menu {
+  margin: 18px 0 0 93px;
+  font-size: 14px;
+  line-height: 17px;
+  width: 303px; }
+
+.place-advert-button {
+  width: 236px;
+  height: 40px;
+  margin-left: 15px;
+  text-align: center; }
+
+.place-advert-button__text {
+  display: inline-block; }
+
+.enter-site-button {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  margin-left: -5px;
+  padding-left: 6px; }
+
 .project-header__content {
   margin-top: 40px; }
 
@@ -229,9 +499,11 @@ input[type="checkbox"]:checked + span.check-room__5 {
   padding: 10px 0 10px 20px;
   border-radius: 3px;
   font-size: 15px;
-  border: 2px solid #f2f2f2; }
-  .choose_city option {
-    background: white; }
+  border: 2px solid #f2f2f2;
+  cursor: pointer; }
+
+.choose_city option {
+  background: white; }
 
 .button-go-to-search {
   margin: 30px 0 0 43px;
@@ -242,267 +514,59 @@ input[type="checkbox"]:checked + span.check-room__5 {
   font-size: 14px;
   border: 0; }
 
-.content-choose-accommodation {
-  max-width: 300px;
-  border: 1px solid black; }
-
-.metro-img {
-  max-width: 411px;
-  max-height: 212px;
-  margin-left: 80px; }
-
-.best-proposition__content {
-  margin: 20px 0 0 20px; }
-
-.propositions {
-  display: inline-block;
-  margin-right: 8px; }
-
-.proposition-photo {
-  max-width: 202px;
-  max-height: 135px; }
-
-.price {
-  position: relative;
-  width: 150px;
-  margin-top: 20px; }
-
-.price-text {
-  display: inline-block; }
-
-.flat-description {
-  margin-top: 5px;
-  color: #8C9BA5;
-  font-size: 14px; }
-
-.flat-location {
-  margin-top: 10px;
-  font-size: 14px; }
-
-.red-circle {
-  display: inline-block;
-  color: #E71D32; }
-
-.blue-circle {
-  display: inline-block;
-  color: #2573D8; }
-
-.metro-location {
-  display: inline-block;
-  margin-left: 10px; }
-
-.telegram-content {
-  width: 100%;
-  margin: 0 0 0 80px;
-  padding: 30px 0 0 30px;
-  display: flex; }
-  .telegram-content .phone-img {
-    max-width: 282px;
-    max-height: 573px;
-    display: inline-block; }
-  .telegram-content .telegram-info {
-    display: inline-block;
-    width: 400px;
-    height: 440px;
-    margin: 60px 0 0 95px;
-    background-color: white; }
-    .telegram-content .telegram-info .telegram-info_header {
-      position: relative;
-      width: 200px;
-      height: 70px;
-      margin: 40px 0 0 30px; }
-      .telegram-content .telegram-info .telegram-info_header .telegram-info_header_title {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 22px;
-        padding-bottom: 50px; }
-    .telegram-content .telegram-info .telegram-info_content {
-      width: 320px;
-      margin: 0 auto;
-      padding-top: 30px; }
-      .telegram-content .telegram-info .telegram-info_content .telegram-info_content_title {
-        font-size: 22px; }
-      .telegram-content .telegram-info .telegram-info_content .telegram-info_content_text {
-        padding-top: 15px; }
-        .telegram-content .telegram-info .telegram-info_content .telegram-info_content_text .telegram-info_content_text_p {
-          margin-top: 10px; }
-      .telegram-content .telegram-info .telegram-info_content .subscribe-telegram-button {
-        margin-top: 30px;
-        color: white;
-        text-align: center;
-        width: 100%;
-        height: 40px;
-        background-color: #30AE63;
-        padding: 10px 0 0 10px;
-        border-radius: 3px; }
-
-.metrovka-slider {
-  width: 848px;
-  margin: 0 auto;
-  margin-top: 20px; }
-
-.metrovka-slider__element {
+/* Footer ***************/
+.footer-column {
   display: inline-block;
   vertical-align: top;
-  margin-right: 10px;
-  width: 272px;
-  min-height: 306px; }
+  width: 206px; }
 
-.metrovka-slider :last-child {
-  margin-right: 0px; }
+.footer-column__title {
+  font-size: 20px; }
 
-.metrovka-slider__element__img {
-  width: 272px;
-  height: 182px; }
+.footer-column__text {
+  display: block;
+  margin-top: 15px;
+  max-width: 180px;
+  font-size: 16px;
+  color: black; }
 
-.metrovka-slider__element__theme {
-  font-size: 12px;
-  margin-top: 20px; }
+.footer-icons, .footer-email {
+  margin-top: 15px; }
 
-.metrovka-theme1 {
-  color: #BA8FF7; }
+.footer-adress, .footer-city {
+  margin-top: 10px; }
 
-.metrovka-theme2 {
-  color: #2573D8; }
-
-.metrovka-theme3 {
-  color: #30AE63; }
-
-.metrovka-slider__element__description {
-  max-width: 272px;
+.footer-city {
   margin-top: 5px;
-  font-size: 18px; }
+  font-size: 12px; }
 
-.metrovka-slider__element__author {
-  color: #8C9BA5;
-  margin-top: 20px;
-  font-size: 16px; }
-
-.metrovka-img1 {
-  background: url("../images/metrovka_slider1.jpg") no-repeat; }
-
-.metrovka-img2 {
-  background: url("../images/metrovka_slider2.jpg") no-repeat; }
-
-.metrovka-img3 {
-  background: url("../images/metrovka_slider3.jpg") no-repeat; }
-
-/* Header ***************/
-.project-header__header {
-  display: flex; }
-  .project-header__header .project-header__menu {
-    padding-top: 25px;
-    margin-left: 40px; }
-    .project-header__header .project-header__menu .project-header__menu-item {
-      padding: 0 5px 0 5px;
-      height: 30px;
-      font-size: 14px;
-      line-height: 20px;
-      display: inline-block;
-      margin-right: 40px;
-      vertical-align: middle; }
-      .project-header__header .project-header__menu .project-header__menu-item .project-header__menu-item__text {
-        color: white; }
-  .project-header__header .project-header__botton-menu {
-    margin: 18px 0 0 93px;
-    font-size: 14px;
-    line-height: 17px;
-    width: 303px; }
-    .project-header__header .project-header__botton-menu .place-advert-button {
-      width: 236px;
-      height: 40px;
-      margin-left: 15px;
-      text-align: center;
-      background: url("../images/sprite.png") no-repeat -10px -662px; }
-    .project-header__header .project-header__botton-menu .enter-site-button {
-      width: 50px;
-      height: 40px;
-      text-align: center;
-      margin-left: -5px; }
-
-.best-proposition__header {
-  width: 100%;
+.footer-button {
+  display: block;
+  margin-top: 15px;
+  width: 162px;
+  height: 40px;
+  color: white;
+  background-color: #30ae63;
+  border-radius: 3px;
   text-align: center;
-  padding-top: 20px; }
+  padding-top: 8px; }
 
-.last-advert__header {
+.footer-logo {
+  height: 200px;
   width: 100%;
-  padding-top: 30px;
   text-align: center; }
 
-.telegram-header {
-  width: 100%;
-  padding-top: 30px;
-  margin: 0 auto;
-  text-align: center; }
-
-.telegram-header__text, .metrovka-header__text {
-  padding-top: 20px;
-  max-width: 500px;
-  margin: 0 auto; }
-
-.telegram-header__menu {
-  padding-left: 40px; }
-
-.metrovka-header {
-  width: 100%;
-  padding-top: 20px;
-  margin: 0 auto;
-  text-align: center; }
-
-/* Footer ***************/
-.best-proposition__footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 40px;
-  padding-top: 7px;
-  text-align: center;
-  border-top: 1px solid #D8D8D8; }
-
-.best-proposition__footer__button {
-  color: black;
-  font-size: 18px; }
-
-.last-advert__footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 40px;
-  padding-top: 7px;
-  text-align: center;
-  border-top: 1px solid #D8D8D8; }
-
-.last-advert__footer__button {
-  color: black;
-  font-size: 18px; }
-
-.metrovka-footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 40px;
-  padding-top: 7px;
-  text-align: center;
-  border-top: 1px solid #D8D8D8;
-  margin-top: 40px; }
-
-.metrovka-footer__button {
-  color: black;
-  font-size: 18px; }
+.footer-logo__img {
+  width: 51px;
+  height: 47px;
+  margin-top: 60px; }
 
 /* Icons ****************/
 .header-logo {
   padding-top: 20px; }
 
 .icon-plus {
-  display: inline-block;
-  position: absolute;
-  left: 10px;
-  top: 12px;
-  width: 18px;
-  height: 18px;
-  background: url("../images/sprite.png") no-repeat -25px -672px; }
+  background: url("../images/sprite.png") no-repeat -10px -662px; }
 
 .icon-check {
   display: inline-block;
@@ -515,11 +579,30 @@ input[type="checkbox"]:checked + span.check-room__5 {
 
 .icon-telegram {
   display: inline-block;
-  top: 20px;
   width: 62px;
   height: 62px;
   margin-right: 20px;
   background: url("../images/sprite.png") no-repeat -25px -432px; }
+
+.icon-facebook {
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  background: url("../images/sprite.png") no-repeat -25px -146px; }
+
+.icon-vk {
+  display: inline-block;
+  width: 22px;
+  height: 12px;
+  margin-left: 10px;
+  background: url("../images/sprite.png") no-repeat -25px -544px; }
+
+.icon-instagram {
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  margin-left: 10px;
+  background: url("../images/sprite.png") no-repeat -25px -278px; }
 
 /*************************
 	All The States Styles

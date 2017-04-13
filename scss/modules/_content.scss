@@ -1,328 +1,301 @@
-//-------------------------//
-//--Content ---------------//
-//-------------------------//
+// //-------------------------//
+// //--Content ---------------//
+// //-------------------------//
 
 
-//**************************************
- // STYLES FOR CONTENT OF PROJECT HEADER
-
-.project-header__content{
-	margin-top: 40px;
-}
-
-.project-header__tittle{
-	color:white;
-	font-size: 32px;
-	margin-top: 60px;
-}
-
-//DECORATE CHECKBOX **********************************
-.project-header__form{
-	display:flex;
-	margin-top: 45px;
-}
-
-.check-room{
-	margin-top: 2px;
-	width:46px;
-	height: 46px;
-	display: inline-flex;
-	position: relative;
-	margin: 12px 2px 0 0;
-}
-
-input[type="checkbox"] + span{
-	position: absolute;
-	left:-7px;
-	top:0;
-	width:100%;
-	height: 100%;
-	cursor: pointer;
-	background: url("../images/checkbox/sprite_checkbox.png") no-repeat;
-	&.check-room__1{
-		background-position: -395px -15px;
-	}
-	&.check-room__2{
-		background-position: -467px -15px;
-	}
-	&.check-room__3{
-		background-position: -539px -15px
-	}
-	&.check-room__4{
-		background-position: -611px -15px;
-	}
-	&.check-room__5{
-		background-position: -683px -15px;
-	}
-}
-
-input[type="checkbox"]{
-	display: none;
-} 
-
-input[type="checkbox"]:checked + span{
-	&.check-room__1{
-		background-position: -15px -15px;
-	}
-	&.check-room__2{
-		background-position: -91px -15px;
-	}
-	&.check-room__3{
-		background-position: -167px -15px;
-	}
-	&.check-room__4{
-		background-position: -243px -15px;
-	}
-	&.check-room__5{
-		background-position: -319px -15px;
-	}
-}
-
-.choose-room{
-	display: inline-block;
-	position: relative;
-	 margin-left: 25px;
-}
-//DECORATE CHECKBOX ENDS******************************
-
-//DECORATE SELECT ************************************
-.choose-city-form{
-	margin-top: 12px;
-}
-
-.choose_city {
-	background: white url("../images/sprite.png") no-repeat 292px -8px;
-	margin-right: 20px;
-	width: 346px;
-	height: 42px;
-	padding: 10px 0 10px 20px;
-	border-radius: 3px;
-	font-size: 15px;
-	border: 2px solid #f2f2f2;
-	option{
-		background: white;
-	}
-}
+@import "content/best_propositions";
+@import "content/last_advert";
+@import "content/telegram";
+@import "content/metrovka";
 
 
-//*************************************
-.button-go-to-search{
-	margin: 30px 0 0 43px;
-	background: white;
-	width: 200px;
-	height: 40px;
-	color:#30ae63;
-	font-size: 14px;
-	border: 0;
-}
+// //***********************************************************
+//  // STYLES FOR CONTENT OF BLOCK WITH ACCOMMODATION NEAR METRO
 
-//***********************************************************
- // STYLES FOR CONTENT OF BLOCK WITH ACCOMMODATION NEAR METRO
+// .content-choose-accommodation{
+//  	max-width: 300px;
+//  	border: 1px solid black;
+// }
 
-.content-choose-accommodation{
- 	max-width: 300px;
- 	border: 1px solid black;
- }
+// .content-choose-accommodation__title{
+// 	font-size: 24px;
+// 	line-height: 32px;
 
-.metro-img{
-	max-width: 411px;
-	max-height: 212px;
-	margin-left: 80px;
-}
-//***********************************************************
+// }
+
+// .metro-img{
+// 	max-width: 411px;
+// 	max-height: 212px;
+// 	margin-left: 80px;
+// }
+// //***********************************************************
 
 
-//****************************************************
- // STYLES FOR CONTENT OF BLOCK WITH BEST PROPOSITIONS
- // STYLES FOR CONTENT OF BLOCK WITH LAST ADVERB
+// //****************************************************
+//  // STYLES FOR CONTENT OF BLOCK WITH BEST PROPOSITIONS
+//  // STYLES FOR CONTENT OF BLOCK WITH LAST ADVERB
 
-.best-proposition__content{
-	margin: 20px 0 0 20px;
-}
+//  .last-advert__header{
+// 	width:100%;
+// 	padding-top: 30px;	
+// 	text-align: center;
+// }
 
-.propositions{
-	display: inline-block;
-	margin-right: 8px;
-}
+// .best-proposition__header{
+// 	width: 100%;
+// 	text-align: center;
+// 	padding-top: 20px;
+// }
 
-.proposition-photo{
-	max-width: 202px;
-	max-height: 135px;
-}
+// .best-proposition__content{
+// 	margin: 20px 0 0 20px;
+// }
 
-.price{
-	position:relative;
-	width: 150px;
-	margin-top: 20px;
-}
+// .propositions{
+// 	display: inline-block;
+// 	margin-right: 8px;
+// }
 
-.price-text{
-	display: inline-block;
-}
+// .proposition-photo{
+// 	max-width: 202px;
+// 	max-height: 135px;
+// }
 
-.flat-description{
-	margin-top: 5px;
-	color: #8C9BA5;
-	font-size: 14px;
-}
+// .proposition-photo1{
+// 	background: url("../images/flat1.jpg") no-repeat;
+// }
 
-.flat-location{
-	margin-top: 10px;
-	font-size: 14px;
-}
+// .price{
+// 	position:relative;
+// 	width: 150px;
+// 	margin-top: 20px;
+// }
 
-.red-circle{
-	display:inline-block;
-	color: #E71D32;
-}
+// .price-text{
+// 	display: inline-block;
+// }
 
-.blue-circle{
-	display:inline-block;
-	color: #2573D8;
-}
+// .flat-description{
+// 	margin-top: 5px;
+// 	color: #8C9BA5;
+// 	font-size: 14px;
+// }
 
-.metro-location{
-	display:inline-block;
-	margin-left: 10px;
-}
-//****************************************************
+// .flat-location{
+// 	margin-top: 10px;
+// 	font-size: 14px;
+// }
 
+// .red-circle{
+// 	display:inline-block;
+// 	color: #E71D32;
+// }
 
-//****************************************************
-// STYLES FOR CONTENT OF BLOCK WITH TELEGRAM
-.telegram-content{
-	width: 100%;
-	// max-height:600px; 
-	margin: 0 0 0 80px;
-	padding: 30px 0 0 30px;
-	display: flex;
+// .blue-circle{
+// 	display:inline-block;
+// 	color: #2573D8;
+// }
 
-	.phone-img{
-		max-width: 282px;
-		max-height: 573px;
-		display: inline-block;
-	}
+// .metro-location{
+// 	display:inline-block;
+// 	margin-left: 10px;
+// }
 
-	.telegram-info{
-		display: inline-block;
-		width: 400px;
-		height: 440px;
-		margin:60px 0 0 95px;
-		background-color: white;
+//  .best-proposition__footer{
+//  	@include footer-with-button;
+//  }
 
-		.telegram-info_header{
-			position: relative;
-			width: 200px;
-			height: 70px;
-			margin: 40px 0 0 30px;
+// .best-proposition__footer__button{
+// 	@include watch-footer-button;
+// }
+// //****************************************************
 
-			.telegram-info_header_title{
-				display: inline-block;
-				vertical-align: middle;
-				font-size: 22px;
-				padding-bottom: 50px;
+// .last-advert__footer{
+// 	@include footer-with-button;
+// }
 
-			}
-		}
+// .last-advert__footer__button{
+// 	@include watch-footer-button;
+// }
 
-		.telegram-info_content{
-			width: 320px;
-			margin: 0 auto;
-			padding-top: 30px;
+// //****************************************************
+// // STYLES FOR CONTENT OF BLOCK WITH TELEGRAM
 
-			.telegram-info_content_title{
-				font-size: 22px;
+// .telegram-header{
+// 	width:100%;
+// 	padding-top: 30px;
+// 	margin: 0 auto;
+// 	text-align: center;
+// }
 
-			}
+// .telegram-header__text{
+// 	padding-top: 20px;
+// 	max-width: 500px;
+// 	margin: 0 auto;
+// }
 
-			.telegram-info_content_text{
-				padding-top: 15px;
+// .telegram-header__menu{
+// 	@extend .menu-accommodation;
+// 	padding-left: 40px;
+// }
 
-				.telegram-info_content_text_p{
-					margin-top: 10px;
-				}
-			}
+// .telegram-header__menu-item{
+// 	@extend .menu-accommodation__item;
+// }
 
-			.subscribe-telegram-button{
-				margin-top: 30px;
-				color: white;
-				text-align: center;
-				width: 100%;
-				height:40px;
-				background-color: #30AE63;
-				padding: 10px 0 0 10px;
-				border-radius: 3px;
-			}
-		}
-	}
-}
-//****************************************************
+// .telegram-header__menu-item__text{
+// 	@extend .menu-accommodation__item-text;
+// }			
 
-//****************************************************
-// STYLES FOR CONTENT OF BLOCK WITH METROVKA
-.metrovka-slider{
-	width: 848px;
-	margin: 0 auto;
-	margin-top:20px;
-}
+// .telegram-content{
+// 	width: 100%;
+// 	// max-height:600px; 
+// 	margin: 0 0 0 80px;
+// 	padding: 30px 0 0 30px;
+// 	display: flex;
+// }
 
-.metrovka-slider__element{
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 10px;
-	width:272px;
-	min-height:306px;
-}
+// .phone-img{
+// 	max-width: 282px;
+// 	max-height: 573px;
+// 	display: inline-block;
+// }
 
-.metrovka-slider :last-child{
-	margin-right: 0px;
-}
+// .telegram-info{
+// 	display: inline-block;
+// 	width: 400px;
+// 	height: 440px;	margin:60px 0 0 95px;
+// 	background-color: white;
+// }
 
-.metrovka-slider__element__img{
-	width: 272px;
-	height: 182px;
-}
+// .telegram-info_header{
+// 	position: relative;
+// 	width: 200px;
+// 	height: 70px;
+// 	margin: 40px 0 0 30px
+// }
 
-.metrovka-slider__element__theme{
-	font-size: 12px;
-	margin-top: 20px;
-}
+// .telegram-info_header_title{
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	font-size: 22px;
+// 	padding-bottom: 50px;
+// }
+		
+// .telegram-info_content{
+// 	width: 320px;
+// 	margin: 0 auto;
+// 	padding-top: 30px;
+// }
 
-.metrovka-theme1{
-	color: $metrovka-color-theme1;
-}
+// .telegram-info_content_title{
+// 	font-size: 22px;
+// }
 
-.metrovka-theme2{
-	color: $metrovka-color-theme2;
-}
+// .telegram-info_content_text{
+// 	padding-top: 15px;
+// }
 
-.metrovka-theme3{
-	color: $metrovka-color-theme3;
-}
-
-.metrovka-slider__element__description{
-	max-width: 272px;
-	margin-top: 5px;
-	font-size: 18px;
-}
-
-.metrovka-slider__element__author{
-	color: $metrovka-color-author;
-	margin-top: 20px;
-	font-size: 16px;
-}
-
-.metrovka-img1{
-	background: url("../images/metrovka_slider1.jpg") no-repeat;
-}
-
-.metrovka-img2{
-	background: url("../images/metrovka_slider2.jpg") no-repeat;
-}
-
-.metrovka-img3{
-	background: url("../images/metrovka_slider3.jpg") no-repeat;
-}
+// .telegram-info_content_text_p{
+// 	margin-top: 10px;
+// }
+			
+// .subscribe-telegram-button{
+// 	margin-top: 30px;
+// 	color: white;
+// 	text-align: center;
+// 	width: 100%;
+// 	height:40px;
+// 	background-color: #30AE63;
+// 	padding: 10px 0 0 10px;
+// 	border-radius: 3px;
+// }
+// //****************************************************
 
 
+// //****************************************************
+// // STYLES FOR CONTENT OF BLOCK WITH METROVKA
+// .metrovka-header{
+//  	width:100%;
+// 	padding-top: 20px;
+// 	margin: 0 auto;
+// 	text-align: center;
+// }
+
+// .metrovka-header__text{
+// 	@extend .telegram-header__text;
+// }
+
+// .metrovka-slider{
+// 	width: 848px;
+// 	margin: 0 auto;
+// 	margin-top:20px;
+// }
+
+// .metrovka-slider__element{
+// 	display: inline-block;
+// 	vertical-align: top;
+// 	margin-right: 10px;
+// 	width:272px;
+// 	min-height:306px;
+// }
+
+// .metrovka-slider :last-child{
+// 	margin-right: 0px;
+// }
+
+// .metrovka-slider__element__img{
+// 	width: 272px;
+// 	height: 182px;
+// }
+
+// .metrovka-slider__element__theme{
+// 	font-size: 12px;
+// 	margin-top: 20px;
+// }
+
+// .metrovka-theme1{
+// 	color: $metrovka-color-theme1;
+// }
+
+// .metrovka-theme2{
+// 	color: $metrovka-color-theme2;
+// }
+
+// .metrovka-theme3{
+// 	color: $metrovka-color-theme3;
+// }
+
+// .metrovka-slider__element__description{
+// 	max-width: 272px;
+// 	margin-top: 5px;
+// 	font-size: 18px;
+// }
+
+// .metrovka-slider__element__author{
+// 	color: $metrovka-color-author;
+// 	margin-top: 20px;
+// 	font-size: 16px;
+// }
+
+// .metrovka-img1{
+// 	background: url("../images/metrovka_slider1.jpg") no-repeat;
+// }
+
+// .metrovka-img2{
+// 	background: url("../images/metrovka_slider2.jpg") no-repeat;
+// }
+
+// .metrovka-img3{
+// 	background: url("../images/metrovka_slider3.jpg") no-repeat;
+// }
+
+// .metrovka-footer{
+// 	@include footer-with-button;
+// 	margin-top: 40px;
+// }
+
+// .metrovka-footer__button{
+// 	@include watch-footer-button;
+// }
 //****************************************************
