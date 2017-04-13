@@ -99,7 +99,7 @@ input[type="checkbox"]:checked + span{
 	background: white;
 	width: 200px;
 	height: 35px;
-	color:#30ae63;
+	color:$button-color-green;
 	margin-top:25px;
 }
 
@@ -109,7 +109,7 @@ input[type="checkbox"]:checked + span{
 .content-choose-accommodation{
  	max-width: 300px;
  	border: 1px solid black;
- }
+}
 
 .metro-img{
 	max-width: 411px;
@@ -135,6 +135,10 @@ input[type="checkbox"]:checked + span{
 .proposition-photo{
 	max-width: 202px;
 	max-height: 135px;
+}
+
+.proposition-photo1{
+	background: url("../images/flat1.jpg") no-repeat;
 }
 
 .price{
@@ -183,65 +187,62 @@ input[type="checkbox"]:checked + span{
 	margin: 0 0 0 80px;
 	padding: 30px 0 0 30px;
 	display: flex;
+}
 
-	.phone-img{
-		max-width: 282px;
-		max-height: 573px;
-		display: inline-block;
-	}
+.phone-img{
+	max-width: 282px;
+	max-height: 573px;
+	display: inline-block;
+}
 
-	.telegram-info{
-		display: inline-block;
-		width: 400px;
-		height: 440px;
-		margin:60px 0 0 95px;
-		background-color: white;
+.telegram-info{
+	display: inline-block;
+	width: 400px;
+	height: 440px;	margin:60px 0 0 95px;
+	background-color: white;
+}
 
-		.telegram-info_header{
-			position: relative;
-			width: 200px;
-			height: 70px;
-			margin: 40px 0 0 30px;
+.telegram-info_header{
+	position: relative;
+	width: 200px;
+	height: 70px;
+	margin: 40px 0 0 30px
+}
 
-			.telegram-info_header_title{
-				display: inline-block;
-				vertical-align: middle;
-				font-size: 22px;
-				padding-bottom: 50px;
+.telegram-info_header_title{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+	padding-bottom: 50px;
+}
+		
+.telegram-info_content{
+	width: 320px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
 
-			}
-		}
+.telegram-info_content_title{
+	font-size: 22px;
+}
 
-		.telegram-info_content{
-			width: 320px;
-			margin: 0 auto;
-			padding-top: 30px;
+.telegram-info_content_text{
+	padding-top: 15px;
+}
 
-			.telegram-info_content_title{
-				font-size: 22px;
-
-			}
-
-			.telegram-info_content_text{
-				padding-top: 15px;
-
-				.telegram-info_content_text_p{
-					margin-top: 10px;
-				}
-			}
-
-			.subscribe-telegram-button{
-				margin-top: 30px;
-				color: white;
-				text-align: center;
-				width: 100%;
-				height:40px;
-				background-color: #30AE63;
-				padding: 10px 0 0 10px;
-				border-radius: 3px;
-			}
-		}
-	}
+.telegram-info_content_text_p{
+	margin-top: 10px;
+}
+			
+.subscribe-telegram-button{
+	margin-top: 30px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	height:40px;
+	background-color: #30AE63;
+	padding: 10px 0 0 10px;
+	border-radius: 3px;
 }
 //****************************************************
 
@@ -310,6 +311,4 @@ input[type="checkbox"]:checked + span{
 .metrovka-img3{
 	background: url("../images/metrovka_slider3.jpg") no-repeat;
 }
-
-
 //****************************************************

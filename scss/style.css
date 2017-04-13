@@ -58,19 +58,19 @@ body {
   min-height: 301px;
   color: white;
   background-size: cover; }
-  .project-header .project-header__wrapper {
-    position: relative;
-    width: 890px;
-    margin: 0 auto;
-    border: 1px solid black; }
+
+.project-header__wrapper {
+  position: relative;
+  width: 890px;
+  margin: 0 auto; }
 
 .project-content {
   width: 100%;
   background-color: rgba(90, 104, 114, 0.08); }
-  .project-content .project-content__wrapper {
-    width: 890px;
-    margin: 0 auto;
-    border: 1px solid black; }
+
+.project-content__wrapper {
+  width: 890px;
+  margin: 0 auto; }
 
 .project-content__accommodation-metro {
   min-height: 295px;
@@ -100,6 +100,15 @@ body {
   min-height: 518px;
   margin-top: 30px;
   background-color: white; }
+
+.project-footer {
+  width: 100%;
+  background-color: rgba(90, 104, 114, 0.08); }
+
+.project-footer__wrapper {
+  width: 844px;
+  margin: 0 auto;
+  padding-top: 40px; }
 
 /* Responsive ***********/
 /* Tools ****************/
@@ -202,6 +211,9 @@ input[type="checkbox"]:checked + span.check-room__5 {
   max-width: 202px;
   max-height: 135px; }
 
+.proposition-photo1 {
+  background: url("../images/flat1.jpg") no-repeat; }
+
 .price {
   position: relative;
   width: 150px;
@@ -236,45 +248,54 @@ input[type="checkbox"]:checked + span.check-room__5 {
   margin: 0 0 0 80px;
   padding: 30px 0 0 30px;
   display: flex; }
-  .telegram-content .phone-img {
-    max-width: 282px;
-    max-height: 573px;
-    display: inline-block; }
-  .telegram-content .telegram-info {
-    display: inline-block;
-    width: 400px;
-    height: 440px;
-    margin: 60px 0 0 95px;
-    background-color: white; }
-    .telegram-content .telegram-info .telegram-info_header {
-      position: relative;
-      width: 200px;
-      height: 70px;
-      margin: 40px 0 0 30px; }
-      .telegram-content .telegram-info .telegram-info_header .telegram-info_header_title {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 22px;
-        padding-bottom: 50px; }
-    .telegram-content .telegram-info .telegram-info_content {
-      width: 320px;
-      margin: 0 auto;
-      padding-top: 30px; }
-      .telegram-content .telegram-info .telegram-info_content .telegram-info_content_title {
-        font-size: 22px; }
-      .telegram-content .telegram-info .telegram-info_content .telegram-info_content_text {
-        padding-top: 15px; }
-        .telegram-content .telegram-info .telegram-info_content .telegram-info_content_text .telegram-info_content_text_p {
-          margin-top: 10px; }
-      .telegram-content .telegram-info .telegram-info_content .subscribe-telegram-button {
-        margin-top: 30px;
-        color: white;
-        text-align: center;
-        width: 100%;
-        height: 40px;
-        background-color: #30AE63;
-        padding: 10px 0 0 10px;
-        border-radius: 3px; }
+
+.phone-img {
+  max-width: 282px;
+  max-height: 573px;
+  display: inline-block; }
+
+.telegram-info {
+  display: inline-block;
+  width: 400px;
+  height: 440px;
+  margin: 60px 0 0 95px;
+  background-color: white; }
+
+.telegram-info_header {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  margin: 40px 0 0 30px; }
+
+.telegram-info_header_title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+  padding-bottom: 50px; }
+
+.telegram-info_content {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 30px; }
+
+.telegram-info_content_title {
+  font-size: 22px; }
+
+.telegram-info_content_text {
+  padding-top: 15px; }
+
+.telegram-info_content_text_p {
+  margin-top: 10px; }
+
+.subscribe-telegram-button {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  background-color: #30AE63;
+  padding: 10px 0 0 10px;
+  border-radius: 3px; }
 
 .metrovka-slider {
   width: 848px;
@@ -330,29 +351,36 @@ input[type="checkbox"]:checked + span.check-room__5 {
 /* Header ***************/
 .project-header__header {
   display: flex; }
-  .project-header__header .project-header__menu {
-    padding-top: 25px;
-    margin-left: 40px; }
-    .project-header__header .project-header__menu .project-header__menu-item {
-      padding: 0 5px 0 5px;
-      height: 30px;
-      display: inline-block;
-      margin-right: 40px;
-      vertical-align: middle; }
-      .project-header__header .project-header__menu .project-header__menu-item .project-header__menu-item__text {
-        color: white; }
-  .project-header__header .project-header__botton-menu {
-    margin: 20px 0 0 60px; }
-    .project-header__header .project-header__botton-menu .place-advert-button {
-      width: 230px;
-      text-align: center;
-      position: relative; }
-      .project-header__header .project-header__botton-menu .place-advert-button .place-advert-button__text {
-        display: inline-block; }
-      .project-header__header .project-header__botton-menu .place-advert-button .enter-site-button {
-        width: 70px;
-        margin-left: -4px;
-        text-align: center; }
+
+.project-header__menu {
+  padding-top: 25px;
+  margin-left: 40px; }
+
+.project-header__menu-item {
+  padding: 0 5px 0 5px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 40px;
+  vertical-align: middle; }
+
+.project-header__menu-item__text {
+  color: white; }
+
+.project-header__botton-menu {
+  margin: 20px 0 0 60px; }
+
+.place-advert-button {
+  width: 230px;
+  text-align: center;
+  position: relative; }
+
+.place-advert-button__text {
+  display: inline-block; }
+
+.enter-site-button {
+  width: 70px;
+  margin-left: -4px;
+  text-align: center; }
 
 .best-proposition__header {
   width: 100%;
@@ -425,9 +453,58 @@ input[type="checkbox"]:checked + span.check-room__5 {
   color: black;
   font-size: 18px; }
 
+.footer-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 206px; }
+
+.footer-column__title {
+  font-size: 20px; }
+
+.footer-column__text {
+  display: block;
+  margin-top: 15px;
+  max-width: 180px;
+  font-size: 16px;
+  color: black; }
+
+.footer-icons, .footer-email {
+  margin-top: 15px; }
+
+.footer-adress, .footer-city {
+  margin-top: 10px; }
+
+.footer-city {
+  margin-top: 5px;
+  font-size: 12px; }
+
+.footer-button {
+  display: block;
+  margin-top: 15px;
+  width: 162px;
+  height: 40px;
+  color: white;
+  background-color: #30ae63;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 8px; }
+
+.footer-logo {
+  height: 200px;
+  width: 100%;
+  text-align: center; }
+
+.footer-logo__img {
+  width: 51px;
+  height: 47px;
+  margin-top: 60px; }
+
 /* Icons ****************/
 .header-logo {
   padding-top: 20px; }
+
+.icons {
+  display: inline-block; }
 
 .icon-plus {
   display: inline-block;
@@ -449,11 +526,30 @@ input[type="checkbox"]:checked + span.check-room__5 {
 
 .icon-telegram {
   display: inline-block;
-  top: 20px;
   width: 62px;
   height: 62px;
   margin-right: 20px;
   background: url("../images/sprite.png") no-repeat -25px -432px; }
+
+.icon-facebook {
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  background: url("../images/sprite.png") no-repeat -25px -146px; }
+
+.icon-vk {
+  display: inline-block;
+  width: 22px;
+  height: 12px;
+  margin-left: 10px;
+  background: url("../images/sprite.png") no-repeat -25px -544px; }
+
+.icon-instagram {
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  margin-left: 10px;
+  background: url("../images/sprite.png") no-repeat -25px -278px; }
 
 /*************************
 	All The States Styles

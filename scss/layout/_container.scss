@@ -4,41 +4,41 @@
 
 
 //**************************************************************
- // STYLES FOR PROJECT HEADER CONTENTAINER 
+// STYLES FOR PROJECT HEADER CONTENTAINER 
 .project-header{
 	width:100%;
 	background: url("../images/background_header.jpg") no-repeat;
 	min-height:301px;
 	color:white;
 	background-size: cover;
+}
 
-	.project-header__wrapper{
-		position:relative;
-		width: 890px;
-		margin: 0 auto;
-		border: 1px solid black;
-	}
+.project-header__wrapper{
+	position:relative;
+	width: 890px;
+	margin: 0 auto;
+	// border: 1px solid black;
 }
 //***************************************************************
 
 
 //**************************************************************
- // STYLES FOR CONTENT PROJECT CONTENTAINER 
+// STYLES FOR CONTENT PROJECT CONTENTAINER 
 .project-content{
 	width: 100%;
-	background-color: rgba(90, 104, 114, 0.08);
+	background-color: $background-color-gray;
+}
 
-	.project-content__wrapper{
-		width: 890px;
-		margin: 0 auto;
-		border: 1px solid black;
-	}
+.project-content__wrapper{
+	width: 890px;
+	margin: 0 auto;
+	// border: 1px solid black;
 }
 //**************************************************************
 
 
 //**************************************************************
- // STYLES FOR CONTENTAINER WITH ACCOMMODATION NEAR METRO
+// STYLES FOR CONTENTAINER WITH ACCOMMODATION NEAR METRO
 .project-content__accommodation-metro{
 	min-height: 295px;
 	background-color: white;
@@ -50,7 +50,7 @@
 
 
 //**************************************************************
- // STYLES FOR CONTENTAINER WITH BEST PROPOSITIONS
+// STYLES FOR CONTENTAINER WITH BEST PROPOSITIONS
 .project-content__best-proposition{
 	position: relative;
 	min-height: 384px;
@@ -61,7 +61,7 @@
 
 
 //**************************************************************
- // STYLES FOR CONTENTAINER WITH LAST ADVERB
+// STYLES FOR CONTENTAINER WITH LAST ADVERB
 .project-content__last-advert{
 	position:relative;
 	min-height: 444px;
@@ -72,12 +72,12 @@
 
 
 //**************************************************************
- // STYLES FOR CONTENTAINER WITH TELEGRAM
+// STYLES FOR CONTENTAINER WITH TELEGRAM
 .project-content__telegram{
 	min-height: 800px;
 	margin-top: 30px;
 }
- //*************************************************************
+//**************************************************************
 
 
  //**************************************************************
@@ -89,3 +89,20 @@
 	background-color: white;
 }
  //**************************************************************
+
+ //**************************************************************
+ // STYLES FOR CONTENTAINER WITH PROJECT FOOTER
+.project-footer{
+	width:100%;
+	background-color: $background-color-gray;
+}
+
+.project-footer__wrapper{
+	width: 844px;
+	margin: 0 auto;
+	padding-top: 40px;
+	// border: 1px solid black;
+}
+
+ //**************************************************************
+
