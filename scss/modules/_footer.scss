@@ -2,47 +2,6 @@
 //--Footer ----------------//
 //-------------------------//
 
-
-
-//****************************************************
- // STYLES FOR FOOTER OF BLOCK WITH BEST PROPOSITIONS
- .best-proposition__footer{
- 	@include footer-with-button;
- }
-
-.best-proposition__footer__button{
-	@include watch-footer-button;
-}
-//****************************************************
-
-
-//****************************************************
-// STYLES FOR FOOTER OF BLOCK WITH LAST ADVERT
-.last-advert__footer{
-	@include footer-with-button;
-}
-
-.last-advert__footer__button{
-	@include watch-footer-button;
-}
-
-//****************************************************
-
-
-//****************************************************
-// STYLES FOR FOOTER OF METROVKA BLOCK 
-.metrovka-footer{
-	@include footer-with-button;
-	margin-top: 40px;
-}
-
-.metrovka-footer__button{
-	@include watch-footer-button;
-}
-//****************************************************
-
-//****************************************************
-// STYLES FOR PROJECT FOOTER
 .footer-column{
 	display:inline-block;
 	vertical-align: top;
@@ -97,4 +56,5 @@
 	height: 47px;
 	margin-top:60px;
 }
-//**************************************************** 
+//**************************************************************************************************************************
+//************************************************************************************************************************** 
