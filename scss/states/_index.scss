@@ -3,30 +3,30 @@
 *************************/
 
 
-// .project-header__menu-item:hover{
-// 	border-bottom: 2px solid white;
-// }
+.project-header__menu-item:hover{
+	border-bottom: 2px solid white;
+}
 
-// // .button:hover{
-// // 	background-color: #6FCF97 !important;
-// // }
+.menu-accommodation__item:checked + span{
+	border-bottom: 2px solid $color-checked;
+}
 
-// .menu-accommodation__item:hover{
-// 	border-bottom: 2px solid #27AE60;
-// }
+.button:hover{
+	background-color: $button-color-hover;
+}
+	
+.button:active{
+	background-color: darken($button-color-green,7%);
+}
 
-// // .metrovka-footer:hover{
-// // 	@include footer-with-button-hover;
-// // }
+.button:disabled{
+	background-color: lighten($button-color-green,40%);
+}
 
-// // .last-advert__footer:hover{
-// // 	@include footer-with-button-hover;
-// // }
+.propositions:hover, .metrovka-slider__element:hover{
+	border: 2px solid $button-color-green;
+}
 
-// // .best-proposition__footer:hover{
-// // 	@include footer-with-button-hover;
-// // }
-
-// .propositions:hover{
-// 	border-bottom: 2px solid #27AE60;
-// }
+.footer-column__text:hover{
+		color:$button-color-hover;
+}

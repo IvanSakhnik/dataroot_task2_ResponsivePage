@@ -2,7 +2,6 @@
 //--Base Styles------------//
 //-------------------------//
 
-
 @import "../../fonts/styles.css";
 
 body{
@@ -16,22 +15,13 @@ a{
 	display: inline-block;
 }
 
-
-//****************************************
-// STYLES FOR MENU WITH TYPE ACCOMMODATION
-
-.menu-accommodation{
-	padding-top: 20px;
-
-	.menu-accommodation__item{
-		padding: 0 5px 0 5px;
-		height: 30px;
-		display: inline-block;
-		margin-right: 30px;
-		vertical-align: middle;
-
-		.menu-accommodation__item-text{
-			color: black;
-		}
-	}
+input[type="submit"]{
+	border-radius: 2px;
+	border: none;
 }
+
+input[type="checkbox"]{
+	display: none;
+} 
+
+

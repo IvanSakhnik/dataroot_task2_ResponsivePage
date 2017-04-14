@@ -19,6 +19,8 @@
 .propositions{
 	display: inline-block;
 	margin-right: 8px;
+	border: 2px solid transparent;
+	cursor: pointer;
 }
 
 .proposition-photo{
@@ -47,6 +49,10 @@
 	@include vertical-dots;
 }
 
+.sub-menu{
+	@include sub-menu;
+}
+
 .price{
 	position:relative;
 	width: 150px;
@@ -55,17 +61,18 @@
 
 .price-text{
 	display: inline-block;
+	font-size: 16px;
 }
 
 .flat-description{
 	margin-top: 5px;
 	color: #8C9BA5;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .flat-location{
 	margin-top: 10px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .red-circle{
