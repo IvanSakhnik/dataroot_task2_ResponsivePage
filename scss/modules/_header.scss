@@ -34,11 +34,7 @@
 }
 
 .project-header__menu :last-child .project-header__menu-item__text:before{
-	content: "...";
-	margin-right: 7px;
-	font-size: 30px;
-	position: relative;
-	top: -4px;
+	@include horizontal-dots;
 }
 
 .project-header__botton-menu{
@@ -170,6 +166,10 @@ input[type="checkbox"]:checked + span{
 
 .rent-header__menu-item{
 	@extend .project-header__menu-item;
+}
+
+.rent-header__menu :last-child .rent-header__menu-item__text:before{
+	@include horizontal-dots;
 }
 
 .rent-header__menu-item__text{
