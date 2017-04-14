@@ -26,3 +26,134 @@
 	max-height: 212px;
 	margin-left: 80px;
 }
+
+//****************************************************************************************
+//****************************************************************************************
+//STYLES FOR CONTENT OF RENT PAGE
+
+.nav-item{
+	display: inline-block;
+	color: black;
+	color: $color-blue;
+}
+
+.nav-item:hover{
+	color: darken($color-blue, 20%);
+}
+
+.nav-item:before{
+	content:"/ "
+}
+
+.nav-item:first-child:before{
+	content:""
+}
+
+.rent-title{
+	font-size: 22px;
+	padding: 17px 0;
+}
+
+.rent-variants{
+	color:$color-text-gray;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.variants-quantity, .variants-sort, .currency{
+	display: inline-block;
+}
+
+.variants-sort{
+	margin-left: 490px;
+	width: 140px;
+	padding-left: 5px;
+	background: url("../images/rent_sprite.png") no-repeat 86px -21px;
+}
+
+.currency{
+	width: 100px;
+	padding-left: 10px;
+	background: url("../images/rent_sprite.png") no-repeat 50px -21px;
+}
+
+.rent-proposition{
+	width: 890px;
+	height: 258px;
+	background-color: white;
+	margin-top: 23px;
+}
+
+.rent-proposition__content{
+	padding: 11px 0 0 19px;
+	border: 1px solid black;
+	height: 196px;
+}
+
+.proposition-img, .proposition-info, .proposition-summary{
+	display:inline-block;
+}
+
+.proposition-img{
+	max-width: 242px;
+	width: 100%;
+	height: 170px;
+	background: url("../images/rent_flat1.jpg") no-repeat 0 0;
+}
+
+.proposition-info{
+	max-width: 320px;
+	width: 100%;
+	height: 196px;
+	padding:4px 0 0 17px;
+	vertical-align: top;
+}
+
+.proposition-title{
+	font-size: 17px;
+	color: $color-blue;
+}
+
+.proposition-location{
+	padding-top: 10px;
+}
+
+.transport-location{
+	display:inline-block;
+	font-size: 14px;
+}
+
+.commute-time{
+	display:inline-block;
+	color:$color-text-gray;
+	font-size: 13px;
+	padding-left: 15px;
+}
+
+.green-circle{
+	display:inline-block;
+	color: $color-green-circle;
+}
+
+.metro-station{
+	display:inline-block;
+	padding-left: 3px;
+	font-size: 13px;
+}
+
+.features-title{
+	padding-top: 23px;
+	font-size: 13px;
+	color:$color-text-gray;
+}
+
+.features-short-description{
+	font-size: 13px;
+	padding-top:10px;
+}
+
+.features-full-description{
+	padding-top: 21px;
+	font-size: 13.5px;
+	line-height: 1.3;
+}

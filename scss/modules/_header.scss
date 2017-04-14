@@ -9,6 +9,10 @@
 	display: flex;
 }
 
+.header-logo{
+	padding-top: 20px;
+}
+
 .project-header__menu{
 	padding-top: 25px;
 	margin-left:40px;
@@ -34,10 +38,6 @@
 	line-height: 17px;
 	width:303px;
 }
-
-// .project-header__content{
-// 	margin-top: 40px;
-// }
 
 .project-header__tittle{
 	color:white;
@@ -135,6 +135,33 @@ input[type="checkbox"]:checked + span{
 	background: white;
 }
 
-//*****************************************************
-//******************************************************
+//**********************************************************************************************
+//**********************************************************************************************
+//STYLES FOR RENT PAGE
 
+.rent-header__header{
+	display: flex;
+	// padding: 10px;
+}
+
+.rent-logo{
+	padding-top: 12px;
+}
+
+.rent-header__menu{
+	padding-top: 17px;
+	margin-left:40px;
+}
+
+.rent-header__menu-item{
+	@extend .project-header__menu-item;
+}
+
+.rent-header__menu-item__text{
+	color:white;
+}
+
+.rent-header__botton-menu{
+	@extend .project-header__botton-menu;
+	margin: 10px 0 0 92px;
+}
