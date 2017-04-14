@@ -1,4 +1,6 @@
-
+//-------------------------//
+//--Button Styles----------//
+//-------------------------//
 
 .best-proposition__footer__button{
 	@include watch-footer-button;
@@ -11,7 +13,6 @@
 .metrovka-footer__button{
 	@include watch-footer-button;
 }
-
 
 .button{
 	display:inline-block;
@@ -35,7 +36,7 @@
 	background-color: lighten($button-color-green,40%);
 }
 
-.subscribe-telegram-button{
+.transition-button{
 	margin-top: 30px;
 	max-width: 320px;
 	padding: 10px 0 0 10px;
@@ -56,23 +57,17 @@
 	margin-left: 5px;
 }
 
-.place-advert-button{
-	width: 236px;
-	margin-left: 15px;
-
-	// &__text{
-	// 	display:inline-block;
-	// }
+.call-form-button{
+	width: 236px; 
 }
 
-.enter-site-button{
+.button-interaction-site{
 	width: 50px;
 	margin-left: -5px;
 	padding-left: 6px;
 }
 
-.button-go-to-search{
-	margin: 30px 0 0 43px;
+.form-button{
 	background: white;
 	width: 200px;
 	height: 40px;

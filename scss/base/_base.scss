@@ -1,13 +1,19 @@
 //-------------------------//
-//--Base Styles-------_----//
+//--Base Styles------------//
 //-------------------------//
 
-@import "../../fonts/stylesheet.css";
+
+@import "../../fonts/styles.css";
 
 body{
-	font-family: 'open_sans';
-  	font-weight: 300;
+	font-family: 'open_sans', sans-serif;
+  	font-weight: normal;
     font-style: normal;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
 }
 
 

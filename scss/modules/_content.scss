@@ -2,13 +2,20 @@
 // //--Content ---------------//
 // //-------------------------//
 
-
+/* Content best proposition *******************/
 @import "content/best_propositions";
+
+/* Content last advert ************************/
 @import "content/last_advert";
+
+/* Content telegram ***************************/
 @import "content/telegram";
+
+/* Content metrovka ***************************/
 @import "content/metrovka";
 
 
+/* Content choose accommodation ***************/
 .content-choose-accommodation{
  	max-width: 300px;
  	text-align: center;
