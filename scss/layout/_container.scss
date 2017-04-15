@@ -102,13 +102,13 @@
 //STYLES FOR RENT PAGE CONTAINERS
 
 .rent-wrapper{
-	width: 1400px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 //**************************************************************
 .rent-header{
-	min-width: 1400px;
+	// min-width: 1400px;
 	width:100%;
 	background: $button-color-green;
 	min-height:60px;
@@ -117,14 +117,14 @@
 }
 
 .rent-header__wrapper{
-	width: 891px;
+	max-width: 891px;
 }
 
  //*************************************************************
 
 .rent-content{
 	padding: 20px 0 0 16px;
-	min-width: 1400px;
+	// min-width: 1400px;
 	width: 100%;
 	background-color: $background-color-gray;
 }
@@ -150,13 +150,17 @@
 	margin-left: 10px;
 	width: 449px;
 	height: 799px;
+	iframe{
+			width: 449px;
+			height: 799px;
+		}
 }
 
 //**************************************************************
 
 .rent-footer{
-	min-width: 1400px;
-	width:100%;
+	// min-width: 1400px;
+	width: 100%;
 	background-color: $background-color-gray;
 }
 

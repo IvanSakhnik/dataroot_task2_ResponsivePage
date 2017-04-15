@@ -1,3 +1,134 @@
 //-------------------------//
 //--Responsive ------------//
 //-------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//**********************************************************************
+//**********************************************************************
+//MEDIA QUERY FOR RENT PAGE
+
+// @media screen and (min-width: 1280px) {
+// 	.google-map{
+// 		overflow:hidden;
+// 		width: 25%;
+// 		height: 50%;
+// 	}
+// }
+
+// @media screen and (max-width: 890px) {
+// 	.google-map{
+// 		display: none;
+// }
+
+@media screen and (max-width: 360px) {
+	.google-map{
+		display: none;
+	}
+
+	.rent-header{
+		padding-left: 6px;}
+
+	.rent-header__wrapper{
+		max-width: 96%;}
+
+	.rent-header__menu, .rent-header__botton-menu{
+		display:none;}
+	
+	.rent-nav-container{
+		padding-left: 16px;
+	}
+
+	.rent-nav-container{
+		max-width: 100%;}
+
+	.nav-item{
+		display: none;}
+
+	.nav-main{
+		display: inline;
+		font-size: 0.875em;
+		line-height: 1.068125em;
+		color: $color-blue;}
+
+	.rent-title{
+		font-size: 1em;}
+
+	.variants-quantity, .variants-sort, .currency,
+	.rent-proposition-img, .rent-proposition-info,
+	.rent-proposition-summary, .rent-proposition__footer__switches,
+	.rent-proposition__footer, .rent-proposition__footer__button{
+		display: block;
+	}
+	
+	.rent-content{
+		padding-left: 0px;
+	}
+
+	.rent-proposition{
+		width: 360px;
+		height: 650px;
+	}
+
+	.rent-proposition-img{
+		padding: 10px;
+		max-width: 325px;
+		height: 228px;
+		background-size: cover;
+		// border: 1px solid black;
+	}
+	
+	.rent-proposition-info{
+		width: 320px;
+		height: 196px;
+		padding:20px 0 0 0;
+	}
+
+	.proposition-title{
+		margin-left: 0;
+
+	}
+
+	.rent-proposition-summary{
+		margin-top: 20px;
+		max-width: 320px;
+		height: 80px;
+		text-align: left;
+		border: 1px solid black;
+	}
+
+	.rent-price, .rent-price-dollars, .rent-price-currrency{
+		display: inline-block;
+	}
+	
+	.rent-price-currrency{
+		margin-left: 80px;
+	}
+
+	.dollars-curs{
+		display: none;
+	}
+
+	.estimate-price, .call-button, .massage-button{
+		display: inline-block;
+		// vertical-align: bottom;
+		height: 32px;
+		margin: 10px 0 0 0;
+	}
+
+	.call-button,{
+		margin-left: 0;
+	}
+
+}
