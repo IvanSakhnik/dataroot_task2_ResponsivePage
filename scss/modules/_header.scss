@@ -141,11 +141,6 @@
 	color:white;
 }
 
-.rent-header__botton-menu{
-	@extend .project-header__botton-menu;
-	margin: 14px 0 0 104px;
-}
-
 .rent-header__menu-item__sub-menu{
 	@include header-sub-menu;
 	background-color: $button-color-green;

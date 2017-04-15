@@ -922,9 +922,6 @@ input[type="checkbox"] {
 .rent-header__menu-item__text {
   color: white; }
 
-.rent-header__botton-menu {
-  margin: 14px 0 0 104px; }
-
 .rent-header__menu-item__sub-menu {
   position: absolute;
   display: none;
@@ -1029,6 +1026,12 @@ input[type="checkbox"] {
   height: 18px;
   margin-left: 10px;
   background: url("../images/sprite.png") no-repeat -25px -278px; }
+
+.icon-menu {
+  display: none;
+  width: 22px;
+  height: 11px;
+  background: url("../images/sprite.png") no-repeat -25px -738px; }
 
 /*************************
 	All The States Styles
@@ -1211,7 +1214,10 @@ input[type="checkbox"] {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px; }
-  .project-header__menu, .rent-header__menu, .project-header__botton-menu, .rent-header__botton-menu {
+  .icon-menu {
+    display: block;
+    margin: 30px 0 0 270px; }
+  .project-header__menu, .rent-header__menu {
     display: none; }
   .project-header__tittle {
     padding-top: 40px; }
@@ -1280,7 +1286,7 @@ input[type="checkbox"] {
     padding-left: 6px; }
   .rent-header__wrapper {
     max-width: 96%; }
-  .rent-header__menu, .rent-header__botton-menu {
+  .rent-header__menu {
     display: none; }
   .rent-nav-container {
     padding-left: 16px; }
