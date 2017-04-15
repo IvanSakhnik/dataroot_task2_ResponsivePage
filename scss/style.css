@@ -47,8 +47,7 @@
 .best-proposition__footer__button {
   color: black;
   font-size: 1em;
-  position: absolute;
-  bottom: 0px;
+  margin-top: 20px;
   width: 100%;
   height: 40px;
   padding-top: 9px;
@@ -62,8 +61,7 @@
 .last-advert__footer__button {
   color: black;
   font-size: 1em;
-  position: absolute;
-  bottom: 0px;
+  margin-top: 20px;
   width: 100%;
   height: 40px;
   padding-top: 9px;
@@ -77,8 +75,7 @@
 .metrovka-footer__button {
   color: black;
   font-size: 1em;
-  position: absolute;
-  bottom: 0px;
+  margin-top: 20px;
   width: 100%;
   height: 40px;
   padding-top: 9px;
@@ -263,128 +260,6 @@ input[type="submit"] {
 input[type="checkbox"] {
   display: none; }
 
-/*************************
-	All The Layout Styles
-*************************/
-/* Container ************/
-.project-header {
-  width: 100%;
-  background: url("../images/background_header.jpg") no-repeat;
-  min-height: 301px;
-  color: white;
-  background-size: cover; }
-
-.project-header__wrapper {
-  position: relative;
-  max-width: 890px;
-  margin: 0 auto; }
-
-.project-content {
-  width: 100%;
-  padding-top: 20px;
-  background-color: rgba(90, 104, 114, 0.08); }
-
-.project-content__wrapper {
-  max-width: 890px;
-  margin: 0 auto; }
-
-.container {
-  background-color: white;
-  margin-top: 20px; }
-
-.project-content__accommodation-metro {
-  min-height: 295px;
-  background-color: white;
-  padding: 50px 0 0 40px;
-  display: flex; }
-
-.project-content__best-proposition {
-  position: relative;
-  min-height: 384px; }
-
-.project-content__last-advert {
-  position: relative;
-  min-height: 444px; }
-
-.project-content__telegram {
-  min-height: 800px;
-  margin-top: 20px; }
-
-.project-content__metrovka {
-  position: relative;
-  min-height: 518px; }
-
-.project-footer {
-  width: 100%;
-  background-color: rgba(90, 104, 114, 0.08); }
-
-.project-footer__wrapper {
-  max-width: 844px;
-  padding-top: 40px;
-  margin: 0 auto; }
-
-.rent-wrapper {
-  width: 1400px;
-  margin: 0 auto; }
-
-.rent-header {
-  min-width: 1400px;
-  width: 100%;
-  background: #30ae63;
-  min-height: 60px;
-  color: white;
-  padding-left: 16px; }
-
-.rent-header__wrapper {
-  width: 891px; }
-
-.rent-content {
-  padding: 20px 0 0 16px;
-  min-width: 1400px;
-  width: 100%;
-  background-color: rgba(90, 104, 114, 0.08); }
-
-.rent-content__wrapper {
-  width: 100%; }
-
-.rent-blocks-container {
-  padding-top: 13px;
-  width: 100%; }
-
-.rent-proposition__container {
-  display: inline-block;
-  vertical-align: top;
-  width: 891px; }
-
-.google-map {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 10px;
-  width: 449px;
-  height: 799px; }
-
-.rent-footer {
-  min-width: 1400px;
-  width: 100%;
-  background-color: rgba(90, 104, 114, 0.08); }
-
-.rent-footer__wrapper {
-  max-width: 844px;
-  padding-top: 7px;
-  margin-left: 42px; }
-
-/* Responsive ***********/
-@media screen and (max-width: 360px) {
-  .footer-column {
-    display: block;
-    width: 360px;
-    background-color: red;
-    color: blue; }
-  .footer-column__text {
-    max-width: 300px;
-    border: 1px solid black; } }
-
-/* Tools ****************/
 /*************************
 	All The Modules Styles
 *************************/
@@ -1200,3 +1075,113 @@ input[type="checkbox"] {
 
 .rent-proposition__footer__button:active {
   border-color: rgba(0, 0, 0, 0.6); }
+
+/*************************
+	All The Layout Styles
+*************************/
+/* Container ************/
+.project-header {
+  width: 100%;
+  background: url("../images/background_header.jpg") no-repeat;
+  min-height: 301px;
+  color: white;
+  background-size: cover; }
+
+.project-header__wrapper {
+  position: relative;
+  max-width: 890px;
+  margin: 0 auto; }
+
+.project-content {
+  width: 100%;
+  padding-top: 20px;
+  background-color: rgba(90, 104, 114, 0.08); }
+
+.project-content__wrapper {
+  max-width: 890px;
+  margin: 0 auto; }
+
+.container {
+  background-color: white;
+  margin-top: 20px; }
+
+.project-content__accommodation-metro {
+  min-height: 295px;
+  background-color: white;
+  padding: 50px 0 0 40px;
+  display: flex; }
+
+.project-content__best-proposition {
+  position: relative; }
+
+.project-content__last-advert {
+  position: relative; }
+
+.project-content__telegram {
+  margin-top: 20px; }
+
+.project-content__metrovka {
+  position: relative; }
+
+.project-footer {
+  width: 100%;
+  background-color: rgba(90, 104, 114, 0.08); }
+
+.project-footer__wrapper {
+  max-width: 844px;
+  width: 100%;
+  padding-top: 40px;
+  margin: 0 auto; }
+
+.rent-wrapper {
+  width: 1400px;
+  margin: 0 auto; }
+
+.rent-header {
+  min-width: 1400px;
+  width: 100%;
+  background: #30ae63;
+  min-height: 60px;
+  color: white;
+  padding-left: 16px; }
+
+.rent-header__wrapper {
+  width: 891px; }
+
+.rent-content {
+  padding: 20px 0 0 16px;
+  min-width: 1400px;
+  width: 100%;
+  background-color: rgba(90, 104, 114, 0.08); }
+
+.rent-content__wrapper {
+  width: 100%; }
+
+.rent-blocks-container {
+  padding-top: 13px;
+  width: 100%; }
+
+.rent-proposition__container {
+  display: inline-block;
+  vertical-align: top;
+  width: 891px; }
+
+.google-map {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  width: 449px;
+  height: 799px; }
+
+.rent-footer {
+  min-width: 1400px;
+  width: 100%;
+  background-color: rgba(90, 104, 114, 0.08); }
+
+.rent-footer__wrapper {
+  max-width: 844px;
+  padding-top: 7px;
+  margin-left: 42px; }
+
+/* Responsive ***********/
+/* Tools ****************/
