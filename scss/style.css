@@ -1297,13 +1297,17 @@ input[type="checkbox"] {
     font-size: 1em; }
   .rent-variants {
     width: 340px; }
-  .variants-quantity, .variants-sort, .currency,
+  .variants-quantity,
   .rent-proposition-img, .rent-proposition-info,
   .rent-proposition-summary, .rent-proposition__footer__switches,
   .rent-proposition__footer, .rent-proposition__footer__button {
     display: block; }
+  .variants-sort, .currency {
+    display: inline-block;
+    margin: 0; }
   .rent-content {
-    padding-left: 0px; }
+    padding-left: 0px;
+    width: 100%; }
   .rent-proposition {
     width: 360px;
     height: 650px; }
@@ -1344,8 +1348,7 @@ input[type="checkbox"] {
     width: 315px;
     height: 40px;
     margin: 0 auto;
-    margin-top: 370px;
-    border: 1px solid black; }
+    margin-top: 370px; }
   .rent-proposition__footer__switches {
     text-align: center;
     width: 150px;
@@ -1355,14 +1358,27 @@ input[type="checkbox"] {
     vertical-align: top;
     width: 140px;
     height: 20px;
-    margin: 0 0 20px 150px;
-    border: 2px solid black; }
+    margin: 0 0 20px 150px; }
   .next-section {
     width: 115px;
-    margin: 8px 0 0 20px; }
+    margin: -27px 0 0 20px; }
   .next-section-theme {
     width: 100px;
     margin: 7px 0 0 20px;
-    color: rgba(0, 0, 0, 0.6); } }
+    color: rgba(0, 0, 0, 0.6); }
+  .footer-column {
+    width: 100%; }
+  .form-button-place {
+    margin: 20px 0 15px 0; }
+  .footer-adress, .footer-city, .footer-column__title, .footer-column__text {
+    text-align: center;
+    margin-left: 25%;
+    width: 110px; }
+  .footer-column__title {
+    padding: 20px 0 10px 0; }
+  .footer-icons, .footer-email {
+    margin: 15px 100px; }
+  .footer-button {
+    margin-left: 22%; } }
 
 /* Tools ****************/
