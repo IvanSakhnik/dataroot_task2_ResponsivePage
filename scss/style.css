@@ -1186,7 +1186,7 @@ input[type="checkbox"] {
   margin-left: 42px; }
 
 /* Responsive ***********/
-@media screen and (max-width: 361px) {
+@media screen and (min-width: 361px) and (max-width: 890px) {
   .project-header__wrapper {
     position: relative;
     width: 100%;
