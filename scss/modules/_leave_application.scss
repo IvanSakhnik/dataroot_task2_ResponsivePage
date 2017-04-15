@@ -1,0 +1,41 @@
+//-------------------------//
+//--Leave Application -----//
+//-------------------------//
+
+.application-wrapper{
+	width: 800px;
+	min-height: 484px;
+	margin: 70px auto;
+	display: flex;
+	border: 1px solid $color-border-form;
+	border-top: 5px solid $button-color-green;
+}
+
+.application-left{
+	width: 400px;
+	padding: 40px;
+	background: $background-color-gray;
+}
+
+.application-left__title{
+	@include title;
+}
+
+.application-left__text{
+	padding-top: 40px;
+	font-size: 14px;
+	line-height: 20px;
+	width: 320px;
+	min-height: 96px;
+}
+
+.application-right{
+	padding: 40px;
+}
+
+.choose-location-or-metro{
+	@extend .choose_location;
+	width: 346px;
+	padding: 10px 0 10px 20px;
+	font-size: 15px;
+}

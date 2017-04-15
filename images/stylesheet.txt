@@ -28,7 +28,7 @@
     background-position: -25px -214px;
 }
 
-.sprite-insta {
+.sprite-instagram {
     width: 17px;
     height: 18px;
     background-position: -25px -278px;
@@ -62,4 +62,16 @@
     width: 16px;
     height: 16px;
     background-position: -25px -672px;
+}
+
+.sprite-z-lines {
+    width: 22px;
+    height: 11px;
+    background-position: -25px -738px;
+}
+
+.sprite-z-x {
+    width: 10px;
+    height: 10px;
+    background-position: -25px -799px;
 }

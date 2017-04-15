@@ -18,40 +18,20 @@
 	width:100%;
 	height: 100%;
 	cursor: pointer;
-	background: url("../images/checkbox/sprite_checkbox.png") no-repeat;
-	&.check-room__1{
-		background-position: -395px -15px;
-	}
-	&.check-room__2{
-		background-position: -467px -15px;
-	}
-	&.check-room__3{
-		background-position: -539px -15px
-	}
-	&.check-room__4{
-		background-position: -611px -15px;
-	}
-	&.check-room__5{
-		background-position: -683px -15px;
-	}
+	border: 2px solid $color-border-form;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
 }
 
 .check-room__item:checked + span{
-	&.check-room__1{
-		background-position: -15px -15px;
-	}
-	&.check-room__2{
-		background-position: -91px -15px;
-	}
-	&.check-room__3{
-		background-position: -167px -15px;
-	}
-	&.check-room__4{
-		background-position: -243px -15px;
-	}
-	&.check-room__5{
-		background-position: -319px -15px;
-	}
+	background: white;
+	color: black;
+}
+
+.application-right__form .check-room__item:checked + span{
+	background: $button-color-green;
+	color: white;
 }
 
 .menu-accommodation{
