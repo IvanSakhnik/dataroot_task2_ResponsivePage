@@ -59,10 +59,9 @@
 	}
 }
 
-
 @mixin sub-menu{
 	left: -130px;
-	top: 40px;
+	top: 35px;
 	display: none;
 	width:160px;
 	z-index:10;
@@ -74,14 +73,14 @@
     &::before, &::after {
 	    content: ''; 
 	    position: absolute;
-	    left: 128px; 
-	    bottom: 172px;
+	    left: 129px; 
+	    bottom: 155px;
 	    border: 10px solid transparent;
 	    border-bottom: 10px solid $color-border-form;
     }
     &::after {
 	    border-bottom: 10px solid white;
-	    bottom: 172px; 
+	    bottom: 155px; 
     }
 
 	& :last-child{

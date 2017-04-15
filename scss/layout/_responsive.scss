@@ -1,36 +1,122 @@
 //-------------------------//
 //--Responsive ------------//
 //-------------------------//
+@media screen and (max-width: 361px){
+	.project-header__wrapper{
+		position:relative;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.project-header__menu, .project-header__botton-menu{
+		display: none;
+	}
+
+	.project-header__tittle{
+		padding-top: 40px;
+	}
+
+	.project-header__form{
+		display: block;
+	}
+
+	.choose_city{
+		width: 312px;
+		background: white url("../images/sprite.png") no-repeat 252px -8px;
+		option{
+			width: 312px;
+		}
+	}
+
+	.choose-room{
+		margin: 20px 0 0 0;
+	}
+
+	.project-content__accommodation-metro{
+		position: relative;
+		display: block;
+		padding: 15px;
+		.metro-img{
+			width: 80%;
+			height: 110%;
+			position: absolute;
+			top: 20px;
+			left: -40px;
+		}
+		.content-choose-accommodation{
+			padding-top: 250px;
+			margin: 0 auto;
+		}
+		.menu-accommodation{
+			text-align: center;
+		}
+	}
+	
+	.project-content__best-proposition{
+		overflow: hidden;
+	}
+
+	.project-content__last-advert{
+		overflow: hidden;
+		.menu-accommodation-place{
+			text-align: center;
+			margin: 0;
+			padding: 20px;
+		}
+	}
+
+	.telegram-header__text{
+		width: 290px;
+	}
+
+	.telegram-info{
+		margin-left: -111px;
+		width: 360px;
+		padding-left: 20px;
+	}
+
+	.telegram-content .phone-img{
+		display: none;
+	}
+	
+	.metrovka-slider__element{
+		margin-left: 40px;
+		margin-bottom: 20px;
+	}
+
+	.footer-column{
+		width:100%;
+	}
+
+	.form-button-place{
+		margin: 20px 0 20px 0;
+	}
+	
+	.footer-adress, .footer-city, .footer-column__title, .footer-column__text{
+		text-align: center;
+		margin: 0 auto;
+		width: 110px;
+	}
+	
+	.footer-column__title{
+		padding: 20px 0 10px 0;
+	}
+
+	.footer-icons, .footer-email{
+		margin: 15px 130px;
+	}
+
+	.footer-button{
+		margin: 0 auto;
+	}
+} 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-//**********************************************************************
-//**********************************************************************
-//MEDIA QUERY FOR RENT PAGE
-
-// @media screen and (min-width: 1280px) {
-// 	.google-map{
-// 		overflow:hidden;
-// 		width: 25%;
-// 		height: 50%;
-// 	}
-// }
-
-// @media screen and (max-width: 890px) {
-// 	.google-map{
-// 		display: none;
-// }
+//**********************************************************
+//**********************************************************
+//MEDIA QUERE FOR RENT PAGE
 
 @media screen and (max-width: 360px) {
 	.google-map{
@@ -65,6 +151,11 @@
 	.rent-title{
 		font-size: 1em;}
 
+	
+	.rent-variants{
+		width: 340px;
+	}
+
 	.variants-quantity, .variants-sort, .currency,
 	.rent-proposition-img, .rent-proposition-info,
 	.rent-proposition-summary, .rent-proposition__footer__switches,
@@ -86,7 +177,6 @@
 		max-width: 325px;
 		height: 228px;
 		background-size: cover;
-		// border: 1px solid black;
 	}
 	
 	.rent-proposition-info{
@@ -104,8 +194,8 @@
 		margin-top: 20px;
 		max-width: 320px;
 		height: 80px;
+		padding:0;
 		text-align: left;
-		border: 1px solid black;
 	}
 
 	.rent-price, .rent-price-dollars, .rent-price-currrency{
@@ -120,15 +210,53 @@
 		display: none;
 	}
 
-	.estimate-price, .call-button, .massage-button{
+	.estimate-price, 
+	.connection-buttons{
 		display: inline-block;
-		// vertical-align: bottom;
-		height: 32px;
-		margin: 10px 0 0 0;
+		height: 36px;
+		margin: 18px 0 0 0;
 	}
 
-	.call-button,{
-		margin-left: 0;
+	.estimate-price{
+		position:relative;
+		top:-12px;
 	}
 
+	.connection-buttons{
+		margin-left: 15px;
+	}
+
+	.rent-proposition__footer{
+		width: 315px;
+		height: 40px;
+		margin: 0 auto;
+		margin-top: 370px;
+		border: 1px solid black;
+	}
+
+	.rent-proposition__footer__switches{
+		text-align: center;
+		width: 150px;
+		height: 30px;
+		padding: 10px 0 0 0;
+	}
+
+	.rent-proposition__footer__button{
+		vertical-align: top;
+		width: 140px;
+		height: 20px;
+		margin: 0 0 20px 150px;
+		border: 2px solid black;
+	}
+
+	.next-section{
+		width: 115px;
+		margin:8px 0 0 20px;
+	}
+
+	.next-section-theme{
+		width: 100px;
+		margin:7px 0 0 20px;
+		color: $color-text-darkgray;
+	}
 }
