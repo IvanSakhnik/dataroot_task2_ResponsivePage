@@ -14,8 +14,14 @@
 	color: $color-blue;
 }
 
-.nav-item:before{
-	content:" / "
+.nav-main{
+	display:none;
+}
+
+.nav-item:nth-child(3), .nav-item:nth-child(4){
+	&:before{
+		content:" / ";
+	}
 }
 
 .nav-item:first-child:before{
@@ -88,6 +94,7 @@
 	padding:6px 0 0 17px;
 	vertical-align: top;
 }
+
 
 .rent-proposition-summary{
 	max-width: 260px;
@@ -175,6 +182,10 @@
 	91px -199px;
  }
 
+ .connection-buttons{
+ 	margin-top: 18px;
+ }
+
  .red-price{
  	background-color: $rent-red-price-background;
 	color: $rent-red-price-text;
@@ -183,12 +194,6 @@
  .green-price{
 	background-color: $rent-green-price-background;
 	color: $rent-green-price-text;
- }
-
- .connection-buttons{
- 	padding-top: 18px;
- 	margin-left: 85px;
- 	width: 160px;
  }
 
 .rent-proposition__footer{

@@ -85,12 +85,17 @@
  }
 
  .call-button{
+ 	width: 71px;
+ 	display: inline-block;
+ 	// margin-top: 18px;
  	border: 2px solid $border-call-button;
  	background: url("../images/rent_sprite.png") no-repeat 2px -269px;
  }
 
 .massage-button{
-	margin-left: 1px;
+	width: 71px;
+	display: inline-block;
+	// margin-top: 18px;
 	border: 2px solid $border-massage-button;
 	background: url("../images/rent_sprite.png") no-repeat 1px -133px;
 }
