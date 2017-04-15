@@ -276,7 +276,7 @@ input[type="checkbox"] {
 
 .project-header__wrapper {
   position: relative;
-  width: 890px;
+  max-width: 890px;
   margin: 0 auto; }
 
 .project-content {
@@ -285,7 +285,7 @@ input[type="checkbox"] {
   background-color: rgba(90, 104, 114, 0.08); }
 
 .project-content__wrapper {
-  width: 890px;
+  max-width: 890px;
   margin: 0 auto; }
 
 .container {
@@ -319,7 +319,7 @@ input[type="checkbox"] {
   background-color: rgba(90, 104, 114, 0.08); }
 
 .project-footer__wrapper {
-  width: 844px;
+  max-width: 844px;
   padding-top: 40px;
   margin: 0 auto; }
 
