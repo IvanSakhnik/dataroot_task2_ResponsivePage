@@ -17,7 +17,7 @@
 	}
 	
 	&:active{
-		background-color: darken($button-color-green,7%);
+		background-color: darken($button-color-green, 7%);
 	}
 
 	&:disabled{
@@ -30,7 +30,7 @@
 }
 
 .footer-column__text:hover{
-		color:$button-color-hover;
+	color:$button-color-hover;
 }
 
 
