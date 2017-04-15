@@ -2,16 +2,22 @@
 //--Responsive ------------//
 //-------------------------//
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 361px){
 	.footer-column{
-		display:block;
-		width: 360px;
-		background-color: red;
-		color:blue;
+		//background-color: red;
+		border: 1px solid black;
+		width:360px;
 	}
 
-	.footer-column__text{
-		max-width: 300px;
+
+	.footer-adress, .footer-city, .footer-column__title, .footer-column__text{
 		border: 1px solid black;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+
+	.telegram-content .phone-img{
+		display: none;
 	}
 }
