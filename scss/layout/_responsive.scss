@@ -1,3 +1,17 @@
 //-------------------------//
 //--Responsive ------------//
 //-------------------------//
+
+@media screen and (max-width: 360px){
+	.footer-column{
+		display:block;
+		width: 360px;
+		background-color: red;
+		color:blue;
+	}
+
+	.footer-column__text{
+		max-width: 300px;
+		border: 1px solid black;
+	}
+}

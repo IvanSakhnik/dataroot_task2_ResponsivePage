@@ -276,7 +276,7 @@ input[type="checkbox"] {
 
 .project-header__wrapper {
   position: relative;
-  width: 890px;
+  max-width: 890px;
   margin: 0 auto; }
 
 .project-content {
@@ -285,7 +285,7 @@ input[type="checkbox"] {
   background-color: rgba(90, 104, 114, 0.08); }
 
 .project-content__wrapper {
-  width: 890px;
+  max-width: 890px;
   margin: 0 auto; }
 
 .container {
@@ -319,7 +319,7 @@ input[type="checkbox"] {
   background-color: rgba(90, 104, 114, 0.08); }
 
 .project-footer__wrapper {
-  width: 844px;
+  max-width: 844px;
   padding-top: 40px;
   margin: 0 auto; }
 
@@ -369,11 +369,21 @@ input[type="checkbox"] {
   background-color: rgba(90, 104, 114, 0.08); }
 
 .rent-footer__wrapper {
-  width: 844px;
+  max-width: 844px;
   padding-top: 7px;
   margin-left: 42px; }
 
 /* Responsive ***********/
+@media screen and (max-width: 360px) {
+  .footer-column {
+    display: block;
+    width: 360px;
+    background-color: red;
+    color: blue; }
+  .footer-column__text {
+    max-width: 300px;
+    border: 1px solid black; } }
+
 /* Tools ****************/
 /*************************
 	All The Modules Styles
@@ -600,7 +610,7 @@ input[type="checkbox"] {
   margin: 0 auto; }
 
 .metrovka-slider {
-  width: 848px;
+  max-width: 848px;
   margin: 0 auto;
   padding-top: 20px; }
 
