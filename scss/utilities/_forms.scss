@@ -21,7 +21,7 @@
 	border: 2px solid $color-border-form;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 40px;
+	line-height: 2.5em;
 }
 
 .check-room__item:checked + span{
@@ -35,7 +35,7 @@
 }
 
 .menu-accommodation{
-	font-size: 14px;
+	font-size: 0.875em;
 	padding: 15px 0 0 7px;
 	span{
 		display: inline-block;

@@ -21,9 +21,9 @@
 .project-header__menu-item{
 	padding: 0 5px 0 5px;
 	height: 30px;
-	font-size: 14px;
+	font-size: 0.875em;
 	position: relative;
-	line-height: 20px;
+	line-height: 1.25em;
 	display: inline-block;
 	margin-right: 35px;
 	border-bottom: 2px solid transparent;
@@ -47,14 +47,14 @@
 
 .project-header__botton-menu{
 	margin: 23px 0 0 70px;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 0.875em;
+	line-height: 1.0625em;
 	max-width:290px;
 }
 
 .project-header__tittle{
 	color:white;
-	font-size: 32px;
+	font-size: 2em;
 	padding-top: 60px;
 	min-height: 90px;
 }
@@ -89,7 +89,7 @@
 	margin-right: 20px;
 	width: 346px;
 	padding: 10px 0 10px 20px;
-	font-size: 15px;
+	font-size: 0.9375em;
 }
 
 .form-button-place{
