@@ -3,21 +3,112 @@
 //-------------------------//
 
 @media screen and (max-width: 361px){
-	.footer-column{
-		//background-color: red;
-		border: 1px solid black;
-		width:360px;
+	.project-header__wrapper{
+		position:relative;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
-
-	.footer-adress, .footer-city, .footer-column__title, .footer-column__text{
-		border: 1px solid black;
-		text-align: center;
-		margin: 0 auto;
+	.project-header__menu, .project-header__botton-menu{
+		display: none;
 	}
 
+	.project-header__tittle{
+		padding-top: 40px;
+	}
+
+	.project-header__form{
+		display: block;
+	}
+
+	.choose_city{
+		width: 312px;
+		background: white url("../images/sprite.png") no-repeat 252px -8px;
+		option{
+			width: 312px;
+		}
+	}
+
+	.choose-room{
+		margin: 20px 0 0 0;
+	}
+
+	.project-content__accommodation-metro{
+		position: relative;
+		display: block;
+		padding: 15px;
+		.metro-img{
+			width: 80%;
+			height: 110%;
+			position: absolute;
+			top: 20px;
+			left: -40px;
+		}
+		.content-choose-accommodation{
+			padding-top: 250px;
+			margin: 0 auto;
+		}
+		.menu-accommodation{
+			text-align: center;
+		}
+	}
+	
+	.project-content__best-proposition{
+		overflow: hidden;
+	}
+
+	.project-content__last-advert{
+		overflow: hidden;
+		.menu-accommodation-place{
+			text-align: center;
+			margin: 0;
+			padding: 20px;
+		}
+	}
+
+	.telegram-header__text{
+		width: 290px;
+	}
+
+	.telegram-info{
+		margin-left: -111px;
+		width: 360px;
+		padding-left: 20px;
+	}
 
 	.telegram-content .phone-img{
 		display: none;
+	}
+	
+	.metrovka-slider__element{
+		margin-left: 40px;
+		margin-bottom: 20px;
+	}
+
+	.footer-column{
+		width:100%;
+	}
+
+	.form-button-place{
+		margin: 20px 0 20px 0;
+	}
+	
+	.footer-adress, .footer-city, .footer-column__title, .footer-column__text{
+		text-align: center;
+		margin: 0 auto;
+		width: 110px;
+	}
+	
+	.footer-column__title{
+		padding: 20px 0 10px 0;
+	}
+
+	.footer-icons, .footer-email{
+		margin: 15px 130px;
+	}
+
+	.footer-button{
+		margin: 0 auto;
 	}
 }
