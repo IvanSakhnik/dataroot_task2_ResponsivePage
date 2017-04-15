@@ -72,3 +72,44 @@
 	border-radius: 3px;
 	padding-top: 8px;
 }
+
+
+//*************************************************************************
+//*************************************************************************
+//BUTTONS OF RENT PAGE
+
+ .rent-button{
+ 	width: 72px;
+ 	height: 34px;	
+ 	border-radius: 5px;
+ }
+
+ .call-button{
+ 	border: 2px solid $border-call-button;
+ 	background: url("../images/rent_sprite.png") no-repeat 2px -269px;
+ }
+
+.massage-button{
+	margin-left: 1px;
+	border: 2px solid $border-massage-button;
+	background: url("../images/rent_sprite.png") no-repeat 1px -133px;
+}
+
+.rent-switch-dark, .rent-switch-light{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: $rent-switch-dark;
+}
+
+.rent-switch-light{
+	margin-left: 2px;
+	background-color: $rent-switch-light;
+}
+
+.rent-proposition__footer__button{
+	vertical-align: top;
+	width: 140px;
+	height: 50px;
+	border: 2px solid transparent;
+}

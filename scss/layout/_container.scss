@@ -105,6 +105,7 @@
 //STYLES FOR RENT PAGE CONTAINERS
 
 .rent-header{
+	min-width: 1400px;
 	width:100%;
 	background: $button-color-green;
 	min-height:60px;
@@ -116,28 +117,48 @@
 	width: 891px;
 }
 
-.rent-content{
-	padding: 20px 0 0 16px;
-	width: 100%;
-	min-height: 500px;
-	background-color: $background-color-gray;
-}
  //*************************************************************
 
-.rent-content_wrapper{
+.rent-content{
+	padding: 20px 0 0 16px;
+	min-width: 1400px;
+	width: 100%;
+	background-color: $background-color-gray;
+}
+
+.rent-content__wrapper{
+	width: 100%;
+}
+
+.rent-blocks-container{
+	padding-top: 13px;
+	width: 100%;
+}
+
+.rent-proposition__container{
+	display: inline-block;
+	vertical-align: top;
 	width: 891px;
+}
+
+.google-map{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	width: 449px;
+	height: 799px;
 }
 
 //**************************************************************
 
 .rent-footer{
+	min-width: 1400px;
 	width:100%;
 	background-color: $background-color-gray;
 }
 
 .rent-footer__wrapper{
 	width: 844px;
-	padding-top: 20px;
-	margin-left: 42px;
-	// margin: 0 auto;	
+	padding-top: 7px;
+	margin-left: 42px;	
 }
