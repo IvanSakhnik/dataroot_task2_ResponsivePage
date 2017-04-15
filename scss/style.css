@@ -695,8 +695,8 @@ input[type="checkbox"] {
   display: inline-block; }
 
 .nav-item {
-  font-size: 0.85em;
-  letter-spacing: 0.3px;
+  font-size: 0.875em;
+  line-height: 1.068125em;
   color: #2573D8; }
 
 .nav-item:before {
@@ -706,12 +706,12 @@ input[type="checkbox"] {
   content: ""; }
 
 .rent-title {
-  font-size: 1.3em;
+  font-size: 1.25em;
   padding-top: 19px; }
 
 .rent-variants {
   color: #8C9BA5;
-  font-size: 0.85em;
+  font-size: 0.875em;
   padding: 28px 0 10px 0; }
 
 .variants-sort {
@@ -774,7 +774,7 @@ input[type="checkbox"] {
   padding-top: 10px; }
 
 .transport-location {
-  font-size: 0.8em; }
+  font-size: 0.75em; }
 
 .commute-time {
   color: #8C9BA5;
@@ -785,8 +785,7 @@ input[type="checkbox"] {
   color: #30AD64; }
 
 .metro-station {
-  padding-left: 3px;
-  font-size: 13px; }
+  padding-left: 3px; }
 
 .features-title {
   padding-top: 23px;
@@ -795,34 +794,32 @@ input[type="checkbox"] {
 
 .features-short-description {
   font-size: 0.75em;
-  letter-spacing: 0.3px;
   padding-top: 12px;
   color: rgba(0, 0, 0, 0.6); }
 
 .features-full-description {
   padding-top: 21px;
-  font-size: 0.75em;
-  letter-spacing: 0.6px;
-  line-height: 1.65; }
+  font-size: 0.8125em;
+  line-height: 1.25em; }
 
 .rent-price {
-  font-size: 1em;
-  letter-spacing: 1px; }
+  font-size: 1.125em; }
 
 .rent-price-currrency {
-  padding-top: 11px; }
+  padding-top: 7px; }
 
 .rent-price-dollars, .dollars-curs {
   color: #8C9BA5;
-  font-size: 0.9em; }
+  font-size: 0.875em;
+  line-height: 1.5em; }
 
 .dollars-curs {
   margin-left: 12px;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   border-bottom: 2px solid #8C9BA5; }
 
 .estimate-price {
-  font-size: 0.8em;
+  font-size: 0.8125em;
   text-align: center;
   margin: 20px 0 0 96px;
   padding: 11px 37px 0 0;
