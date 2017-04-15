@@ -30,12 +30,34 @@
 }
 
 .application-right{
-	padding: 40px;
+	padding: 30px 40px 40px 40px;
+}
+
+.close-icon{
+	height: 15px;
+	width: 15px;
+	display: block;
+	margin-left: 100%;
 }
 
 .choose-location-or-metro{
 	@extend .choose_location;
-	width: 346px;
+	width: 320px;
+	background-position: 260px -8px;
 	padding: 10px 0 10px 20px;
 	font-size: 15px;
 }
+
+.choose-room-place{
+	padding-top: 30px;
+}
+
+.user_name{
+	margin-top: 30px;
+}
+
+.user_email{
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
