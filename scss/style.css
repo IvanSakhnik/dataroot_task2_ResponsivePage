@@ -809,11 +809,11 @@ input[type="checkbox"] {
   display: flex; }
 
 .header-logo {
-  padding-top: 21px; }
+  padding-top: 16px; }
 
-.project-header__menu {
-  padding-top: 25px;
-  padding-left: 65px; }
+.project-header__menu, .rent-header__menu {
+  padding-top: 15px;
+  padding-left: 40px; }
 
 .project-header__menu-item, .rent-header__menu-item {
   padding: 0 5px 0 5px;
@@ -828,12 +828,20 @@ input[type="checkbox"] {
 .project-header__menu-item__text {
   color: white; }
 
-.project-header__menu :last-child .project-header__menu-item__text:before {
-  content: "...";
-  margin-right: 7px;
-  font-size: 1.875em;
-  position: relative;
-  top: -4px; }
+.project-header__menu :nth-child(4), .rent-header__menu :nth-child(4) {
+  margin-right: 105px; }
+  .project-header__menu :nth-child(4) .project-header__menu-item__text:before, .rent-header__menu :nth-child(4) .project-header__menu-item__text:before {
+    content: "...";
+    margin-right: 7px;
+    font-size: 1.875em;
+    position: relative;
+    top: -4px; }
+
+.project-header__menu :nth-child(5), .rent-header__menu :nth-child(5) {
+  margin-right: -10px; }
+
+.project-header__menu :nth-child(6), .rent-header__menu :nth-child(6) {
+  margin-right: 0px; }
 
 .project-header__menu-item__sub-menu {
   position: absolute;
@@ -848,14 +856,8 @@ input[type="checkbox"] {
   .project-header__menu-item__sub-menu a:hover {
     border-bottom: 2px solid white; }
 
-.project-header__menu > .project-header__menu-item:hover .project-header__menu-item__sub-menu, .project-header__menu > .rent-header__menu-item:hover .project-header__menu-item__sub-menu {
+.project-header__menu > .project-header__menu-item:hover .project-header__menu-item__sub-menu, .rent-header__menu > .project-header__menu-item:hover .project-header__menu-item__sub-menu, .project-header__menu > .rent-header__menu-item:hover .project-header__menu-item__sub-menu, .rent-header__menu > .rent-header__menu-item:hover .project-header__menu-item__sub-menu {
   display: block; }
-
-.project-header__botton-menu, .rent-header__botton-menu {
-  margin: 23px 0 0 70px;
-  font-size: 0.875em;
-  line-height: 1.0625em;
-  max-width: 290px; }
 
 .project-header__tittle {
   color: white;
@@ -897,18 +899,25 @@ input[type="checkbox"] {
   padding-top: 14px; }
 
 .rent-header__menu {
-  padding: 15px 0 0 40px;
   height: 63px; }
+
+.rent-header__menu :nth-child(4) {
+  margin-right: 110px; }
+  .rent-header__menu :nth-child(4) .rent-header__menu-item__text:before {
+    content: "...";
+    margin-right: 7px;
+    font-size: 1.875em;
+    position: relative;
+    top: -4px; }
 
 .rent-header__menu-item {
   margin-right: 31px; }
 
-.rent-header__menu :last-child .rent-header__menu-item__text:before {
-  content: "...";
-  margin-right: 7px;
-  font-size: 1.875em;
-  position: relative;
-  top: -4px; }
+.rent-header__menu :nth-child(5) {
+  margin-right: -10px; }
+
+.rent-header__menu :nth-child(6) {
+  margin-right: 0px; }
 
 .rent-header__menu-item__text {
   color: white; }
@@ -1026,6 +1035,12 @@ input[type="checkbox"] {
 *************************/
 .project-header__menu-item:hover, .rent-header__menu-item:hover {
   border-bottom: 2px solid white; }
+
+.project-header__menu :nth-child(5):hover, .rent-header__menu :nth-child(5):hover,
+.project-header__menu :nth-child(6):hover, .rent-header__menu :nth-child(6):hover,
+.rent-header__menu :nth-child(5):hover,
+.rent-header__menu :nth-child(6):hover {
+  border-bottom: none; }
 
 .menu-accommodation__item:checked + span {
   border-bottom: 2px solid #30ae63; }
@@ -1190,13 +1205,13 @@ input[type="checkbox"] {
   margin-left: 42px; }
 
 /* Responsive ***********/
-@media screen and (min-width: 361px) and (max-width: 890px) {
+@media screen and (max-width: 361px) {
   .project-header__wrapper {
     position: relative;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px; }
-  .project-header__menu, .project-header__botton-menu, .rent-header__botton-menu {
+  .project-header__menu, .rent-header__menu, .project-header__botton-menu, .rent-header__botton-menu {
     display: none; }
   .project-header__tittle {
     padding-top: 40px; }

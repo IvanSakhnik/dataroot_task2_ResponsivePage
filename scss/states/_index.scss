@@ -7,6 +7,14 @@
 	border-bottom: 2px solid white;
 }
 
+.project-header__menu :nth-child(5):hover, 
+.project-header__menu :nth-child(6):hover,
+.rent-header__menu :nth-child(5):hover, 
+.rent-header__menu :nth-child(6):hover{
+	border-bottom: none;
+}
+
+
 .menu-accommodation__item:checked + span{
 	border-bottom: 2px solid $color-checked;
 }
