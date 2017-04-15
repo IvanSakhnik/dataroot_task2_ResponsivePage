@@ -15,13 +15,14 @@
 
 .project-header__menu{
 	padding-top: 25px;
-	padding-left:40px;
+	padding-left:65px;
 }
 
 .project-header__menu-item{
 	padding: 0 5px 0 5px;
 	height: 30px;
 	font-size: 14px;
+	position: relative;
 	line-height: 20px;
 	display: inline-block;
 	margin-right: 35px;
@@ -36,11 +37,19 @@
 	@include horizontal-dots;
 }
 
+.project-header__menu-item__sub-menu{
+	@include header-sub-menu;
+}
+
+.project-header__menu > .project-header__menu-item:hover .project-header__menu-item__sub-menu{
+	display: block;
+}
+
 .project-header__botton-menu{
-	margin: 18px 0 0 70px;
+	margin: 23px 0 0 70px;
 	font-size: 14px;
 	line-height: 17px;
-	width:290px;
+	max-width:290px;
 }
 
 .project-header__tittle{
@@ -57,59 +66,10 @@
 }
 
 .check-room{
-	// margin-top: 2px;
 	width:46px;
 	height: 46px;
 	display: inline-flex;
-	// position: relative;
 	margin: 12px 2px 0 0;
-}
-
-input[type="checkbox"] + span{
-	// position: absolute;
-	// left:-7px;
-	// top:0;
-	width:100%;
-	height: 100%;
-	cursor: pointer;
-	background: url("../images/checkbox/sprite_checkbox.png") no-repeat;
-	&.check-room__1{
-		background-position: -395px -15px;
-	}
-	&.check-room__2{
-		background-position: -467px -15px;
-	}
-	&.check-room__3{
-		background-position: -539px -15px
-	}
-	&.check-room__4{
-		background-position: -611px -15px;
-	}
-	&.check-room__5{
-		background-position: -683px -15px;
-	}
-}
-
-input[type="checkbox"]{
-	display: none;
-} 
-
-input[type="checkbox"]:checked + span{
-	&.check-room__1{
-		background-position: -15px -15px;
-	}
-	&.check-room__2{
-		background-position: -91px -15px;
-	}
-	&.check-room__3{
-		background-position: -167px -15px;
-	}
-	&.check-room__4{
-		background-position: -243px -15px;
-	}
-	&.check-room__5{
-		background-position: -319px -15px;
-	}
 }
 
 .choose-room{
@@ -121,23 +81,15 @@ input[type="checkbox"]:checked + span{
 
 //DECORATE SELECT ************************************
 .choose-city-form{
-	margin-top: 12px;
+	padding-top: 12px;
 }
 
 .choose_city {
-	background: white url("../images/sprite.png") no-repeat 292px -8px;
+	@extend .choose_location;
 	margin-right: 20px;
 	width: 346px;
-	height: 42px;
 	padding: 10px 0 10px 20px;
-	border-radius: 3px;
 	font-size: 15px;
-	border: 2px solid $color-border-form;
-	cursor: pointer;
-}
-
-.choose_city option{
-	background: white;
 }
 
 .form-button-place{
@@ -157,8 +109,7 @@ input[type="checkbox"]:checked + span{
 }
 
 .rent-header__menu{
-	padding-top: 15px;
-	margin-left:40px;
+	padding: 15px 0 0 40px;
 	height: 63px;
 }
 
@@ -177,5 +128,18 @@ input[type="checkbox"]:checked + span{
 
 .rent-header__botton-menu{
 	@extend .project-header__botton-menu;
-	margin: 13px 0 0 104px;
+	margin: 14px 0 0 104px;
+}
+
+.rent-header__menu-item__sub-menu{
+	@include header-sub-menu;
+	background-color: $button-color-green;
+	padding:10px;
+	a{
+		margin-left: 10px;
+	}
+}
+
+.rent-header__menu > .rent-header__menu-item:hover .rent-header__menu-item__sub-menu{
+	display: block;
 }

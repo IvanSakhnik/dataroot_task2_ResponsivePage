@@ -22,18 +22,7 @@
 	background-color:$button-color-green;
 	width: 100%;
 	text-align: center;
-}
-
-.button:hover{
-	background-color: $button-color-hover;
-}
-	
-.button:active{
-	background-color: darken($button-color-green,7%);
-}
-
-.button:disabled{
-	background-color: lighten($button-color-green,40%);
+	border-radius: 2px;
 }
 
 .transition-button{
@@ -65,6 +54,7 @@
 	width: 50px;
 	margin-left: -5px;
 	padding-left: 6px;
+	background: none;
 }
 
 .form-button{
@@ -73,7 +63,6 @@
 	height: 40px;
 	color:$button-color-green;
 	font-size: 14px;
-	border: 0;
 }
 
 .footer-button{

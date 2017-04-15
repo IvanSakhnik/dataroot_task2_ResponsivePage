@@ -8,14 +8,6 @@
 	margin: 0 auto;
 }
 
-@mixin vertical-dots{
-	position: absolute;
-	right: 0px;
-	width: 20px;
-    height: 36px;
-    background: url("../images/sprite.png") no-repeat -25px -346px;
-}
-
 @mixin horizontal-dots{
 	content: "...";
 	margin-right: 7px;
@@ -26,7 +18,7 @@
 
 @mixin containers-footer-button{
 	color: black;
-	font-size: 18px;
+	font-size: 16px;
 	position: absolute;
 	bottom: 0px;
 	width:100%;
@@ -42,4 +34,87 @@
 	&:active{
 		background-color: darken($button-color-green,7%);
 	}
+}
+
+@mixin horizontal-menu{
+	display: inline-block;
+	height: 25px;
+	border-bottom: 2px solid transparent;
+	margin-left: 30px;
+}	
+
+@mixin header-sub-menu{
+	position: absolute;
+	display: none;
+	right: -120px;
+	top: 30px;
+	width: 150px;
+	line-height: 20px;
+	a{
+		border-bottom: 2px solid transparent;
+		color: white;
+	}
+
+	a:hover{
+		border-bottom: 2px solid white;
+	}
+}
+
+
+@mixin sub-menu{
+	left: -130px;
+	top: 40px;
+	display: none;
+	width:160px;
+	z-index:10;
+	background: white;
+
+	border: 1px solid $color-border-form;
+    position: relative;
+
+    &::before, &::after {
+	    content: ''; 
+	    position: absolute;
+	    left: 128px; 
+	    bottom: 172px;
+	    border: 10px solid transparent;
+	    border-bottom: 10px solid $color-border-form;
+    }
+    &::after {
+	    border-bottom: 10px solid white;
+	    bottom: 172px; 
+    }
+
+	& :last-child{
+		border-top: 1px solid $color-border-form;
+	}
+
+	.sub-menu__item__text{
+		padding: 8px;
+		color: black;
+		display: block;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.sub-menu__item__text:hover{
+		color:white;
+		background: $button-color-hover;
+	}
+
+	& :last-child .sub-menu__item__text:hover{
+		color:white;
+		background: red;
+	}
+}
+
+@mixin vertical-dots{
+	position: absolute;
+	right: 0px;
+	width: 20px;
+    height: 36px;
+    background: url("../images/sprite.png") no-repeat -25px -346px;
+
+    &:hover > .sub-menu{
+    	display: block;
+    }
 }

@@ -1,0 +1,199 @@
+//STYLES FOR CONTENT OF RENT PAGE
+
+.nav-item{
+	display: inline-block;
+	font-size: 0.85em;
+	letter-spacing: 0.3px;
+	color: $color-blue;
+}
+
+.nav-item:hover{
+	color: darken($color-blue, 20%);
+}
+
+.nav-item:before{
+	content:" / "
+}
+
+.nav-item:first-child:before{
+	content:""
+}
+
+.rent-title{
+	font-size: 1.3em;
+	padding-top: 19px;
+}
+
+.rent-variants{
+	color:$color-text-gray;
+	font-size: 0.85em;
+	padding-top: 27px;
+}
+
+.variants-quantity, .variants-sort, .currency{
+	display: inline-block;
+}
+
+.variants-sort{
+	margin-left: 473px;
+	width: 140px;
+	padding-left: 5px;
+	background: url("../images/rent_sprite.png") no-repeat 86px -21px;
+}
+
+.currency{
+	width: 100px;
+	padding-left: 10px;
+	background: url("../images/rent_sprite.png") no-repeat 50px -21px;
+}
+
+.rent-proposition{
+	max-width: 890px;
+	width: 100%;
+	height: 258px;
+	background-color: white;
+	margin-top: 25px;
+}
+
+.rent-proposition__content{
+	width: 100%;
+	padding: 11px 0 0 20px;
+	height: 196px;
+	vertical-align: top;
+}
+
+.rent-proposition-img,.rent-proposition-info,.rent-proposition-summary{
+	display:inline-block;
+}
+
+.rent-proposition-img{
+	max-width: 242px;
+	width: 100%;
+	height: 170px;
+	background: url("../images/rent_flat1.jpg") no-repeat 0 0;
+}
+
+.rent-proposition-info{
+	max-width: 355px;
+	width: 100%;
+	height: 183px;
+	padding:6px 0 0 17px;
+	vertical-align: top;
+}
+
+.rent-proposition-summary{
+	max-width: 260px;
+	width: 100%;
+	height: 183px;
+	padding:6px 20px 0 0;
+	text-align: right;
+	vertical-align: top;
+}
+
+.proposition-title{
+	font-size: 1em;
+	color: $color-blue;
+}
+
+.proposition-location{
+	padding-top: 10px;
+}
+
+.transport-location{
+	display:inline-block;
+	font-size: 0.8em;
+}
+
+.commute-time{
+	display:inline-block;
+	color:$color-text-gray;
+	font-size: 0.85em;
+	padding-left: 15px;
+}
+
+.green-circle{
+	display:inline-block;
+	color: $color-green-circle;
+}
+
+.metro-station{
+	display:inline-block;
+	padding-left: 3px;
+	font-size: 13px;
+}
+
+.features-title{
+	padding-top: 23px;
+	font-size: 0.75em;
+	color:$color-text-gray;
+}
+
+.features-short-description{
+	font-size: 0.75em;
+	letter-spacing: 0.3px;
+	padding-top:12px;
+}
+
+.features-full-description{
+	padding-top: 21px;
+	font-size: 0.75em;
+	letter-spacing: 0.6px;
+	line-height: 1.65;
+}
+
+.rent-price{
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+
+.rent-price-currrency{
+	padding-top: 11px;
+}
+
+.rent-price-dollars, .dollars-curs{
+	display: inline-block;
+	color:$color-text-gray;
+	font-size: 0.9em;
+}
+
+ .dollars-curs{
+ 	margin-left: 11px;
+ 	padding-bottom: 5px;
+ 	border-bottom: 2px solid $color-text-gray;
+ }
+
+ .estimate-price{
+	font-size: 0.8em;
+	text-align: center;
+	margin: 20px 0 0 95px;
+	padding: 11px 37px 0 0;
+	border-radius: 5px;
+	width: 148px;
+	height: 36px;
+	color: $rent-hight-price-text;
+	background: $rent-hight-price-background url("../images/rent_sprite.png") no-repeat 
+	91px -199px;
+ }
+
+ .connection-buttons{
+ 	padding-top: 18px;
+ 	margin-left: 84px;
+ 	width: 160px;
+ }
+
+ .call-button,.massage-button{
+ 	display: inline-block;
+ 	width: 72px;
+ 	height: 34px;	
+ 	border-radius: 5px;
+ }
+
+ .call-button{
+ 	border: 2px solid $border-call-button;
+ 	background: url("../images/rent_sprite.png") no-repeat 1px -269px;
+ }
+
+.massage-button{
+	border: 2px solid $border-massage-button;
+	background: url("../images/rent_sprite.png") no-repeat 1px -133px;
+}

@@ -28,6 +28,8 @@
 	margin-right: 10px;
 	width:272px;
 	min-height:306px;
+	border: 2px solid transparent;
+	cursor: pointer;
 }
 
 .metrovka-slider :last-child{
@@ -35,13 +37,14 @@
 }
 
 .metrovka-slider__element__img{
-	width: 272px;
+	width: 268px;
 	height: 182px;
 }
 
 .metrovka-slider__element__theme{
-	font-size: 12px;
+	font-size: 11px;
 	margin-top: 20px;
+	line-height: 16px;
 }
 
 .metrovka-theme1{
@@ -59,13 +62,15 @@
 .metrovka-slider__element__description{
 	max-width: 272px;
 	margin-top: 5px;
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .metrovka-slider__element__author{
 	color: $color-text-gray;
 	margin-top: 20px;
-	font-size: 16px;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 .metrovka-slider__element__img{

@@ -12,10 +12,10 @@
 		<div class="project-header__wrapper">
 
 			<div class="project-header__header">
-				<a class="header-logo" href=""><img src="./images/logo.png" alt="logo"></a>
+				<a class="header-logo" href="index.html"><img src="./images/logo.png" alt="logo"></a>
 				<menu class="project-header__menu">
 					<li class="project-header__menu-item">
-						<a class="project-header__menu-item__text" href="">Аренда</a>
+						<a class="project-header__menu-item__text" href="rent.html">Аренда</a>
 					</li>
 					<li class="project-header__menu-item">
 						<a class="project-header__menu-item__text" href="">Продажа</a>
@@ -25,6 +25,11 @@
 					</li>
 					<li class="project-header__menu-item">
 						<a class="project-header__menu-item__text" href="">Еще</a>
+						<ul class="project-header__menu-item__sub-menu">
+							<li><a href="">Блог</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Новый поиск</a></li>
+						</ul>
 					</li>
 				</menu>
 				<div class="project-header__botton-menu">
@@ -48,15 +53,13 @@
 					</div>
 					</label>
 
-					<label class="choose-room">Кол-во комнат<br>
-						<!-- <div class="choose-room"> -->
-							<label class="check-room"><input type="checkbox" value="1" name="rooms"><span class="check-room__1"></span></label>
-							<label class="check-room"><input type="checkbox" value="2" name="rooms"><span class="check-room__2"></span></label>
-							<label class="check-room"><input type="checkbox" value="3" name="rooms"><span class="check-room__3"></span></label>
-							<label class="check-room"><input type="checkbox" value="4" name="rooms"><span class="check-room__4"></span></label>
-							<label class="check-room"><input type="checkbox" value="5" name="rooms"><span class="check-room__5"></span></label>
-						<!-- </div> -->
-					</label>
+					<div class="choose-room">Кол-во комнат<br>
+							<label class="check-room"><input class="check-room__item" type="checkbox" value="1" name="rooms"><span class="check-room__1"></span></label>
+							<label class="check-room"><input class="check-room__item" type="checkbox" value="2" name="rooms"><span class="check-room__2"></span></label>
+							<label class="check-room"><input class="check-room__item" type="checkbox" value="3" name="rooms"><span class="check-room__3"></span></label>
+							<label class="check-room"><input class="check-room__item" type="checkbox" value="4" name="rooms"><span class="check-room__4"></span></label>
+							<label class="check-room"><input class="check-room__item" type="checkbox" value="5" name="rooms"><span class="check-room__5"></span></label>
+					</div>
 					
 
 					<input class="button form-button form-button-place" type="submit" name="" value="Перейти к поиску"> 
@@ -76,24 +79,20 @@
 					<h2 class="content-choose-accommodation__title">
 						Недвижимость возле метро
 					</h2>
-					<ul class="menu-accommodation">
-						<li class="menu-accommodation__item">
-							<a class="menu-accommodation__item-text" href="">Квартиры</a>
-						</li>
-						<li class="menu-accommodation__item">
-							<a class="menu-accommodation__item-text" href="">Дома</a>
-						</li>
-						<li class="menu-accommodation__item">
-							<a class="menu-accommodation__item-text" href="">Офисы</a>
-						</li>
-					</ul>
+					
 					<form action="" method="">
-						<select name="choose station">
-							<option selected>Политехнический институт</option>
-							<option>Шулявка</option>
-							<option>Крещатик</option>
-							<option>Майдан Независимости</option>
-							<option>Левобережная</option>
+						<div class="menu-accommodation">
+							<label><input class="menu-accommodation__item" type="checkbox" value="flats" name="flats"><span>Квартиры</span ></label>
+							<label><input class="menu-accommodation__item" type="checkbox" value="home" name="home"><span>Дома</span></label>
+							<label><input class="menu-accommodation__item" type="checkbox" value="offices" name="offices"><span>Офисы</span></label>
+						</div>
+
+						<select class="choose_station" name="choose station">
+							<option selected>&#9899; Политехнический институт</option>
+							<option>&#9899; Шулявка</option>
+							<option>&#9899; Крещатик</option>
+							<option>&#9899; Майдан Независимости</option>
+							<option>&#9899; Левобережная</option>
 						</select>
 						<input class="button button-search" type="submit" name="" value="Показать результаты поиска">
 					</form>
@@ -110,7 +109,16 @@
 				<main class="best-proposition__content">
 					<div class="propositions proposition1">
 						<div class="proposition-photo proposition-photo1">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
+							
 						</div>
 						<div class="price">
 							<div class="price-text">7 800 грн</div>
@@ -124,7 +132,15 @@
 					</div>
 					<div class="propositions proposition2"align="">
 						<div class="proposition-photo proposition-photo1">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="price">
 							<div class="price-text">10 200 грн</div>
@@ -138,7 +154,15 @@
 					</div>
 					<div class="propositions proposition3">
 						<div class="proposition-photo proposition-photo1">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="price">
 							<div class="price-text">6 900 грн</div>
@@ -152,7 +176,15 @@
 					</div>
 					<div class="propositions proposition4">
 						<div class="proposition-photo proposition-photo1">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="price">
 							<div class="price-text">9 000 грн</div>
@@ -175,22 +207,24 @@
 			<div class="project-content__last-advert container">
 				<header class="last-advert__header">
 					<h2 class="last-advert__title" >Последние объявления в Киеве</h2>
-					<menu class="menu-accommodation">
-						<li class="menu-accommodation__item">
-							<a class="menu-accommodation__item-text" href="">Квартиры</a>
-						</li>
-						<li class="menu-accommodation__item">
-							<a class="menu-accommodation__item-text" href="">Дома</a>
-						</li>
-						<li class="menu-accommodation__item">
-							<a class="menu-accommodation__item-text" href="">Офисы</a>
-						</li>
-					</menu>
+					<div class="menu-accommodation menu-accommodation-place">
+						<label><input class="menu-accommodation__item" type="checkbox" value="flats" name="flats"><span>Квартиры</span ></label>
+						<label><input class="menu-accommodation__item" type="checkbox" value="home" name="home"><span>Дома</span></label>
+						<label><input class="menu-accommodation__item" type="checkbox" value="offices" name="offices"><span>Офисы</span></label>
+					</div>
 				</header>
 				<main class="best-proposition__content">
 					<div class="propositions proposition1">
 						<div class="proposition-photo proposition-photo2">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="price">
 							<div class="price-text">11 800 грн</div>
@@ -204,7 +238,15 @@
 					</div>
 					<div class="propositions proposition2"align="">
 						<div class="proposition-photo proposition-photo3">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="price">
 							<div class="price-text">15 000 грн</div>
@@ -218,7 +260,15 @@
 					</div>
 					<div class="propositions proposition3">
 						<div class="proposition-photo proposition-photo4">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="price">
 							<div class="price-text">11 800 грн</div>
@@ -232,7 +282,15 @@
 					</div>
 					<div class="propositions proposition4">
 						<div class="proposition-photo proposition-photo1">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="price">
 							<div class="price-text">7 000 грн</div>
@@ -301,7 +359,15 @@
 				<main class="metrovka-slider">
 					<div class="metrovka-slider__element">
 						<div class="metrovka-slider__element__img metrovka-img1">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="metrovka-slider__element__theme metrovka-theme1">ЛАЙФХАК</div>
 						<div class="metrovka-slider__element__description">Киевляне могут оплатить коммуналку через Facebook</div>
@@ -309,7 +375,15 @@
 					</div>
 					<div class="metrovka-slider__element">
 						<div class="metrovka-slider__element__img metrovka-img2">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="metrovka-slider__element__theme metrovka-theme2">СОВЕТ METROVKA</div>
 						<div class="metrovka-slider__element__description">ТОП-5 самых дешевых квартир Киева</div>
@@ -317,7 +391,15 @@
 					</div>
 					<div class="metrovka-slider__element">
 						<div class="metrovka-slider__element__img metrovka-img3">
-							<div class="vertical-dots"></div>
+							<div class="vertical-dots">
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Stop App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Restart App</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Rename app</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text" href="">Edit routes and access</a></li>
+									<li class="sub-menu__item"><a class="sub-menu__item__text"href="">Delete App</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="metrovka-slider__element__theme metrovka-theme3">ТЕХНОЛОГИИ</div>
 						<div class="metrovka-slider__element__description">Смарт квартиры: цены, предложения и законность</div>

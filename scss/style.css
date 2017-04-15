@@ -4,11 +4,63 @@
 /* Vars *****************/
 /* Mixins****************/
 /* Forms ****************/
-/* Buttons **************/
 @import url(../../fonts/styles.css);
+.choose_location, .choose_station, .choose_city {
+  background: white url("../images/sprite.png") no-repeat 292px -8px;
+  height: 40px;
+  border-radius: 3px;
+  border: 2px solid #f2f2f2;
+  cursor: pointer; }
+  .choose_location option, .choose_station option, .choose_city option {
+    background: white; }
+
+.check-room__item + span {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: url("../images/checkbox/sprite_checkbox.png") no-repeat; }
+  .check-room__item + span.check-room__1 {
+    background-position: -395px -15px; }
+  .check-room__item + span.check-room__2 {
+    background-position: -467px -15px; }
+  .check-room__item + span.check-room__3 {
+    background-position: -539px -15px; }
+  .check-room__item + span.check-room__4 {
+    background-position: -611px -15px; }
+  .check-room__item + span.check-room__5 {
+    background-position: -683px -15px; }
+
+.check-room__item:checked + span.check-room__1 {
+  background-position: -15px -15px; }
+
+.check-room__item:checked + span.check-room__2 {
+  background-position: -91px -15px; }
+
+.check-room__item:checked + span.check-room__3 {
+  background-position: -167px -15px; }
+
+.check-room__item:checked + span.check-room__4 {
+  background-position: -243px -15px; }
+
+.check-room__item:checked + span.check-room__5 {
+  background-position: -319px -15px; }
+
+.menu-accommodation {
+  font-size: 14px;
+  padding: 15px 0 0 7px; }
+  .menu-accommodation span {
+    display: inline-block;
+    height: 25px;
+    margin-right: 35px;
+    cursor: pointer; }
+
+.menu-accommodation__item + span {
+  border-bottom: 2px solid transparent; }
+
+/* Buttons **************/
 .best-proposition__footer__button {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -23,7 +75,7 @@
 
 .last-advert__footer__button {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -38,7 +90,7 @@
 
 .metrovka-footer__button {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -58,16 +110,8 @@
   color: white;
   background-color: #30ae63;
   width: 100%;
-  text-align: center; }
-
-.button:hover {
-  background-color: #50DB88; }
-
-.button:active {
-  background-color: #289253; }
-
-.button:disabled {
-  background-color: #bdedd0; }
+  text-align: center;
+  border-radius: 2px; }
 
 .transition-button {
   margin-top: 30px;
@@ -93,15 +137,15 @@
 .button-interaction-site {
   width: 50px;
   margin-left: -5px;
-  padding-left: 6px; }
+  padding-left: 6px;
+  background: none; }
 
 .form-button {
   background: white;
   width: 200px;
   height: 40px;
   color: #30ae63;
-  font-size: 14px;
-  border: 0; }
+  font-size: 14px; }
 
 .footer-button {
   display: block;
@@ -190,16 +234,12 @@ a {
   text-decoration: none;
   display: inline-block; }
 
-.menu-accommodation, .telegram-header__menu {
-  padding-top: 20px; }
-  .menu-accommodation .menu-accommodation__item, .telegram-header__menu .menu-accommodation__item, .menu-accommodation .telegram-header__menu-item, .telegram-header__menu .telegram-header__menu-item {
-    padding: 0 5px 0 5px;
-    height: 30px;
-    display: inline-block;
-    margin-right: 30px;
-    vertical-align: middle; }
-    .menu-accommodation .menu-accommodation__item .menu-accommodation__item-text, .telegram-header__menu .menu-accommodation__item .menu-accommodation__item-text, .menu-accommodation .telegram-header__menu-item .menu-accommodation__item-text, .telegram-header__menu .telegram-header__menu-item .menu-accommodation__item-text, .menu-accommodation .menu-accommodation__item .telegram-header__menu-item__text, .telegram-header__menu .menu-accommodation__item .telegram-header__menu-item__text, .menu-accommodation .telegram-header__menu-item .telegram-header__menu-item__text, .telegram-header__menu .telegram-header__menu-item .telegram-header__menu-item__text {
-      color: black; }
+input[type="submit"] {
+  border-radius: 2px;
+  border: none; }
+
+input[type="checkbox"] {
+  display: none; }
 
 /*************************
 	All The Layout Styles
@@ -246,8 +286,7 @@ a {
 
 .project-content__telegram {
   min-height: 800px;
-  margin-top: 20px;
-  border: 1px solid black; }
+  margin-top: 20px; }
 
 .project-content__metrovka {
   position: relative;
@@ -303,7 +342,9 @@ a {
 
 .propositions {
   display: inline-block;
-  margin-right: 8px; }
+  margin-right: 8px;
+  border: 2px solid transparent;
+  cursor: pointer; }
 
 .proposition-photo {
   position: relative;
@@ -324,6 +365,42 @@ a {
   width: 20px;
   height: 36px;
   background: url("../images/sprite.png") no-repeat -25px -346px; }
+  .vertical-dots:hover > .sub-menu {
+    display: block; }
+
+.sub-menu {
+  left: -130px;
+  top: 40px;
+  display: none;
+  width: 160px;
+  z-index: 10;
+  background: white;
+  border: 1px solid #f2f2f2;
+  position: relative; }
+  .sub-menu::before, .sub-menu::after {
+    content: '';
+    position: absolute;
+    left: 128px;
+    bottom: 172px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #f2f2f2; }
+  .sub-menu::after {
+    border-bottom: 10px solid white;
+    bottom: 172px; }
+  .sub-menu :last-child {
+    border-top: 1px solid #f2f2f2; }
+  .sub-menu .sub-menu__item__text {
+    padding: 8px;
+    color: black;
+    display: block;
+    font-size: 14px;
+    line-height: 17px; }
+  .sub-menu .sub-menu__item__text:hover {
+    color: white;
+    background: #50DB88; }
+  .sub-menu :last-child .sub-menu__item__text:hover {
+    color: white;
+    background: red; }
 
 .price {
   position: relative;
@@ -331,16 +408,17 @@ a {
   margin-top: 20px; }
 
 .price-text {
-  display: inline-block; }
+  display: inline-block;
+  font-size: 16px; }
 
 .flat-description {
   margin-top: 5px;
   color: #8C9BA5;
-  font-size: 14px; }
+  font-size: 12px; }
 
 .flat-location {
   margin-top: 10px;
-  font-size: 14px; }
+  font-size: 12px; }
 
 .red-circle {
   display: inline-block;
@@ -365,6 +443,9 @@ a {
   font-size: 24px;
   margin: 0 auto; }
 
+.menu-accommodation-place {
+  padding: 20px 0 0 330px; }
+
 /* Content telegram ***************************/
 .telegram-header {
   width: 100%;
@@ -375,15 +456,31 @@ a {
 .telegram__title {
   max-width: 400px;
   font-size: 24px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 10px; }
 
 .telegram-header__text, .metrovka-header__text {
   padding-top: 20px;
   max-width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 20px; }
 
 .telegram-header__menu {
-  padding-left: 40px; }
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px; }
+
+.telegram-header__menu-item {
+  display: inline-block;
+  height: 25px;
+  border-bottom: 2px solid transparent;
+  margin-left: 30px; }
+  .telegram-header__menu-item__text {
+    color: black;
+    height: 100%; }
+  .telegram-header__menu-item__text:hover {
+    border-bottom: 2px solid #30ae63; }
 
 .telegram-content {
   width: 100%;
@@ -417,7 +514,8 @@ a {
 
 .telegram-info_content {
   width: 320px;
-  padding-top: 40px; }
+  padding-top: 40px;
+  font-size: 14px; }
 
 .telegram-info_content_title {
   font-size: 22px; }
@@ -428,7 +526,7 @@ a {
 
 .telegram-info_content_list_item {
   padding-top: 15px;
-  line-height: 1.3; }
+  line-height: 20px; }
 
 .telegram-footer {
   height: 100px;
@@ -458,18 +556,21 @@ a {
   vertical-align: top;
   margin-right: 10px;
   width: 272px;
-  min-height: 306px; }
+  min-height: 306px;
+  border: 2px solid transparent;
+  cursor: pointer; }
 
 .metrovka-slider :last-child {
   margin-right: 0px; }
 
 .metrovka-slider__element__img {
-  width: 272px;
+  width: 268px;
   height: 182px; }
 
 .metrovka-slider__element__theme {
-  font-size: 12px;
-  margin-top: 20px; }
+  font-size: 11px;
+  margin-top: 20px;
+  line-height: 16px; }
 
 .metrovka-theme1 {
   color: #BA8FF7; }
@@ -483,12 +584,14 @@ a {
 .metrovka-slider__element__description {
   max-width: 272px;
   margin-top: 5px;
-  font-size: 18px; }
+  font-size: 16px;
+  line-height: 24px; }
 
 .metrovka-slider__element__author {
   color: #8C9BA5;
   margin-top: 20px;
-  font-size: 16px; }
+  font-size: 12px;
+  line-height: 16px; }
 
 .metrovka-slider__element__img {
   position: relative; }
@@ -504,19 +607,33 @@ a {
 
 /* Content choose accommodation ***************/
 .content-choose-accommodation {
-  max-width: 300px;
-  text-align: center;
-  border: 1px solid black; }
+  max-width: 320px;
+  text-align: center; }
 
 .content-choose-accommodation__title {
   font-size: 24px;
   line-height: 32px; }
+
+.choose_station {
+  background: white url("../images/sprite.png") no-repeat 257px -8px;
+  margin-right: 20px;
+  width: 313px;
+  padding: 10px 0 10px 20px;
+  font-size: 12px; }
 
 .metro-img {
   max-width: 411px;
   max-height: 212px;
   margin-left: 80px; }
 
+.menu-accommodation {
+  text-align: left;
+  margin-bottom: 20px; }
+
+.button-search {
+  margin-top: 20px; }
+
+/* Content rent page **************************/
 .nav-item {
   display: inline-block;
   font-size: 0.85em;
@@ -560,12 +677,11 @@ a {
   width: 100%;
   height: 258px;
   background-color: white;
-  margin-top: 23px; }
+  margin-top: 25px; }
 
 .rent-proposition__content {
   width: 100%;
-  padding: 11px 0 0 19px;
-  border: 1px solid black;
+  padding: 11px 0 0 20px;
   height: 196px;
   vertical-align: top; }
 
@@ -583,8 +699,7 @@ a {
   width: 100%;
   height: 183px;
   padding: 6px 0 0 17px;
-  vertical-align: top;
-  border: 1px solid black; }
+  vertical-align: top; }
 
 .rent-proposition-summary {
   max-width: 260px;
@@ -592,8 +707,7 @@ a {
   height: 183px;
   padding: 6px 20px 0 0;
   text-align: right;
-  vertical-align: top;
-  border: 1px solid black; }
+  vertical-align: top; }
 
 .proposition-title {
   font-size: 1em;
@@ -673,15 +787,16 @@ a {
 .call-button, .massage-button {
   display: inline-block;
   width: 72px;
-  height: 34px; }
+  height: 34px;
+  border-radius: 5px; }
 
 .call-button {
   border: 2px solid rgba(48, 174, 99, 0.4);
-  border-radius: 5px; }
+  background: url("../images/rent_sprite.png") no-repeat 1px -269px; }
 
 .massage-button {
   border: 2px solid rgba(37, 115, 216, 0.4);
-  border-radius: 5px; }
+  background: url("../images/rent_sprite.png") no-repeat 1px -133px; }
 
 /* Header ***************/
 .project-header__header {
@@ -692,12 +807,13 @@ a {
 
 .project-header__menu {
   padding-top: 25px;
-  padding-left: 40px; }
+  padding-left: 65px; }
 
 .project-header__menu-item, .rent-header__menu-item {
   padding: 0 5px 0 5px;
   height: 30px;
   font-size: 14px;
+  position: relative;
   line-height: 20px;
   display: inline-block;
   margin-right: 35px;
@@ -713,11 +829,27 @@ a {
   position: relative;
   top: -4px; }
 
+.project-header__menu-item__sub-menu {
+  position: absolute;
+  display: none;
+  right: -120px;
+  top: 30px;
+  width: 150px;
+  line-height: 20px; }
+  .project-header__menu-item__sub-menu a {
+    border-bottom: 2px solid transparent;
+    color: white; }
+  .project-header__menu-item__sub-menu a:hover {
+    border-bottom: 2px solid white; }
+
+.project-header__menu > .project-header__menu-item:hover .project-header__menu-item__sub-menu, .project-header__menu > .rent-header__menu-item:hover .project-header__menu-item__sub-menu {
+  display: block; }
+
 .project-header__botton-menu, .rent-header__botton-menu {
-  margin: 18px 0 0 70px;
+  margin: 23px 0 0 70px;
   font-size: 14px;
   line-height: 17px;
-  width: 290px; }
+  max-width: 290px; }
 
 .project-header__tittle {
   color: white;
@@ -735,61 +867,19 @@ a {
   display: inline-flex;
   margin: 12px 2px 0 0; }
 
-input[type="checkbox"] + span {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  background: url("../images/checkbox/sprite_checkbox.png") no-repeat; }
-  input[type="checkbox"] + span.check-room__1 {
-    background-position: -395px -15px; }
-  input[type="checkbox"] + span.check-room__2 {
-    background-position: -467px -15px; }
-  input[type="checkbox"] + span.check-room__3 {
-    background-position: -539px -15px; }
-  input[type="checkbox"] + span.check-room__4 {
-    background-position: -611px -15px; }
-  input[type="checkbox"] + span.check-room__5 {
-    background-position: -683px -15px; }
-
-input[type="checkbox"] {
-  display: none; }
-
-input[type="checkbox"]:checked + span.check-room__1 {
-  background-position: -15px -15px; }
-
-input[type="checkbox"]:checked + span.check-room__2 {
-  background-position: -91px -15px; }
-
-input[type="checkbox"]:checked + span.check-room__3 {
-  background-position: -167px -15px; }
-
-input[type="checkbox"]:checked + span.check-room__4 {
-  background-position: -243px -15px; }
-
-input[type="checkbox"]:checked + span.check-room__5 {
-  background-position: -319px -15px; }
-
 .choose-room {
   display: inline-block;
   position: relative;
   margin-left: 20px; }
 
 .choose-city-form {
-  margin-top: 12px; }
+  padding-top: 12px; }
 
 .choose_city {
-  background: white url("../images/sprite.png") no-repeat 292px -8px;
   margin-right: 20px;
   width: 346px;
-  height: 42px;
   padding: 10px 0 10px 20px;
-  border-radius: 3px;
-  font-size: 15px;
-  border: 2px solid #f2f2f2;
-  cursor: pointer; }
-
-.choose_city option {
-  background: white; }
+  font-size: 15px; }
 
 .form-button-place {
   margin: 30px 0 0 42px; }
@@ -801,8 +891,7 @@ input[type="checkbox"]:checked + span.check-room__5 {
   padding-top: 14px; }
 
 .rent-header__menu {
-  padding-top: 15px;
-  margin-left: 40px;
+  padding: 15px 0 0 40px;
   height: 63px; }
 
 .rent-header__menu-item {
@@ -819,22 +908,44 @@ input[type="checkbox"]:checked + span.check-room__5 {
   color: white; }
 
 .rent-header__botton-menu {
-  margin: 13px 0 0 104px; }
+  margin: 14px 0 0 104px; }
+
+.rent-header__menu-item__sub-menu {
+  position: absolute;
+  display: none;
+  right: -120px;
+  top: 30px;
+  width: 150px;
+  line-height: 20px;
+  background-color: #30ae63;
+  padding: 10px; }
+  .rent-header__menu-item__sub-menu a {
+    border-bottom: 2px solid transparent;
+    color: white; }
+  .rent-header__menu-item__sub-menu a:hover {
+    border-bottom: 2px solid white; }
+  .rent-header__menu-item__sub-menu a {
+    margin-left: 10px; }
+
+.rent-header__menu > .rent-header__menu-item:hover .rent-header__menu-item__sub-menu {
+  display: block; }
 
 /* Footer ***************/
 .footer-column {
   display: inline-block;
   vertical-align: top;
-  width: 206px; }
+  width: 206px;
+  font-size: 13px;
+  line-height: 20px; }
 
 .footer-column__title {
-  font-size: 20px; }
+  font-size: 16px;
+  line-height: 32px; }
 
 .footer-column__text {
   display: block;
   margin-top: 15px;
-  max-width: 180px;
-  font-size: 16px;
+  max-width: 170px;
   color: black; }
 
 .footer-icons, .footer-email {
@@ -845,7 +956,7 @@ input[type="checkbox"]:checked + span.check-room__5 {
 
 .footer-city {
   margin-top: 5px;
-  font-size: 12px; }
+  font-size: 11px; }
 
 .footer-logo {
   height: 200px;
@@ -903,3 +1014,23 @@ input[type="checkbox"]:checked + span.check-room__5 {
 /*************************
 	All The States Styles
 *************************/
+.project-header__menu-item:hover, .rent-header__menu-item:hover {
+  border-bottom: 2px solid white; }
+
+.menu-accommodation__item:checked + span {
+  border-bottom: 2px solid #30ae63; }
+
+.button:hover {
+  background-color: #50DB88; }
+
+.button:active {
+  background-color: #289253; }
+
+.button:disabled {
+  background-color: #bdedd0; }
+
+.propositions:hover, .metrovka-slider__element:hover {
+  border: 2px solid #30ae63; }
+
+.footer-column__text:hover {
+  color: #50DB88; }
