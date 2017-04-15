@@ -21,7 +21,7 @@
   border: 2px solid #f2f2f2;
   border-radius: 50%;
   text-align: center;
-  line-height: 40px; }
+  line-height: 2.5em; }
 
 .check-room__item:checked + span {
   background: white;
@@ -32,7 +32,7 @@
   color: white; }
 
 .menu-accommodation {
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 15px 0 0 7px; }
   .menu-accommodation span {
     display: inline-block;
@@ -46,7 +46,7 @@
 /* Buttons **************/
 .best-proposition__footer__button {
   color: black;
-  font-size: 16px;
+  font-size: 1em;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -61,7 +61,7 @@
 
 .last-advert__footer__button {
   color: black;
-  font-size: 16px;
+  font-size: 1em;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -76,7 +76,7 @@
 
 .metrovka-footer__button {
   color: black;
-  font-size: 16px;
+  font-size: 1em;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -131,7 +131,7 @@
   width: 200px;
   height: 40px;
   color: #30ae63;
-  font-size: 14px; }
+  font-size: 0.875em; }
 
 .footer-button {
   display: block;
@@ -387,7 +387,7 @@ input[type="checkbox"] {
 
 .best-proposition__title {
   max-width: 400px;
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0 auto; }
 
 .best-proposition__content {
@@ -446,8 +446,8 @@ input[type="checkbox"] {
     padding: 8px;
     color: black;
     display: block;
-    font-size: 14px;
-    line-height: 17px; }
+    font-size: 0.875em;
+    line-height: 1.0625em; }
   .sub-menu .sub-menu__item__text:hover {
     color: white;
     background: #50DB88; }
@@ -462,16 +462,16 @@ input[type="checkbox"] {
 
 .price-text {
   display: inline-block;
-  font-size: 16px; }
+  font-size: 1em; }
 
 .flat-description {
   margin-top: 5px;
   color: #8C9BA5;
-  font-size: 12px; }
+  font-size: 0.75em; }
 
 .flat-location {
   margin-top: 10px;
-  font-size: 12px; }
+  font-size: 0.75em; }
 
 .red-circle {
   display: inline-block;
@@ -493,7 +493,7 @@ input[type="checkbox"] {
 
 .last-advert__title {
   max-width: 400px;
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0 auto; }
 
 .menu-accommodation-place {
@@ -508,7 +508,7 @@ input[type="checkbox"] {
 
 .telegram__title {
   max-width: 400px;
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0 auto;
   padding-top: 10px; }
 
@@ -516,13 +516,13 @@ input[type="checkbox"] {
   padding-top: 20px;
   max-width: 500px;
   margin: 0 auto;
-  font-size: 14px;
-  line-height: 20px; }
+  font-size: 0.875em;
+  line-height: 1.25em; }
 
 .telegram-header__menu {
   padding-top: 20px;
   text-align: center;
-  font-size: 14px; }
+  font-size: 0.875em; }
 
 .telegram-header__menu-item {
   display: inline-block;
@@ -562,16 +562,16 @@ input[type="checkbox"] {
 .telegram-info_header_title {
   display: inline-block;
   vertical-align: middle;
-  font-size: 22px;
+  font-size: 1.375em;
   padding-bottom: 50px; }
 
 .telegram-info_content {
   width: 320px;
   padding-top: 40px;
-  font-size: 14px; }
+  font-size: 0.875em; }
 
 .telegram-info_content_title {
-  font-size: 22px; }
+  font-size: 1.375em; }
 
 .telegram-info_content_list {
   padding: 15px 0 0 20px;
@@ -579,7 +579,7 @@ input[type="checkbox"] {
 
 .telegram-info_content_list_item {
   padding-top: 15px;
-  line-height: 20px; }
+  line-height: 1.25em; }
 
 .telegram-footer {
   height: 100px;
@@ -596,7 +596,7 @@ input[type="checkbox"] {
 
 .metrovka__title {
   max-width: 400px;
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0 auto; }
 
 .metrovka-slider {
@@ -621,9 +621,9 @@ input[type="checkbox"] {
   height: 182px; }
 
 .metrovka-slider__element__theme {
-  font-size: 11px;
+  font-size: 0.6875em;
   margin-top: 20px;
-  line-height: 16px; }
+  line-height: 1em; }
 
 .metrovka-theme1 {
   color: #BA8FF7; }
@@ -637,14 +637,14 @@ input[type="checkbox"] {
 .metrovka-slider__element__description {
   max-width: 272px;
   margin-top: 5px;
-  font-size: 16px;
-  line-height: 24px; }
+  font-size: 1em;
+  line-height: 1.5em; }
 
 .metrovka-slider__element__author {
   color: #8C9BA5;
   margin-top: 20px;
-  font-size: 12px;
-  line-height: 16px; }
+  font-size: 0.75em;
+  line-height: 1em; }
 
 .metrovka-slider__element__img {
   position: relative; }
@@ -664,15 +664,15 @@ input[type="checkbox"] {
   text-align: center; }
 
 .content-choose-accommodation__title {
-  font-size: 24px;
-  line-height: 32px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 .choose_station {
   background: white url("../images/sprite.png") no-repeat 257px -8px;
   margin-right: 20px;
   width: 313px;
   padding: 10px 0 10px 20px;
-  font-size: 12px; }
+  font-size: 0.75em; }
 
 .metro-img {
   max-width: 411px;
@@ -882,13 +882,13 @@ input[type="checkbox"] {
 
 .application-left__title {
   max-width: 400px;
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0 auto; }
 
 .application-left__text {
   padding-top: 40px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875em;
+  line-height: 1.25em;
   width: 320px;
   min-height: 96px; }
 
@@ -905,7 +905,7 @@ input[type="checkbox"] {
   width: 320px;
   background-position: 260px -8px;
   padding: 10px 0 10px 20px;
-  font-size: 15px; }
+  font-size: 0.9375em; }
 
 .choose-room-place {
   padding-top: 30px; }
@@ -931,9 +931,9 @@ input[type="checkbox"] {
 .project-header__menu-item, .rent-header__menu-item {
   padding: 0 5px 0 5px;
   height: 30px;
-  font-size: 14px;
+  font-size: 0.875em;
   position: relative;
-  line-height: 20px;
+  line-height: 1.25em;
   display: inline-block;
   margin-right: 35px;
   border-bottom: 2px solid transparent; }
@@ -944,7 +944,7 @@ input[type="checkbox"] {
 .project-header__menu :last-child .project-header__menu-item__text:before {
   content: "...";
   margin-right: 7px;
-  font-size: 30px;
+  font-size: 1.875em;
   position: relative;
   top: -4px; }
 
@@ -954,7 +954,7 @@ input[type="checkbox"] {
   right: -120px;
   top: 30px;
   width: 150px;
-  line-height: 20px; }
+  line-height: 1.25em; }
   .project-header__menu-item__sub-menu a {
     border-bottom: 2px solid transparent;
     color: white; }
@@ -966,13 +966,13 @@ input[type="checkbox"] {
 
 .project-header__botton-menu, .rent-header__botton-menu {
   margin: 23px 0 0 70px;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875em;
+  line-height: 1.0625em;
   max-width: 290px; }
 
 .project-header__tittle {
   color: white;
-  font-size: 32px;
+  font-size: 2em;
   padding-top: 60px;
   min-height: 90px; }
 
@@ -998,7 +998,7 @@ input[type="checkbox"] {
   margin-right: 20px;
   width: 346px;
   padding: 10px 0 10px 20px;
-  font-size: 15px; }
+  font-size: 0.9375em; }
 
 .form-button-place {
   margin: 30px 0 0 42px; }
@@ -1019,7 +1019,7 @@ input[type="checkbox"] {
 .rent-header__menu :last-child .rent-header__menu-item__text:before {
   content: "...";
   margin-right: 7px;
-  font-size: 30px;
+  font-size: 1.875em;
   position: relative;
   top: -4px; }
 
@@ -1035,7 +1035,7 @@ input[type="checkbox"] {
   right: -120px;
   top: 30px;
   width: 150px;
-  line-height: 20px;
+  line-height: 1.25em;
   background-color: #30ae63;
   padding: 10px; }
   .rent-header__menu-item__sub-menu a {
@@ -1054,18 +1054,19 @@ input[type="checkbox"] {
   display: inline-block;
   vertical-align: top;
   width: 206px;
-  font-size: 13px;
-  line-height: 20px; }
+  font-size: 0.8125em;
+  line-height: 1.25em; }
 
 .footer-column__title {
-  font-size: 16px;
-  line-height: 32px; }
+  font-size: 1em;
+  line-height: 2em; }
 
 .footer-column__text {
   display: block;
   margin-top: 15px;
-  max-width: 170px;
-  color: black; }
+  max-width: 140px;
+  color: black;
+  font-size: 0.8125em; }
 
 .footer-icons, .footer-email {
   margin-top: 15px; }
@@ -1075,7 +1076,7 @@ input[type="checkbox"] {
 
 .footer-city {
   margin-top: 5px;
-  font-size: 11px; }
+  font-size: 0.6825em; }
 
 .footer-logo {
   height: 200px;

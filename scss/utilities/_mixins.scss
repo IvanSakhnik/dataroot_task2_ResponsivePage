@@ -4,21 +4,21 @@
 
 @mixin title{
 	max-width: 400px;
-	font-size: 24px;
+	font-size: 1.5em;
 	margin: 0 auto;
 }
 
 @mixin horizontal-dots{
 	content: "...";
 	margin-right: 7px;
-	font-size: 30px;
+	font-size: 1.875em;
 	position: relative;
 	top: -4px;
 }
 
 @mixin containers-footer-button{
 	color: black;
-	font-size: 16px;
+	font-size: 1em;
 	position: absolute;
 	bottom: 0px;
 	width:100%;
@@ -49,7 +49,7 @@
 	right: -120px;
 	top: 30px;
 	width: 150px;
-	line-height: 20px;
+	line-height: 1.25em;
 	a{
 		border-bottom: 2px solid transparent;
 		color: white;
@@ -93,8 +93,8 @@
 		padding: 8px;
 		color: black;
 		display: block;
-		font-size: 14px;
-		line-height: 17px;
+		font-size: 0.875em;
+		line-height: 1.0625em;
 	}
 	.sub-menu__item__text:hover{
 		color:white;
