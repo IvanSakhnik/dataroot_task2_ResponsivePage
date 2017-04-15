@@ -18,11 +18,17 @@ $metrovka-color-theme1:#BA8FF7;
 $color-blue:#2573D8; 
 $metrovka-color-theme3:#30AE63;
 $color-text-gray:#8C9BA5;
-
+$color-text-darkgray:rgba(0, 0, 0, 0.6);
 $border-color:#D8D8D8;
 
 
-$rent-hight-price-background: #FFEFEA;
-$rent-hight-price-text: rgba(208, 2, 2, 0.5);
+$rent-red-price-background: #FFEFEA;
+$rent-red-price-text: rgba(208, 2, 2, 0.5);
+$rent-green-price-background:#EAFFF5;
+$rent-green-price-text: #30AD64;
 $border-call-button: rgba(48, 174, 99, 0.4);
 $border-massage-button: rgba(37, 115, 216, 0.4);
+$rent-switch-dark: rgba(0, 0, 0, 0.6);
+$rent-switch-light: #D8D8D8;
+
+
