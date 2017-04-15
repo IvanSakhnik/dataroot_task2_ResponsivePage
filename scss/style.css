@@ -210,6 +210,12 @@ input, button, textarea, select, option {
 select::-ms-expand {
   display: none; }
 
+input[type="text"] {
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  padding: 10px;
+  width: 320px; }
+
 /* Base *****************/
 body {
   font-family: 'open_sans', sans-serif;
@@ -875,12 +881,29 @@ input[type="checkbox"] {
   min-height: 96px; }
 
 .application-right {
-  padding: 40px; }
+  padding: 30px 40px 40px 40px; }
+
+.close-icon {
+  height: 15px;
+  width: 15px;
+  display: block;
+  margin-left: 100%; }
 
 .choose-location-or-metro {
-  width: 346px;
+  width: 320px;
+  background-position: 260px -8px;
   padding: 10px 0 10px 20px;
   font-size: 15px; }
+
+.choose-room-place {
+  padding-top: 30px; }
+
+.user_name {
+  margin-top: 30px; }
+
+.user_email {
+  margin-top: 15px;
+  margin-bottom: 30px; }
 
 /* Header ***************/
 .project-header__header {
@@ -1058,6 +1081,9 @@ input[type="checkbox"] {
 /* Icons ****************/
 .icon-plus {
   background: url("../images/sprite.png") no-repeat -10px -662px; }
+
+.close-icon {
+  background: url("../images/sprite.png") no-repeat -25px -799px; }
 
 .icon-check {
   display: inline-block;
