@@ -454,7 +454,7 @@
 				<div class="footer-adress">ул. Жилянская,37</div>
 				<div class="footer-city">Киев,01033</div>
 				<div class="footer-email">info@metrovka.ua</div>
-				<a class="footer-button button" href="leave_application.html">Оставить заявку</a>
+				<a class="footer-button button" href="#openModal">Оставить заявку</a>
 			</div>
 			<div class="footer-logo">
 				<div class="footer-logo__img"></div>
@@ -462,5 +462,52 @@
 		</div>
 	</footer>
 	 
+	<!-- Leave Application -->
+	
+	<div id="openModal" class="modalDialog">
+		<div class="application-wrapper">
+
+			<div class="application-left">
+				<div class="application-left__title">Оставить заявку</div>
+				<div class="application-left__text">Нет времени искать по сайту? <br>
+				Заполняй критерии поиска и получай актуальные обьявления как только 
+				они появляются на Metrovka.</div>
+			</div>
+
+			<div class="application-right">
+				<a href="#close" class="close-icon"></a>
+				<form class="application-right__form" action="" method="">
+					<div class="menu-accommodation application-right__form__menu-accommodation-place">
+						<label><input class="menu-accommodation__item" type="checkbox" value="flats" name="flats"><span>Район</span ></label>
+						<label><input class="menu-accommodation__item" type="checkbox" value="home" name="home"><span>Метро</span></label>
+					</div>
+
+					<div class="application-right__form__choose-place">
+						<select class="choose-location-or-metro" name="choose city" id="choose_city">
+							<option selected>Голосеевский</option>
+							<option>Дарницкий</option>
+							<option>Шевченковский</option>
+							<option>Печерский</option>
+						</select>
+					</div>
+
+					<div class="choose-room choose-room-place">Кол-во комнат<br>
+						<label class="check-room"><input class="check-room__item" type="checkbox" value="1" name="rooms"><span>1</span></label>
+						<label class="check-room"><input class="check-room__item" type="checkbox" value="2" name="rooms"><span>2</span></label>
+						<label class="check-room"><input class="check-room__item" type="checkbox" value="3" name="rooms"><span>3</span></label>
+						<label class="check-room"><input class="check-room__item" type="checkbox" value="4" name="rooms"><span>4</span></label>
+						<label class="check-room"><input class="check-room__item" type="checkbox" value="5" name="rooms"><span>5+</span></label>
+					</div>
+					
+					<input class="user_name" type="text" name="name" placeholder="Как вас зовут?"> <br>
+					<input class="user_email" type="text" name="email" placeholder="Email"> <br>
+
+					<a href='#close' onClick='submit()' class="button button-leave-application">Оставить заявку</a>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
 </body>
 </html>

@@ -754,13 +754,33 @@ input[type="checkbox"] {
   color: rgba(0, 0, 0, 0.6); }
 
 /* Content leave-application page *************/
-.application-wrapper {
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none; }
+
+.modalDialog:target {
+  display: block;
+  pointer-events: auto; }
+
+.modalDialog > .application-wrapper {
+  position: relative;
   width: 800px;
   min-height: 484px;
   margin: 70px auto;
   display: flex;
   border: 1px solid #f2f2f2;
-  border-top: 5px solid #30ae63; }
+  border-top: 5px solid #30ae63;
+  background: white; }
 
 .application-left {
   width: 400px;
@@ -786,7 +806,9 @@ input[type="checkbox"] {
   height: 15px;
   width: 15px;
   display: block;
-  margin-left: 100%; }
+  position: absolute;
+  right: 10px;
+  top: 10px; }
 
 .choose-location-or-metro {
   width: 320px;
