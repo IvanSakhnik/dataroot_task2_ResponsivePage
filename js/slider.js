@@ -16,20 +16,19 @@
     	}, options);
 
     	var make = function(){
-    		//$('.slider').css({'owerflow':'hidden'})
-            //$('.slide').css({'position':'absolute'})
+    		$('.slider').css({'owerflow':'hidden'})
+            //$('.slide').css({'position':'relative'})
                            
             var slideNum=0;
             var slideTime;
             var slideCount=$('.slide').size;
                 var animSlide=function(arrow){
-                //clearTimeout(slideTime);
-                //$('.slide').eq(slideCount-1).prependTo('.slider');
                 var step = $('.slide').outerWidth();
                 if (arrow=='next'){
-                    $('.slider').animate({'left': -step}, 'slow', function(){
+                    $('.slide').eq(0).animate({'margin-left': -step}, 'slow', function(){
+                        //$('.slide').eq(0).css({'margin-left':'0'})
                         $('.slide').eq(0).appendTo('.slider');
-                        $('.slider').css('left',0)
+                        //$('.slider').css('left',0)
                     });
                 rotator();
                 };
