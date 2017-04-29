@@ -68,12 +68,16 @@
 		}
 	}
 	
+	// .best-proposition__content{
+	// 	overflow-x: auto;
+	// }
+	
 	.project-content__best-proposition{
-		overflow-x: auto;
+		overflow: hidden;
 	}
 
 	.project-content__last-advert{
-		overflow-x: auto;
+		overflow: hidden;
 		.menu-accommodation-place{
 			text-align: center;
 			margin: 0;
