@@ -1274,9 +1274,9 @@ input[type="checkbox"] {
     .project-content__accommodation-metro .menu-accommodation {
       text-align: center; }
   .project-content__best-proposition {
-    overflow: hidden; }
+    overflow-x: auto; }
   .project-content__last-advert {
-    overflow: hidden; }
+    overflow-x: auto; }
     .project-content__last-advert .menu-accommodation-place {
       text-align: center;
       margin: 0;

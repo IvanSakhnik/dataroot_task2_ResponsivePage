@@ -69,11 +69,11 @@
 	}
 	
 	.project-content__best-proposition{
-		overflow: hidden;
+		overflow-x: auto;
 	}
 
 	.project-content__last-advert{
-		overflow: hidden;
+		overflow-x: auto;
 		.menu-accommodation-place{
 			text-align: center;
 			margin: 0;
