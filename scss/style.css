@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*************************
  All The Utilities Styles
 *************************/
@@ -1427,3 +1428,49 @@ input[type="checkbox"] {
     height: 550px; } }
 
 /* Tools ****************/
+/* STYLE SLIDER ******************************************/
+/* Оболочка слайдера и кнопок */
+/* Оболочка слайдера */
+/* Слайд */
+/* Кнопки смены слайдов */
+.sli-links {
+  margin-top: 10px;
+  text-align: center; }
+
+.sli-links .control-slide {
+  margin: 2px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  text-indent: -9999px; }
+
+.sli-links .control-slide:hover {
+  cursor: pointer;
+  background-position: center center; }
+
+.sli-links .control-slide.active {
+  background-position: center top; }
+
+/* Ссылка "Следующий" и "Педыдущий" */
+#prewbutton, #nextbutton {
+  display: block;
+  width: 15px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  text-indent: -999px;
+  opacity: 0.8;
+  z-index: 3; }
+
+#prewbutton {
+  left: 10px;
+  content: "<<< prew"; }
+
+#nextbutton {
+  right: 10px;
+  content: "next >>>"; }
+
+#prewbutton:hover, #nextbutton:hover {
+  opacity: 1; }
