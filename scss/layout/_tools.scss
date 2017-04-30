@@ -21,7 +21,7 @@
 
 /* Слайд */
 .slide{ 
-    // width:100%;
+    //width:100%;
     // height:100%;
 }
 
@@ -53,27 +53,29 @@
 /* Ссылка "Следующий" и "Педыдущий" */
 #prewbutton, #nextbutton{ 
     display:block;
-    width:15px;
-    height:100%;
+    width:30px;
+    height:30px;
     position:absolute;
     top:0;
     overflow:hidden;
-    text-indent:-999px;
+    //text-indent:-999px;
+    //background: red;
     // background:url(arrowBg.png) left center no-repeat;
-    opacity:0.8;
-    z-index:3;
+    opacity:0.85;
+    // z-index:3;
     // outline:none !important;
 }
 
 #prewbutton{
 	left:10px;
-	content: "<<< prew";
+	content: "prew";
+    background: white url('../images/arrow_left.png') no-repeat;
 }
 
 #nextbutton{
     right:10px;
-    content: "next >>>";
-    // background:url(arrowBg.png) right center no-repeat;
+    content: "next";
+    background:url('../images/arrow_right.png') no-repeat;
 }
 
 #prewbutton:hover, #nextbutton:hover{
