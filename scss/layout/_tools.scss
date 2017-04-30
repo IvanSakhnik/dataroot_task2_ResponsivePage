@@ -16,7 +16,6 @@
 
 /* Оболочка слайдера */
 .slider{ 
-    // width:640px;
     overflow: hidden;
     width:864px;
     padding: 0;
@@ -56,10 +55,6 @@
     cursor:pointer;
     background: #2F4F4F;
 }
-
-// .sli-links .control-slide.active{
-//     background: #2F4F4F;
-// }
 
 /* Ссылка "Следующий" и "Педыдущий" */
 .prewbutton, .nextbutton{ 

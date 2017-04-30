@@ -68,6 +68,7 @@
             });
         }
 
+
         var rotator = function(){
             if (settings.autoplay==true){
                 var timer;
