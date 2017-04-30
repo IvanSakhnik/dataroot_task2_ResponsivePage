@@ -48,7 +48,7 @@
 .best-proposition__footer__button {
   color: black;
   font-size: 1em;
-  margin-top: 20px;
+  margin-top: 0px;
   width: 100%;
   height: 40px;
   padding-top: 9px;
@@ -62,7 +62,7 @@
 .last-advert__footer__button {
   color: black;
   font-size: 1em;
-  margin-top: 20px;
+  margin-top: 0px;
   width: 100%;
   height: 40px;
   padding-top: 9px;
@@ -76,7 +76,7 @@
 .metrovka-footer__button {
   color: black;
   font-size: 1em;
-  margin-top: 20px;
+  margin-top: 0px;
   width: 100%;
   height: 40px;
   padding-top: 9px;
@@ -133,7 +133,7 @@
 
 .footer-button {
   display: block;
-  margin-top: 15px;
+  margin-top: 15    px;
   max-width: 162px;
   border-radius: 3px;
   padding-top: 8px; }
@@ -1430,50 +1430,63 @@ input[type="checkbox"] {
 /* Tools ****************/
 /* STYLE SLIDER ******************************************/
 /* Оболочка слайдера и кнопок */
+.slider-wrap {
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+  position: relative; }
+
 /* Оболочка слайдера */
 .slider {
-  position: relative; }
+  overflow: hidden;
+  width: 864px;
+  padding: 0;
+  max-height: 216px;
+  margin: 0 auto; }
+
+.slides-wrapper {
+  max-height: 216px;
+  overflow: hidden;
+  margin: 0 auto; }
 
 /* Слайд */
 /* Кнопки смены слайдов */
 .sli-links {
-  margin-top: 10px;
+  margin-top: 40px;
   text-align: center; }
 
 .sli-links .control-slide {
   margin: 2px;
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  overflow: hidden;
-  text-indent: -9999px; }
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #C0C0C0;
+  border: 2px solid #808080; }
 
 .sli-links .control-slide:hover {
   cursor: pointer;
-  background-position: center center; }
-
-.sli-links .control-slide.active {
-  background-position: center top; }
+  background: #2F4F4F; }
 
 /* Ссылка "Следующий" и "Педыдущий" */
-#prewbutton, #nextbutton {
+.prewbutton, .nextbutton {
   display: block;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   position: absolute;
-  top: 0;
+  top: 85%;
   overflow: hidden;
-  opacity: 0.85; }
+  opacity: 0.6;
+  z-index: 3; }
 
-#prewbutton {
+.prewbutton {
   left: 10px;
-  content: "prew";
   background: white url("../images/arrow_left.png") no-repeat; }
 
-#nextbutton {
+.nextbutton {
   right: 10px;
-  content: "next";
   background: url("../images/arrow_right.png") no-repeat; }
 
-#prewbutton:hover, #nextbutton:hover {
+.prewbutton:hover, .nextbutton:hover {
   opacity: 1; }
