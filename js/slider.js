@@ -50,6 +50,13 @@
                 ShowPrewSlide(element);});
         }
 
+        if (settings.swipeAble == true){
+            $(this).on('swiperight', function(){
+                //alert('hi');
+                ShowNextSlide(element);
+            });
+        }
+
         if (settings.pagination == true){
             for (var i=0; i<slideCount; i++){
                 $('<span class="control-slide"></span>').appendTo($(this).find('.sli-links'))
@@ -132,7 +139,6 @@
 
 }( jQuery ));
  
-
 $(document).ready(function(){
     $('.slider-first-wrap').slider({sliderVisible : 3});
     $('.slider-second-wrap').slider({sliderVisible : 4});
