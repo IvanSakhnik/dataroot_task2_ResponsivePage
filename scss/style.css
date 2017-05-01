@@ -1275,6 +1275,8 @@ input[type="checkbox"] {
       text-align: center; }
   .project-content__best-proposition {
     overflow: hidden; }
+  .slider {
+    margin: 0 0 0 0; }
   .project-content__last-advert {
     overflow: hidden; }
     .project-content__last-advert .menu-accommodation-place {
@@ -1476,7 +1478,7 @@ input[type="checkbox"] {
   height: 30px;
   cursor: pointer;
   position: absolute;
-  top: 78%;
+  top: 81%;
   overflow: hidden;
   opacity: 0.6;
   z-index: 3; }
