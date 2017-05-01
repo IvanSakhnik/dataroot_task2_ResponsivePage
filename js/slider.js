@@ -31,15 +31,17 @@
             $(this).find('.prewbutton').css({'display':'block'});  
             $(this).find('.nextbutton').css({'display':'block'});  
             $(this).find('.nextbutton').click(function(){
-                ShowNextSlide(element);});
+                ShowNextSlide(element, 0);});
             $(this).find('.prewbutton').click(function(){
                 ShowPrewSlide(element);});
         }
 
-        var ShowNextSlide = function(element){
+        var ShowNextSlide = function(element, timer){
+            /*var tmp=timer;
             element.find('.slide').hover(function(){
                 clearInterval(timer);
-            });     
+            },
+                function(){timer=tmp;});  */   
             element.animate({'left':-step}, 500, 
                 function(){
                     element.find('.slide').eq(0).remove();
@@ -73,7 +75,7 @@
                 element.find('.slide').eq(0).clone().appendTo(element);
                 if (settings.infinite==true){
                     timer=setInterval(function(){
-                        ShowNextSlide(element);  
+                        ShowNextSlide(element, timer);  
                     }, settings.autoplaySpeed);
                 }
             }

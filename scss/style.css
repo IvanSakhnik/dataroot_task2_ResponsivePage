@@ -378,7 +378,7 @@ input[type="checkbox"] {
 /* Content last advert ************************/
 .last-advert__header {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: center; }
 
 .last-advert__title {
@@ -559,6 +559,7 @@ input[type="checkbox"] {
 
 .choose_station {
   background: white url("../images/sprite.png") no-repeat 257px -8px;
+  margin-top: 20px;
   margin-right: 20px;
   width: 313px;
   padding: 10px 0 10px 20px;
@@ -570,8 +571,7 @@ input[type="checkbox"] {
   margin-left: 80px; }
 
 .menu-accommodation {
-  text-align: left;
-  margin-bottom: 20px; }
+  text-align: left; }
 
 .button-search {
   margin-top: 20px; }

@@ -15,6 +15,7 @@
 .choose_station{
 	@extend .choose_location;
 	background: white url("../images/sprite.png") no-repeat 257px -8px;
+	margin-top: 20px;
 	margin-right: 20px;
 	width: 313px;
 	padding: 10px 0 10px 20px;
@@ -29,7 +30,7 @@
 
 .menu-accommodation{
 	text-align: left;
-	margin-bottom: 20px;
+	//margin-bottom: 20px;
 }
 
 .button-search{
